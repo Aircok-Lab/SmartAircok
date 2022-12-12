@@ -1,0 +1,13 @@
+.dashboard-section1 {
+  width : 20%;
+  height : 30%;
+
+  padding : 1%;
+
+  background-color: #ffffff;
+
+  border : 1px solid #dddddd;
+  border-radius: 5px;
+
+  overflow : auto;
+}
