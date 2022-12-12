@@ -1,0 +1,59 @@
+.aircok-aside {
+  float : left;
+
+  width : 15%;
+  height : 100%;
+
+  color : #bebebe;
+  background-color : #141414;
+}
+
+.aside-manage{
+  width : auto;
+  height : inherit;
+
+  margin-top : 15%;
+  padding-left : 0;
+
+  list-style: none;
+}
+
+.aside-manage-li{
+  width : 100%;
+  height : 6%;
+}
+
+.aside-manage-li-radio{
+  position: absolute;
+
+  width: 0;
+  height: 0;
+
+  visibility: hidden;
+}
+
+.aside-manage-li-radio-label{
+  display: flex;
+  align-items: center;
+
+  width : 90%;
+  height : 100%;
+
+  padding-left : 10%;
+
+  font-size : 130%;
+  
+  transition: 0.3s;
+}
+
+.aside-manage-li-radio:hover + label{
+  font-size : 150%;
+  color : #ffffff;
+}
+
+.aside-manage-li-radio:checked + label{
+  font-size : 150%;
+  color : #ffffff;
+
+  background-color : #758cf7;
+}

@@ -1,0 +1,111 @@
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 챗봇 활성화 버튼 */
+.aircok-chatbot-btn {
+  position : fixed;
+  width : 2.5%;
+
+  right : 1.5%;
+  bottom : 2.5%;
+  z-index : 21;
+}
+
+/* 챗봇 활성화 디자인 */
+.react-chatbot-kit-chat-container {
+  position : fixed;
+  right : 1.5%;
+  /* bottom : 6%; */
+  bottom : 8%;
+  overflow : none;
+  animation : fadeInDown 1s ease;
+  border-radius : 10px;
+  box-shadow : rgb(0 0 0 / 30%) 0px 12px 60px 5px;
+  z-index : 20;
+}
+
+.react-chatbot-kit-chat-message-container{
+  padding-top : 5%;
+}
+
+
+/* 채팅창 제목 */
+.chat-header{
+  /* background-color : #5ccc9d; */
+  background-color : #3e3e3e;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+
+  /* color : white; */
+  color : #e5e5e5;
+  font-family: Arial;
+  font-weight : bold;
+  font-size: 85%;
+  
+  padding: 5%;
+}
+
+/* 답변 아이콘 디자인 */
+.chat-botAvatar{
+  display : flex;
+  align-items: center;
+
+  margin-bottom : 3%;
+}
+
+.chat-botAvatar-icon{
+  width : 15%;
+  height : 15%;
+
+  margin-right : 3%;
+}
+
+/* 답변 말풍선 디자인 */
+.react-chatbot-kit-chat-bot-message-container{
+  display : block;
+  margin-top : 0;
+}
+
+.react-chatbot-kit-chat-bot-message{
+  font-family: Arial;
+
+  margin-left : 3%;
+}
+
+.react-chatbot-kit-chat-bot-message-arrow{
+  top : 5px;
+  border-top : none;
+}
+
+/* 사용자 말풍선 디자인 */
+.react-chatbot-kit-user-chat-message-container{
+  margin-bottom : 0;
+}
+
+.react-chatbot-kit-user-chat-message-arrow{
+  top : 7px;
+  border-bottom : none;
+}
+
+
+/* 채팅 입력창 */
+.react-chatbot-kit-chat-input-form{
+  border-top: 1px solid #d8d8d8;
+}
+
+.react-chatbot-kit-chat-input{
+  border : medium solid white;
+}
+
+.react-chatbot-kit-chat-input:focus-visible{
+  outline: none;
+  border-color : #289c6c;
+}
