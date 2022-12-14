@@ -18,22 +18,13 @@
 		);
 	</select>
 	
-	<select id="selectUserAuthority" parameterType="string" resultType="string">
-		SELECT authrt
-		FROM aircok.user_tb
-		WHERE user_id=#{id}
-	</select>
-	
-	
 	<!-- JWT Refresh Token -->
 	<insert id="insertRefreshToken" parameterType="hashmap">
-    	<![CDATA[
         INSERT INTO aircok.user_token
 		VALUES (
 			#{access_token},
 			#{refresh_token}
 		);
-		]]>
 	</insert>
 	
 	<select id="selectTokenValidate" parameterType="hashmap" resultType="boolean">

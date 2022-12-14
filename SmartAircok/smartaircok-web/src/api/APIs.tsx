@@ -1,9 +1,11 @@
 import axios, {AxiosInstance, AxiosResponse} from 'axios';
 
+import {LoginProps} from '../items/interfaces';
+
 const aircok_axios: AxiosInstance = axios.create({
-  baseURL: 'http://localhost:8200',
+  baseURL: 'http://localhost:11116',
   headers : {
-  "Access-Control-Allow-Origin" : "*"
+    "Access-Control-Allow-Origin" : "*"
   }
 })
 
@@ -32,16 +34,17 @@ const aircok_axios: AxiosInstance = axios.create({
 //   }
 // };
 
-export const test2 = async (param : string) => {
+export const loginAPI = async (user : LoginProps) => {
   try{
-    const data : AxiosResponse = await aircok_axios.get(
-      '/devicelist',
+    const data : AxiosResponse = await aircok_axios.post(
+      '/loginprocess',
       {
-        params : {
-          aircokkey : param
-        }
+        id : user.id,
+        pw : user.pw
       }
     );
+
+    console.log(data)
 
     return data;
   }
@@ -53,8 +56,8 @@ export const test2 = async (param : string) => {
 
 
 
-// const APIs = {
-//   deviceListAPI
-// };
+const APIs = {
+  loginAPI
+};
 
-// export default APIs;
+export default APIs;

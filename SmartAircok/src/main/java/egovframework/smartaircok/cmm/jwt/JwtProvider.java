@@ -1,13 +1,22 @@
-package egovframework.smartaircok.config;
+package egovframework.smartaircok.cmm.jwt;
 
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import org.egovframe.rte.fdl.cryptography.EgovEnvCryptoService;
 import org.egovframe.rte.fdl.cryptography.impl.EgovEnvCryptoServiceImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
 import io.jsonwebtoken.Claims;
@@ -33,8 +42,8 @@ public class JwtProvider {
         Map<String, String> tokenMap = new HashMap<String, String>();
         
         String access_token = Jwts.builder()
-				                .setHeaderParam(Header.TYPE, Header.JWT_TYPE) // (1)
-				                .setIssuer("aircok") // 토큰발급자(iss)
+				                .setHeaderParam(Header.TYPE, Header.JWT_TYPE)
+				                .setIssuer("aircok")
 						        .setIssuedAt(now)
 						        .setExpiration(new Date(now.getTime() + access_exp))
 						        .claim("id", id)
@@ -43,8 +52,8 @@ public class JwtProvider {
 				                .compact(); 
         
         String refresh_token = Jwts.builder()
-				                .setHeaderParam(Header.TYPE, Header.JWT_TYPE) // (1)
-				                .setIssuer("aircok") // 토큰발급자(iss)
+				                .setHeaderParam(Header.TYPE, Header.JWT_TYPE)
+				                .setIssuer("aircok")
 						        .setIssuedAt(now)
 						        .setExpiration(new Date(now.getTime() + refresh_exp))
 						        .claim("id", id)
@@ -62,8 +71,8 @@ public class JwtProvider {
         Date now = new Date();
         
         return Jwts.builder()
-                .setHeaderParam(Header.TYPE, Header.JWT_TYPE) // (1)
-                .setIssuer("aircok") // 토큰발급자(iss)
+                .setHeaderParam(Header.TYPE, Header.JWT_TYPE)
+                .setIssuer("aircok")
 		        .setIssuedAt(now)
 		        .setExpiration(new Date(now.getTime() + access_exp))
 		        .claim("id", claims.get("id", String.class))
@@ -72,9 +81,10 @@ public class JwtProvider {
                 .compact();
     }
 
-    //토큰 유효성 체크
     public Claims parseJwtToken(String token) {
-        token = BearerRemove(token); // Bearer 제거
+        if(token.startsWith("Bearer ")) {
+            token = token.substring("Bearer ".length());
+        }
         return Jwts.parserBuilder()
                 .setSigningKey(secretKey.getBytes())
                 .build()
@@ -82,8 +92,38 @@ public class JwtProvider {
                 .getBody();
     }
     
-    //Bearer 제거
-    private String BearerRemove(String token) {
-        return token.substring("Bearer ".length());
+    public Boolean validateToken(String token) {
+    	try {
+            Jwts.parserBuilder().setSigningKey(secretKey.getBytes()).build().parseClaimsJws(token);
+            return true;
+    	}
+    	catch (Exception e) {
+        	return false;
+    	}
+    }
+    
+    public Authentication getAuthentication(String token) {
+        Claims claims = parseJwtToken(token);
+
+        if (claims.get("authority") == null) {
+            throw new RuntimeException("권한 정보가 없는 토큰입니다.");
+        }
+
+        Collection<? extends GrantedAuthority> authorities =
+                Arrays.stream(claims.get("authority").toString().split(","))
+                        .map(SimpleGrantedAuthority::new)
+                        .collect(Collectors.toList());
+        
+        UserDetails principal = new User(claims.get("id").toString(), "", authorities);
+
+        return new UsernamePasswordAuthenticationToken(principal, "", authorities);
+    }
+    
+    public Map<String, String> GenerateTokenByAuth(Authentication authentication) {
+        String authorities = authentication.getAuthorities().stream()
+                .map(GrantedAuthority::getAuthority)
+                .collect(Collectors.joining(","));
+        
+		return createToken(authentication.getName(), authorities);
     }
 }

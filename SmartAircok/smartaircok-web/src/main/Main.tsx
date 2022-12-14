@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 
+import Header from './header/Header';
 import Aside from './aside/Aside'
 import Article from './article/Article'
 import Chatbot from '../chatbot/Chatbot'
@@ -20,11 +21,14 @@ const Main = () => {
   const [asidelistchk, setasidelistchk] = useState<string>(asidelist[0].val)
 
   return (
-    <main className='aircok-main'>
-      <Aside asidelist={asidelist} asidelistchk={asidelistchk} setasidelistchk={setasidelistchk}/>
-      <Article asidelist={asidelist} asidelistchk={asidelistchk}/>
-      <Chatbot/>
-    </main>
+    <div className='Aircok'>
+      <Header />
+      <main className='aircok-main'>
+        <Aside asidelist={asidelist} asidelistchk={asidelistchk} setasidelistchk={setasidelistchk}/>
+        <Article asidelist={asidelist} asidelistchk={asidelistchk}/>
+        <Chatbot/>
+      </main>
+    </div>
   );
 };
 

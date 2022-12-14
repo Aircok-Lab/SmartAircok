@@ -6,20 +6,14 @@ import org.springframework.stereotype.Repository;
 
 import egovframework.com.cmm.service.impl.EgovComAbstractDAO;
 import egovframework.smartaircok.login.service.SmartAircokLoginVO;
-import egovframework.smartaircok.login.service.SmartAircokTokenVO;
 
 @Repository("smartAircokLoginDAO")
 public class SmartAircokLoginDAO extends EgovComAbstractDAO {
 	/* Login Query */
 	// Login Process
-	public boolean selectIsUser(Map<String, String> loginUser) {
-		return selectOne("smartAircokLogin.selectIsUser", loginUser);
+	public boolean selectIsUser(SmartAircokLoginVO smartAircokLoginVO) {
+		return selectOne("smartAircokLogin.selectIsUser", smartAircokLoginVO);
 	}
-
-	public String selectUserAuthority(String id) {
-		return selectOne("smartAircokLogin.selectUserAuthority", id);
-	}
-	
 
 	// JWT Refresh Token
 	public int insertRefreshToken(Map<String, String> token) {

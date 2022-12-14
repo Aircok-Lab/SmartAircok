@@ -16,7 +16,6 @@ import org.springframework.stereotype.Service;
 
 import egovframework.smartaircok.login.service.SmartAircokLoginService;
 import egovframework.smartaircok.login.service.SmartAircokLoginVO;
-import egovframework.smartaircok.login.service.SmartAircokTokenVO;
 
 @Service("smartAircokLoginService")
 public class SmartAircokLoginServiceImpl extends EgovAbstractServiceImpl implements SmartAircokLoginService {
@@ -26,13 +25,8 @@ public class SmartAircokLoginServiceImpl extends EgovAbstractServiceImpl impleme
 	private SmartAircokLoginDAO smartAircokLoginDAO;
 	
 	@Override
-	public boolean selectIsUser(Map<String, String> loginUser) throws Exception {
-		return this.smartAircokLoginDAO.selectIsUser(loginUser);
-	}
-
-	@Override
-	public String selectUserAuthority(String id) throws Exception {
-		return this.smartAircokLoginDAO.selectUserAuthority(id);
+	public boolean selectIsUser(SmartAircokLoginVO smartAircokLoginVO) throws Exception {
+		return this.smartAircokLoginDAO.selectIsUser(smartAircokLoginVO);
 	}
 	
 	
@@ -64,8 +58,8 @@ public class SmartAircokLoginServiceImpl extends EgovAbstractServiceImpl impleme
 
         List<GrantedAuthority> authorities = new ArrayList<>();
 
-        authorities.add(new SimpleGrantedAuthority(member.get("authority")));
+        authorities.add(new SimpleGrantedAuthority(member.get("authrt")));
 
-        return new User(member.get("id"), member.get("pw"), authorities);
+        return new User(member.get("user_id"), member.get("user_pswd"), authorities);
 	}
 }

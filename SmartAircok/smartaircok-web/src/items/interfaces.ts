@@ -1,5 +1,16 @@
 // import { Dispatch, SetStateAction } from 'react'
 
+export interface LoginProps{
+  id : string
+  pw : string
+}
+
+export interface LoginAccessProps{
+  authority : string
+  access_token : string
+  refresh_token : string
+}
+
 export interface AsideProps{
   val : string
   label : string

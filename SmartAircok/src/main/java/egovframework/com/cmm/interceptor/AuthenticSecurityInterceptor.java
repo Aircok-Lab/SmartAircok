@@ -9,13 +9,12 @@ import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.servlet.HandlerInterceptor;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import egovframework.smartaircok.config.JwtProvider;
+import egovframework.smartaircok.cmm.jwt.JwtProvider;
 import io.jsonwebtoken.Claims;
 
 /**
@@ -43,8 +42,6 @@ public class AuthenticSecurityInterceptor implements HandlerInterceptor {
 	private final Logger LOGGER = LoggerFactory.getLogger(AuthenticSecurityInterceptor.class);
 
 	private final JwtProvider jwtProvider;
-
-	@Autowired
 	public AuthenticSecurityInterceptor(JwtProvider jwtProvider) {
 		this.jwtProvider = jwtProvider;
 	}
