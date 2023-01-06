@@ -1,0 +1,43 @@
+[logback]2022-12-14 10:56:47 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - null
+[logback]2022-12-14 10:56:47 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess SQL Exception LOGGER
+[logback]2022-12-14 10:59:26 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - null
+[logback]2022-12-14 10:59:26 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess SQL Exception LOGGER
+[logback]2022-12-14 11:21:15 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - null
+[logback]2022-12-14 11:21:15 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess SQL Exception LOGGER
+[logback]2022-12-14 13:19:10 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - There is no PasswordEncoder mapped for the id "null"
+[logback]2022-12-14 13:19:10 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
+[logback]2022-12-14 13:19:36 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - There is no PasswordEncoder mapped for the id "null"
+[logback]2022-12-14 13:19:36 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
+[logback]2022-12-14 13:20:26 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - There is no PasswordEncoder mapped for the id "null"
+[logback]2022-12-14 13:20:27 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
+[logback]2022-12-14 13:21:37 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - There is no PasswordEncoder mapped for the id "null"
+[logback]2022-12-14 13:21:37 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
+[logback]2022-12-14 13:41:37 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - There is no PasswordEncoder mapped for the id "null"
+[logback]2022-12-14 13:41:38 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
+[logback]2022-12-14 13:47:07 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - There is no PasswordEncoder mapped for the id "null"
+[logback]2022-12-14 13:47:07 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
+[logback]2022-12-14 13:55:10 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - There is no PasswordEncoder mapped for the id "null"
+[logback]2022-12-14 13:55:10 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
+[logback]2022-12-14 13:56:46 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - There is no PasswordEncoder mapped for the id "null"
+[logback]2022-12-14 13:56:46 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
+[logback]2022-12-14 14:02:31 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - There is no PasswordEncoder mapped for the id "null"
+[logback]2022-12-14 14:05:58 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - Cannot pass null or empty values to constructor
+[logback]2022-12-14 14:05:58 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
+[logback]2022-12-14 14:06:39 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - There is no PasswordEncoder mapped for the id "null"
+[logback]2022-12-14 14:06:39 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
+[logback]2022-12-14 14:37:57 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - 자격 증명에 실패하였습니다.
+[logback]2022-12-14 14:37:57 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
+[logback]2022-12-14 14:59:52 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - Could not open JDBC Connection for transaction; nested exception is java.sql.SQLException: Data source is closed
+[logback]2022-12-14 14:59:52 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
+[logback]2022-12-14 17:35:29 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - Cannot invoke "java.util.Map.get(Object)" because "member" is null
+[logback]2022-12-14 17:35:29 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess InternalAuthenticationServiceException Exception LOGGER
+[logback]2022-12-14 17:35:54 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - Cannot invoke "java.util.Map.get(Object)" because "member" is null
+[logback]2022-12-14 17:35:54 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess InternalAuthenticationServiceException Exception LOGGER
+[logback]2022-12-14 17:38:21 [XNIO-1 task-2] ERROR e.s.l.web.SmartAircokLoginController - Cannot invoke "java.util.Map.get(Object)" because "member" is null
+[logback]2022-12-14 17:38:21 [XNIO-1 task-2] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess InternalAuthenticationServiceException Exception LOGGER
+[logback]2022-12-14 17:38:38 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - Cannot invoke "java.util.Map.get(Object)" because "member" is null
+[logback]2022-12-14 17:38:38 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess InternalAuthenticationServiceException Exception LOGGER
+[logback]2022-12-14 17:38:58 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - Cannot invoke "java.util.Map.get(Object)" because "member" is null
+[logback]2022-12-14 17:38:58 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess InternalAuthenticationServiceException Exception LOGGER
+[logback]2022-12-14 17:52:05 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - Cannot invoke "java.util.Map.get(Object)" because "member" is null
+[logback]2022-12-14 17:52:05 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess InternalAuthenticationServiceException Exception LOGGER

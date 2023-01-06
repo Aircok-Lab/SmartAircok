@@ -1,0 +1,27 @@
+.datainfo{
+  display: block;
+  width : 100%;
+
+  text-align : center;
+}
+
+.data-section-datetime{
+  background-color : #ffffff;
+
+  border : 1px solid #dddddd;
+  border-radius : 5px;
+
+  margin : 2%;
+  padding : 2%;
+}
+
+.data-datetime-ul{
+  margin : 0 1%;
+  padding : 0;
+
+  list-style : none;
+}
+
+.data-datetime-li:hover{
+  background-color : #edf3fd;
+}

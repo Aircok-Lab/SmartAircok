@@ -31,7 +31,7 @@ import org.slf4j.LoggerFactory;
  *  2019.10.18   신용호                최초 생성
  * </pre>
  */
-@WebFilter(urlPatterns = "*.do")
+@WebFilter(urlPatterns = "*")
 public class SimpleCORSFilter implements Filter {
 
 	private final Logger log = LoggerFactory.getLogger(SimpleCORSFilter.class);
@@ -58,7 +58,8 @@ public class SimpleCORSFilter implements Filter {
 			origin = origin.replace("\r", "").replace("\n", "");// Security - Potential HTTP Response Splitting 분할응답 조치
 		}
 
-		response.setHeader("Access-Control-Allow-Origin", origin);
+//		response.setHeader("Access-Control-Allow-Origin", origin);
+		response.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
 
 		// Access-Control-Max-Age
 		response.setHeader("Access-Control-Max-Age", "3600");

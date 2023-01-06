@@ -1,16 +1,17 @@
-.aircok-aside {
+.aircok-aside{
   float : left;
 
   width : 15%;
   height : 100%;
 
-  color : #bebebe;
-  background-color : #141414;
+  color : #141414;
+  background-color : white;
+
+  border-right : 1px solid #dddddd;
 }
 
 .aside-manage{
-  width : auto;
-  height : inherit;
+  height : 85%;
 
   margin-top : 15%;
   padding-left : 0;
@@ -18,11 +19,37 @@
   list-style: none;
 }
 
+/* 1차 depths */
 .aside-manage-li{
-  width : 100%;
-  height : 6%;
+  margin : 0 8% 4% 8%;
 }
 
+.aside-manage-li-radio-label{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width : 98%;
+  height : 100%;
+
+  padding-right : 2%;
+}
+
+.aside-manage-li-radio-label:hover{
+  font-size : 110%;
+  color : #758cf7;
+}
+
+.aside-manage-li-radio:checked + .aside-manage-li-radio-label{
+  font-size : 110%;
+  color : #758cf7;
+
+  border-radius: 0.3rem;
+
+  background-color : #dae2ff;
+}
+
+/* li 클릭 체크 radio button */
 .aside-manage-li-radio{
   position: absolute;
 
@@ -32,12 +59,11 @@
   visibility: hidden;
 }
 
-.aside-manage-li-radio-label{
+.aside-manage-li-radio-label-title{
   display: flex;
   align-items: center;
 
-  width : 90%;
-  height : 100%;
+  width : 70%;
 
   padding-left : 10%;
 
@@ -46,14 +72,53 @@
   transition: 0.3s;
 }
 
-.aside-manage-li-radio:hover + label{
-  font-size : 150%;
-  color : #ffffff;
+.aside-manage-li-radio-label{
+  display: flex;
+  align-items: center;
 }
 
-.aside-manage-li-radio:checked + label{
-  font-size : 150%;
-  color : #ffffff;
+.aside-manage-li-radio-label-p{
+  margin : 5% 0;
+}
 
-  background-color : #758cf7;
+/* 1차 depth 아이콘 */
+.aside-manage-li-ico{
+  width : 10%;
+  margin-right : 10%;
+}
+
+
+/* 2차 depths */
+.daside-manage{
+  padding-left : 5%;
+  list-style : none;
+}
+
+.daside-manage-li{
+  padding : 4% 8%;
+  border-bottom : 1px solid #dddddd;
+}
+
+.daside-manage-li-radio{
+  position: absolute;
+
+  width: 0;
+  height: 0;
+
+  visibility: hidden;
+}
+
+.daside-manage-li-radio-label:hover{
+  color : #758cf7;
+}
+
+
+.daside-manage-li-radio-label-p{
+  margin : 0;
+}
+
+/* aside expansion button */
+.aside-exp{
+  margin-left : 85%;
+  transition: 0.3s;
 }

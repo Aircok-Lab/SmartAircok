@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {ChatAnswersProps, ChatAnswerProps} from '../items/interfaces'
+import { ChatAnswersProps, ChatAnswerProps } from '../items/Interfaces'
 
 import './ChatOptions.css'
 

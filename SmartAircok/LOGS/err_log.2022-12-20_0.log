@@ -1,0 +1,28 @@
+[logback]2022-12-20 11:10:35 [XNIO-1 task-2] ERROR e.s.l.web.SmartAircokLoginController - 
+### Error updating database.  Cause: org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzE1MDIyMzUsImV4cCI6MTY3MTUwMjgzNSwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xkravXPzXXSUI157oJUO1IzA0zuure2ECoc6tDGtNBA, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzE1MDIyMzUsImV4cCI6MTY3MjcxMTgzNSwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.PeZGJc65xSixrOe5s40sjseHIIMkCvNBKeiSIV7l9Fk) 키가 이미 있습니다.
+### The error may exist in file [D:\git\SmartAircok\SmartAircok\target\classes\egovframework\mapper\let\smartaircok\SmartAircokLogin_SQL_postgresql.xml]
+### The error may involve smartAircokLogin.insertRefreshToken-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO aircok.user_token   VALUES (    ?,    ?   );
+### Cause: org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzE1MDIyMzUsImV4cCI6MTY3MTUwMjgzNSwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xkravXPzXXSUI157oJUO1IzA0zuure2ECoc6tDGtNBA, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzE1MDIyMzUsImV4cCI6MTY3MjcxMTgzNSwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.PeZGJc65xSixrOe5s40sjseHIIMkCvNBKeiSIV7l9Fk) 키가 이미 있습니다.
+; 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzE1MDIyMzUsImV4cCI6MTY3MTUwMjgzNSwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xkravXPzXXSUI157oJUO1IzA0zuure2ECoc6tDGtNBA, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzE1MDIyMzUsImV4cCI6MTY3MjcxMTgzNSwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.PeZGJc65xSixrOe5s40sjseHIIMkCvNBKeiSIV7l9Fk) 키가 이미 있습니다.; nested exception is org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzE1MDIyMzUsImV4cCI6MTY3MTUwMjgzNSwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xkravXPzXXSUI157oJUO1IzA0zuure2ECoc6tDGtNBA, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzE1MDIyMzUsImV4cCI6MTY3MjcxMTgzNSwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.PeZGJc65xSixrOe5s40sjseHIIMkCvNBKeiSIV7l9Fk) 키가 이미 있습니다.
+[logback]2022-12-20 11:10:35 [XNIO-1 task-2] ERROR e.s.l.web.SmartAircokLoginController - /login/user Exception LOGGER
+[logback]2022-12-20 16:37:58 [XNIO-1 task-3] ERROR e.s.web.web.SmartAircokWebController - /time Exception LOGGER
+[logback]2022-12-20 16:37:58 [XNIO-1 task-3] ERROR e.s.web.web.SmartAircokWebController -  => $$aircok:s$$NO|ER01$$aircok:e$$
+[logback]2022-12-20 16:37:58 [XNIO-1 task-3] ERROR e.s.web.web.SmartAircokWebController - /time Exception LOGGER
+[logback]2022-12-20 16:37:58 [XNIO-1 task-3] ERROR e.s.web.web.SmartAircokWebController -  => $$aircok:s$$NO|ER01$$aircok:e$$
+[logback]2022-12-20 16:38:07 [XNIO-1 task-1] ERROR e.s.web.web.SmartAircokWebController - /time Exception LOGGER
+[logback]2022-12-20 16:38:07 [XNIO-1 task-1] ERROR e.s.web.web.SmartAircokWebController -  => $$aircok:s$$NO|ER01$$aircok:e$$
+[logback]2022-12-20 16:38:07 [XNIO-1 task-1] ERROR e.s.web.web.SmartAircokWebController - /time Exception LOGGER
+[logback]2022-12-20 16:38:07 [XNIO-1 task-1] ERROR e.s.web.web.SmartAircokWebController -  => $$aircok:s$$NO|ER01$$aircok:e$$
+[logback]2022-12-20 16:38:11 [XNIO-1 task-1] ERROR e.s.web.web.SmartAircokWebController - /time Exception LOGGER
+[logback]2022-12-20 16:38:11 [XNIO-1 task-1] ERROR e.s.web.web.SmartAircokWebController -  => $$aircok:s$$NO|ER01$$aircok:e$$
+[logback]2022-12-20 16:38:11 [XNIO-1 task-1] ERROR e.s.web.web.SmartAircokWebController - /time Exception LOGGER
+[logback]2022-12-20 16:38:11 [XNIO-1 task-1] ERROR e.s.web.web.SmartAircokWebController -  => $$aircok:s$$NO|ER01$$aircok:e$$
+[logback]2022-12-20 16:44:30 [XNIO-1 task-3] ERROR e.s.web.web.SmartAircokWebController - /time Exception LOGGER
+[logback]2022-12-20 16:49:45 [XNIO-1 task-3] ERROR e.s.web.web.SmartAircokWebController - /time Exception LOGGER
+[logback]2022-12-20 16:49:45 [XNIO-1 task-3] ERROR e.s.web.web.SmartAircokWebController -  => $$aircok:s$$NO|ER01$$aircok:e$$

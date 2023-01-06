@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="smartAircokWeb">
-	<select id="selectUsableDeviceLists" parameterType="string" resultType="hashmap">
+<mapper namespace="smartaircokWeb">
+	<select id="selectDeviceLists" parameterType="string" resultType="string">
+		SELECT dvc_list
+		FROM aircok.user_tb
+		WHERE user_id = #{id}
+	</select>
+	
+	<select id="selectDeviceData" parameterType="hashmap" resultType="hashmap">
+		SELECT 
+			data_reg_dt,
+		    <foreach collection="sensors" item="sensor" open="" close="" separator=",">
+		        COALESCE(
+		        	CASE WHEN LENGTH(${sensor}) = 0
+			        	THEN NULL
+			        	ELSE ${sensor}
+		       		END, '0') as ${sensor}
+		    </foreach>
+		FROM aircok_device.dvc_${sn}
+		WHERE data_reg_dt > #{time}
+		ORDER BY data_reg_dt;
+	</select>
+	
+	<select id="selectDeviceLatestData" parameterType="string" resultType="hashmap">
+		<!-- 모든 장비에 들어가는 필수 센서들 + iaq + 수신시간 + 센서상태 -->
+		SELECT recent.sn, recent.data_reg_dt, recent.pm10, recent.pm25, recent.tem, recent.hum, recent.iaq,
+			mng.dvc_mng_nm, state.comm_badn, state.sensor_badn, state.power_badn, state.power_st
+		FROM aircok_device.dvc_recent_data AS recent
+		JOIN(
+			SELECT *
+			FROM aircok_device.dvc_st
+		) AS state
+		ON state.sn = recent.sn
+		JOIN(
+			SELECT sn, dvc_mng_nm
+			FROM aircok.dvc_mng
+		) AS mng
+		ON mng.sn = recent.sn
+		WHERE state.sn IN (
+				SELECT UNNEST(STRING_TO_ARRAY(dvc_list, ','))
+				FROM aircok.user_tb
+				WHERE user_id = #{id}
+			);
+	</select>
+	
+	
+	<select id="selectDeviceSensor" parameterType="string" resultType="hashmap">
+		SELECT *
+		FROM aircok.dvc_sensor
+		WHERE sn = #{sn};
 	</select>
 </mapper>

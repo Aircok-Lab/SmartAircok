@@ -1,0 +1,109 @@
+.data-body{
+  width : 100%;
+  height : 100%;
+}
+
+/* Banner */
+.data-banner{
+  display : flex;
+  justify-content: space-between;
+
+  height : 8%;
+}
+
+.data-title{
+  color : #4e4e4e;
+  font-weight : bold;
+  font-size: 150%;
+}
+
+.data-report{
+  display : flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  width: 30%;
+}
+
+.data-report-btn{
+  width : 40%;
+  height : 40%;
+
+  margin-left : 5%;
+
+  color : white;
+  background-color : #888888;
+  border : 0;
+  border-radius : 1rem;
+}
+
+.data-report-btn:hover{
+  background-color : #c4c4c4;
+}
+
+
+/* tabs */
+
+.data-tabs{
+  width : 100%;
+  height : 5%;
+
+  overflow : none;
+}
+
+.data-tabs-ul {
+  height : 100%;
+
+  margin : 1% 0;
+  padding : 0;
+
+  list-style : none;
+}
+
+.data-tabs-li {
+  width : 10%;
+  height : inherit;
+
+  margin-right : 1%;
+  
+  float : left;
+  
+  display : flex;
+  align-items : center;
+  justify-content : center;
+
+  height : inherit;
+
+  border : 1px solid #dddddd;
+  border-radius : 8px 8px 0 0;
+}
+
+.data-tabs-li-p{  
+  width : 100%;
+  text-align : center;
+  border-left : 2px solid #f3f3f3;
+}
+
+.data-tabs-li-etc {
+  display : flex;
+  align-items: center;
+  justify-content: center;
+
+  width : 4%;
+  height : 90%;
+  
+  float : right;
+
+  background-color : #ffffff;
+
+  border : 1px solid #dddddd;
+  border-radius : 8px;
+
+  cursor : default;
+}
+
+.data-infos{
+  width : 100%;
+  height : 85%;
+  background-color: #dddddd;
+}

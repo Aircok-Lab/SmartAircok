@@ -31,8 +31,9 @@ public class JwtProvider {
 	ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"classpath:/crypto.xml"});
 	EgovEnvCryptoService envCryptoService = context.getBean(EgovEnvCryptoServiceImpl.class);
     private String secretKey = envCryptoService.getCyptoAlgorithmKeyHash();
-    
-	private long access_exp = 1000L * 60 * 10; // 토큰 사용가능 시간, 10분
+
+//	private long access_exp = 1000L * 60 * 10; // 토큰 사용가능 시간, 10분
+	private long access_exp = 1000L * 60 * 60 * 24 * 14; // 토큰 사용가능 시간, 10분
 	private long refresh_exp = 1000L * 60 * 60 * 24 * 14; // 토큰 사용가능 시간, 14일
 
     //토큰 생성

@@ -1,35 +1,48 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react'
 
-import Header from './header/Header';
+import { useDispatch, useSelector } from 'react-redux'
+import { RootState } from '@/items/RootReducer'
+
+import Header from './header/Header'
 import Aside from './aside/Aside'
 import Article from './article/Article'
 import Chatbot from '../chatbot/Chatbot'
 
-import {AsideProps} from '../items/interfaces';
+import Loading from './Loading'
+
+import { asideseq } from '../items/ItemSequences'
 
 import './Main.css'
 
 const Main = () => {
-  const asidelist : AsideProps[] = [
-		{val : "dash", label : "대시보드"},
-		{val : "data", label : "데이터"},
-		{val : "auth", label : "권한 관리"},
-		{val : "org", label : "조직 관리"},
-		{val : "api", label : "API 관리"}
-	];
+  const [isloading, setisloading] = useState<boolean>(true)
 
-  const [asidelistchk, setasidelistchk] = useState<string>(asidelist[0].val)
+  const [asidelistchk, setasidelistchk] = useState<string>(asideseq[0].val)
+
+  const dispatch = useDispatch()
+  const loadData = useSelector((state : RootState) => state.actLatests.latests)
+
+  useEffect(() => {
+    // dispatch({ type: "SAGA_DATAS" })
+    dispatch({ type: "SAGA_LATESTS" })
+  }, [])
+
+  useEffect(() => {
+    (loadData.length > 0) ? setisloading(false) : setisloading(true)
+  },[loadData])
 
   return (
+    isloading ? 
+    <Loading /> : 
     <div className='Aircok'>
       <Header />
       <main className='aircok-main'>
-        <Aside asidelist={asidelist} asidelistchk={asidelistchk} setasidelistchk={setasidelistchk}/>
-        <Article asidelist={asidelist} asidelistchk={asidelistchk}/>
+        <Aside asidelistchk={asidelistchk} setasidelistchk={setasidelistchk}/>
+        <Article asidelistchk={asidelistchk} setasidelistchk={setasidelistchk}/>
         <Chatbot/>
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main

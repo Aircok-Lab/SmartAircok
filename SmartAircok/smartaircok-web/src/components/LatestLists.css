@@ -1,0 +1,36 @@
+.LatestLists{
+  width : 94%;
+
+  margin : 0 3%;
+  text-align : left;
+
+  color : #4e4e4e;
+}
+
+.LatestLists > thead{
+  line-height : 4rem;
+
+  font-weight : bold;
+  font-size: 140%;
+}
+
+.LatestLists > tbody{
+  line-height : 4rem;
+}
+
+td[class^='LatestLists_td']{
+  border-bottom : 1px solid #dddddd;
+}
+
+.LatestLists_td_iaq{
+  display : flex;
+  align-items: center;
+}
+
+.latest-iaq-val{
+  margin-right : 20%;
+}
+
+.latest-iaq-ico{
+  margin-right : 5%;
+}

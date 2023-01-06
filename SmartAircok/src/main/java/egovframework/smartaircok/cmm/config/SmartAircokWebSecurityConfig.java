@@ -67,10 +67,18 @@ public class SmartAircokWebSecurityConfig extends WebSecurityConfigurerAdapter {
 	        .exceptionHandling()
 	        .authenticationEntryPoint(jwtAuthenticationEntryPoint)
 	        .accessDeniedHandler(jwtAccessDeniedHandler)
+	        
+	        .and()
+	        .logout()
+	        .logoutUrl("/logout")
+	        .logoutSuccessUrl("/logout/process")
+	        .deleteCookies("Authorization")
 
 	        .and()
 	        .authorizeRequests()
-	        .antMatchers("/login/**", "/loginprocess").permitAll()
+//	        .antMatchers("/login/**").permitAll()
+//	        .antMatchers("/logout/**").permitAll()
+	        .antMatchers("/**").permitAll()
 	        .anyRequest().authenticated()
 
             .and()
@@ -86,7 +94,7 @@ public class SmartAircokWebSecurityConfig extends WebSecurityConfigurerAdapter {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
         
-        configuration.addAllowedOriginPattern("*");
+        configuration.addAllowedOriginPattern("http://localhost:3000");
         configuration.addAllowedHeader("*");
         configuration.addAllowedMethod("*");
         configuration.setAllowCredentials(true);

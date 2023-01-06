@@ -9,7 +9,7 @@ public class SmartAircokLoginVO {
 	private String pw;
 	private String authority;
 	
-    private final SmartAircokPassWordEncoder smartAircokPassWordEncoder = new SmartAircokPassWordEncoder();
+    private final SmartAircokPassWordEncoder smartaircokPassWordEncoder = new SmartAircokPassWordEncoder();
 	
 	
 	public String getId() {
@@ -23,7 +23,7 @@ public class SmartAircokLoginVO {
 	}
 	public void setPw(String pw) {
 //		this.pw = pw;
-		this.pw = smartAircokPassWordEncoder.encode(pw);
+		this.pw = smartaircokPassWordEncoder.encode(pw);
 	}
 	public String getAuthority() {
 		return authority;

@@ -1,10 +1,10 @@
 import React from 'react';
+import { createClientMessage } from 'react-chatbot-kit';
 
-import {createClientMessage} from 'react-chatbot-kit';
-
-import {ChatActionProps} from '../items/interfaces'
+import { ChatActionProps } from '../items/Interfaces'
 
 const ActionProvider = ({createChatBotMessage, setState, children} : ChatActionProps) => {
+  // depth1 - 1
   const handleFirstA = () => {
     const userMessage = createClientMessage('test1', {});
     const botMessage = createChatBotMessage("This is test1.");
@@ -15,6 +15,7 @@ const ActionProvider = ({createChatBotMessage, setState, children} : ChatActionP
     }));
   };
 
+  // depth1 - 2
   const handleFirstB = () => {
     const userMessage = createClientMessage('test2', {});
     const botMessage = createChatBotMessage("This is test2.");
@@ -25,6 +26,7 @@ const ActionProvider = ({createChatBotMessage, setState, children} : ChatActionP
     }));
   }
 
+  // depth1 - 3
   const handleFirstC = () => {
     const userMessage = createClientMessage('페이지 이동', {});
     const botMessage = createChatBotMessage(

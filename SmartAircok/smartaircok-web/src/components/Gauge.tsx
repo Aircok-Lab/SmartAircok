@@ -1,13 +1,25 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
 // import {ChartType } from './Auth';
 
+import { GaugeProps } from '../items/Interfaces';
+
 import './Gauge.css'
 
-import {GauGeInfoProps} from '../items/interfaces';
-
-const Gauge = ({gaugeparam} : GauGeInfoProps) => {
-  const chartval = (gaugeparam.param1 + gaugeparam.param2 + gaugeparam.param3 + gaugeparam.param4 + gaugeparam.param5) / 5;
+const Gauge = ({gaugemap} : GaugeProps) => {
+  let gaugeparamsum = 0;
+  gaugemap.forEach((value, key) => {
+    switch (key) {
+      case 'co2' :
+        gaugeparamsum += Number(value) / 10
+        break;
+      default : 
+        gaugeparamsum += Number(value)
+        break;
+    }
+  });
+  // 통합공기질 치수 (임의로 평균으로 수행중)
+  const chartval = Math.floor((gaugeparamsum / gaugemap.size) * 10) / 10
 
   const gaugestartdegree : number = -20;
 

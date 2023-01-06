@@ -7,34 +7,34 @@ import org.springframework.stereotype.Repository;
 import egovframework.com.cmm.service.impl.EgovComAbstractDAO;
 import egovframework.smartaircok.login.service.SmartAircokLoginVO;
 
-@Repository("smartAircokLoginDAO")
+@Repository("smartaircokLoginDAO")
 public class SmartAircokLoginDAO extends EgovComAbstractDAO {
 	/* Login Query */
 	// Login Process
-	public boolean selectIsUser(SmartAircokLoginVO smartAircokLoginVO) {
-		return selectOne("smartAircokLogin.selectIsUser", smartAircokLoginVO);
+	public boolean selectIsUser(SmartAircokLoginVO smartaircokLoginVO) {
+		return selectOne("smartaircokLogin.selectIsUser", smartaircokLoginVO);
 	}
 
 	// JWT Refresh Token
 	public int insertRefreshToken(Map<String, String> token) {
-		return insert("smartAircokLogin.insertRefreshToken", token);
+		return insert("smartaircokLogin.insertRefreshToken", token);
 	}
 
 	public boolean selectTokenValidate(Map<String, String> token) {
-		return selectOne("smartAircokLogin.selectTokenValidate", token);
+		return selectOne("smartaircokLogin.selectTokenValidate", token);
 	}
 
 	public int updateAccessToken(Map<String, String> token) {
-		return update("smartAircokLogin.updateAccessToken", token);
+		return update("smartaircokLogin.updateAccessToken", token);
 	}
 
 	public int deleteRefreshToken(Map<String, String> token) {
-		return delete("smartAircokLogin.deleteRefreshToken", token);
+		return delete("smartaircokLogin.deleteRefreshToken", token);
 	}
 	
 	
 	// Spring Security
 	public Map<String, String> selectFindByID(String id) {
-		return selectOne("smartAircokLogin.selectFindByID", id);
+		return selectOne("smartaircokLogin.selectFindByID", id);
 	}
 }

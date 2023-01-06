@@ -1,0 +1,86 @@
+.login{
+  display: flex;
+  width : 100vw;
+  height: 100vh;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-color: #e5e5e5;
+}
+
+.loginForm{
+  margin : 15%;
+  width: 70%;
+  height: 70%;
+}
+
+.login-container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  
+  border-radius: 0.8rem;
+  box-shadow: #a0a0a0 0px 8px 24px 0px;
+}
+
+/* login container left image */
+.login-container-title{
+  display : flex;
+  width: 50%;
+
+  font-size : 140%;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.8rem 0 0 0.8rem;
+  background-color: #c4c4c4;
+}
+
+/* login container */
+.login-container-input{
+  width : 40%;
+
+  padding : 5%;
+
+  border-radius: 0 0.8rem 0.8rem 0;
+  background-color: white;
+}
+
+section[class^='login-container-']{
+  text-align : left;
+
+  margin-bottom : 5%;
+}
+
+section[class^='login-container-'] > label {
+  font-size : 120%;
+}
+
+section[class^='login-container-'] > input {
+  width : 96%;
+
+  margin-top : 2%;
+  padding : 1.5%;
+}
+
+.login-container-input-title{
+  font-size : 140%;
+  font-weight : bold;
+
+  padding-bottom : 5%;
+}
+
+.login-container-submit{
+  width : 100%;
+  padding : 1.5%;
+
+  background-color: #6c6c81;
+  
+  border : none;
+  border-radius: 0.2rem;
+
+  color : white;
+}

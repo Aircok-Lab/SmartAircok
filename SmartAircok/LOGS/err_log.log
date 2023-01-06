@@ -1,43 +1,27 @@
-[logback]2022-12-14 10:56:47 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - null
-[logback]2022-12-14 10:56:47 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess SQL Exception LOGGER
-[logback]2022-12-14 10:59:26 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - null
-[logback]2022-12-14 10:59:26 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess SQL Exception LOGGER
-[logback]2022-12-14 11:21:15 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - null
-[logback]2022-12-14 11:21:15 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess SQL Exception LOGGER
-[logback]2022-12-14 13:19:10 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - There is no PasswordEncoder mapped for the id "null"
-[logback]2022-12-14 13:19:10 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
-[logback]2022-12-14 13:19:36 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - There is no PasswordEncoder mapped for the id "null"
-[logback]2022-12-14 13:19:36 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
-[logback]2022-12-14 13:20:26 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - There is no PasswordEncoder mapped for the id "null"
-[logback]2022-12-14 13:20:27 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
-[logback]2022-12-14 13:21:37 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - There is no PasswordEncoder mapped for the id "null"
-[logback]2022-12-14 13:21:37 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
-[logback]2022-12-14 13:41:37 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - There is no PasswordEncoder mapped for the id "null"
-[logback]2022-12-14 13:41:38 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
-[logback]2022-12-14 13:47:07 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - There is no PasswordEncoder mapped for the id "null"
-[logback]2022-12-14 13:47:07 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
-[logback]2022-12-14 13:55:10 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - There is no PasswordEncoder mapped for the id "null"
-[logback]2022-12-14 13:55:10 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
-[logback]2022-12-14 13:56:46 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - There is no PasswordEncoder mapped for the id "null"
-[logback]2022-12-14 13:56:46 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
-[logback]2022-12-14 14:02:31 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - There is no PasswordEncoder mapped for the id "null"
-[logback]2022-12-14 14:05:58 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - Cannot pass null or empty values to constructor
-[logback]2022-12-14 14:05:58 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
-[logback]2022-12-14 14:06:39 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - There is no PasswordEncoder mapped for the id "null"
-[logback]2022-12-14 14:06:39 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
-[logback]2022-12-14 14:37:57 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - 자격 증명에 실패하였습니다.
-[logback]2022-12-14 14:37:57 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
-[logback]2022-12-14 14:59:52 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - Could not open JDBC Connection for transaction; nested exception is java.sql.SQLException: Data source is closed
-[logback]2022-12-14 14:59:52 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess Exception LOGGER
-[logback]2022-12-14 17:35:29 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - Cannot invoke "java.util.Map.get(Object)" because "member" is null
-[logback]2022-12-14 17:35:29 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess InternalAuthenticationServiceException Exception LOGGER
-[logback]2022-12-14 17:35:54 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - Cannot invoke "java.util.Map.get(Object)" because "member" is null
-[logback]2022-12-14 17:35:54 [XNIO-2 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess InternalAuthenticationServiceException Exception LOGGER
-[logback]2022-12-14 17:38:21 [XNIO-1 task-2] ERROR e.s.l.web.SmartAircokLoginController - Cannot invoke "java.util.Map.get(Object)" because "member" is null
-[logback]2022-12-14 17:38:21 [XNIO-1 task-2] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess InternalAuthenticationServiceException Exception LOGGER
-[logback]2022-12-14 17:38:38 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - Cannot invoke "java.util.Map.get(Object)" because "member" is null
-[logback]2022-12-14 17:38:38 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess InternalAuthenticationServiceException Exception LOGGER
-[logback]2022-12-14 17:38:58 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - Cannot invoke "java.util.Map.get(Object)" because "member" is null
-[logback]2022-12-14 17:38:58 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess InternalAuthenticationServiceException Exception LOGGER
-[logback]2022-12-14 17:52:05 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - Cannot invoke "java.util.Map.get(Object)" because "member" is null
-[logback]2022-12-14 17:52:05 [XNIO-1 task-1] ERROR e.s.l.web.SmartAircokLoginController - /loginprocess InternalAuthenticationServiceException Exception LOGGER
+[logback]2022-12-29 15:30:39 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2022-12-29 15:30:39 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2022-12-29 15:30:54 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2022-12-29 15:30:54 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2022-12-29 15:33:20 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2022-12-29 15:33:20 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2022-12-29 15:33:30 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2022-12-29 15:33:30 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/lists Exception LOGGER
+[logback]2022-12-29 15:35:05 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2022-12-29 15:35:05 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2022-12-29 15:36:18 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2022-12-29 15:36:18 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2022-12-29 15:40:42 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - 
+### Error querying database.  Cause: org.postgresql.util.PSQLException: 오류: recent.data_red_dt 칼럼 없음
+  Hint: 아마 "recent.data_reg_dt" 칼럼을 참조하는 것 같습니다.
+  Position: 19
+### The error may exist in file [D:\git\SmartAircok\SmartAircok\target\classes\egovframework\mapper\let\smartaircok\SmartAircokWeb_SQL_postgresql.xml]
+### The error may involve smartaircokWeb.selectDeviceLatestData-Inline
+### The error occurred while setting parameters
+### SQL: SELECT recent.sn, recent.data_red_dt, recent.pm10, recent.pm25, recent.tem, recent.hum, recent.iaq,    state.comm_badn, state.sensor_badn, state.power_badn, state.power_st   FROM aircok_device.dvc_recent_data AS recent   JOIN(    SELECT *    FROM aircok_device.dvc_st   ) AS state   ON state.sn = recent.sn   WHERE state.sn IN (     SELECT UNNEST(STRING_TO_ARRAY(dvc_list, ','))     FROM aircok.user_tb     WHERE user_id = ?    );
+### Cause: org.postgresql.util.PSQLException: 오류: recent.data_red_dt 칼럼 없음
+  Hint: 아마 "recent.data_reg_dt" 칼럼을 참조하는 것 같습니다.
+  Position: 19
+; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: 오류: recent.data_red_dt 칼럼 없음
+  Hint: 아마 "recent.data_reg_dt" 칼럼을 참조하는 것 같습니다.
+  Position: 19
+[logback]2022-12-29 15:40:42 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
