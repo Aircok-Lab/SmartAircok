@@ -1,9 +1,10 @@
 import React from 'react'
-
-import {createChatBotMessage} from 'react-chatbot-kit';
+import { createChatBotMessage } from 'react-chatbot-kit';
 
 import OptionFirst from './options/OptionFirst';
 import OptionPage from './options/OptionPage';
+
+import chatbotico from '../img/chatbot.svg';
 
 const Config = {
   botName : 'AircokBot',
@@ -20,7 +21,7 @@ const Config = {
     header : () => <div className="chat-header"> Aircok Chat Bot </div>,
     botAvatar : () => 
       <div className="chat-botAvatar"> 
-        <img src="favicon.ico" className="chat-botAvatar-icon" alt="chat-botAvatar-icon"/>
+        <img src={chatbotico} className="chat-botAvatar-icon" alt="chat-botAvatar-icon"/>
         aircok 
       </div>,
     // botChatMessage: () => <div/>,

@@ -46,7 +46,6 @@
 
   /* color : white; */
   color : #e5e5e5;
-  font-family: Arial;
   font-weight : bold;
   font-size: 85%;
   
@@ -75,8 +74,6 @@
 }
 
 .react-chatbot-kit-chat-bot-message{
-  font-family: Arial;
-
   margin-left : 3%;
 }
 

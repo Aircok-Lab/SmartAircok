@@ -19,7 +19,7 @@ import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
 import egovframework.com.cmm.interceptor.CustomAuthenticInterceptor;
-import egovframework.smartaircok.config.JwtProvider;
+import egovframework.smartaircok.cmm.jwt.JwtProvider;
 
 /**
  * @ClassName : EgovConfigWebDispatcherServlet.java
@@ -72,9 +72,9 @@ public class EgovConfigWebDispatcherServlet implements WebMvcConfigurer {
 //			"/**");
 		
 		
-		registry.addInterceptor(new CustomAuthenticInterceptor())
-		.addPathPatterns(
-			"/**");
+//		registry.addInterceptor(new CustomAuthenticInterceptor())
+//		.addPathPatterns(
+//			"/**");
 	}
 
 	// -------------------------------------------------------------

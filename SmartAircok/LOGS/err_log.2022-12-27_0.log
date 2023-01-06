@@ -1,0 +1,2 @@
+[logback]2022-12-27 14:31:31 [XNIO-1 task-5] ERROR e.s.l.web.SmartAircokLoginController - Cannot invoke "java.util.Map.get(Object)" because "member" is null
+[logback]2022-12-27 14:31:31 [XNIO-1 task-5] ERROR e.s.l.web.SmartAircokLoginController - /login/user InternalAuthenticationServiceException Exception LOGGER

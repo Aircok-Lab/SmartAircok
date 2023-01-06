@@ -1,0 +1,795 @@
+[logback]2022-12-20 10:28:35 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 10:28:40 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 10:28:40 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 10:28:40 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 10:28:40 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 10:29:00 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 10:29:00 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 10:29:00 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 10:29:00 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 10:37:11 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 10:37:19 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 10:37:23 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 10:38:16 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 11:06:19 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 11:06:38 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:06:38 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:06:38 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:06:38 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:07:00 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:07:00 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:07:00 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:07:00 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:07:38 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 11:07:45 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:07:45 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:07:45 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:07:45 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:08:07 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 11:08:14 [XNIO-3 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:08:14 [XNIO-3 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:08:14 [XNIO-3 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:08:14 [XNIO-3 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:08:21 [XNIO-3 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:08:21 [XNIO-3 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:08:21 [XNIO-3 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:08:21 [XNIO-3 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:09:13 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 11:09:22 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:09:22 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:09:22 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:09:22 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:10:03 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:10:03 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:10:03 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:10:03 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:10:32 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:10:32 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:10:32 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:10:32 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:10:35 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:10:35 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:10:35 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:10:35 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:10:35 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:10:35 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:10:35 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:10:35 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:10:35 [XNIO-1 task-2] ERROR e.s.l.web.SmartAircokLoginController - 
+### Error updating database.  Cause: org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzE1MDIyMzUsImV4cCI6MTY3MTUwMjgzNSwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xkravXPzXXSUI157oJUO1IzA0zuure2ECoc6tDGtNBA, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzE1MDIyMzUsImV4cCI6MTY3MjcxMTgzNSwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.PeZGJc65xSixrOe5s40sjseHIIMkCvNBKeiSIV7l9Fk) 키가 이미 있습니다.
+### The error may exist in file [D:\git\SmartAircok\SmartAircok\target\classes\egovframework\mapper\let\smartaircok\SmartAircokLogin_SQL_postgresql.xml]
+### The error may involve smartAircokLogin.insertRefreshToken-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO aircok.user_token   VALUES (    ?,    ?   );
+### Cause: org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzE1MDIyMzUsImV4cCI6MTY3MTUwMjgzNSwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xkravXPzXXSUI157oJUO1IzA0zuure2ECoc6tDGtNBA, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzE1MDIyMzUsImV4cCI6MTY3MjcxMTgzNSwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.PeZGJc65xSixrOe5s40sjseHIIMkCvNBKeiSIV7l9Fk) 키가 이미 있습니다.
+; 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzE1MDIyMzUsImV4cCI6MTY3MTUwMjgzNSwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xkravXPzXXSUI157oJUO1IzA0zuure2ECoc6tDGtNBA, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzE1MDIyMzUsImV4cCI6MTY3MjcxMTgzNSwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.PeZGJc65xSixrOe5s40sjseHIIMkCvNBKeiSIV7l9Fk) 키가 이미 있습니다.; nested exception is org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzE1MDIyMzUsImV4cCI6MTY3MTUwMjgzNSwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xkravXPzXXSUI157oJUO1IzA0zuure2ECoc6tDGtNBA, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzE1MDIyMzUsImV4cCI6MTY3MjcxMTgzNSwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.PeZGJc65xSixrOe5s40sjseHIIMkCvNBKeiSIV7l9Fk) 키가 이미 있습니다.
+[logback]2022-12-20 11:10:35 [XNIO-1 task-2] ERROR e.s.l.web.SmartAircokLoginController - /login/user Exception LOGGER
+[logback]2022-12-20 11:10:44 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:10:44 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:10:44 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:10:44 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:13:42 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:13:42 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:13:42 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:13:42 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:13:52 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:13:52 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:13:52 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:13:52 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:17:12 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:17:12 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:17:12 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:17:12 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:18:19 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:18:19 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:18:19 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:18:19 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:19:01 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:19:01 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:19:01 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:19:01 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:19:49 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:19:49 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:19:49 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:19:49 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:20:16 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:20:16 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:20:16 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:20:16 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:23:12 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:23:12 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:23:12 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:23:12 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:24:09 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:24:09 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:24:09 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:24:09 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:24:54 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:24:54 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:24:54 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:24:54 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:25:21 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:25:21 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:25:21 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:25:21 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:33:54 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:33:54 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:33:54 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:33:54 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 11:35:42 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 11:38:46 [XNIO-1 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 11:38:46 [XNIO-1 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 11:38:46 [XNIO-1 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 11:38:46 [XNIO-1 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 12:55:11 [XNIO-1 task-3] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 12:55:11 [XNIO-1 task-3] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220125511$$aircok:e$$
+
+[logback]2022-12-20 12:57:01 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 12:57:13 [XNIO-1 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 12:57:13 [XNIO-1 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 12:57:13 [XNIO-1 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 12:57:13 [XNIO-1 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 12:57:43 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 12:57:43 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 12:57:43 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 12:57:43 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 12:57:43 [XNIO-1 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 12:57:43 [XNIO-1 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220125743$$aircok:e$$
+
+[logback]2022-12-20 12:57:43 [XNIO-1 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 12:57:43 [XNIO-1 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220125743$$aircok:e$$
+
+[logback]2022-12-20 13:13:53 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 13:14:20 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 13:14:20 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 13:14:20 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 13:14:20 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 13:14:20 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:14:20 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220131420$$aircok:e$$
+
+[logback]2022-12-20 13:14:20 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:14:20 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220131420$$aircok:e$$
+
+[logback]2022-12-20 13:14:55 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:14:55 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220131455$$aircok:e$$
+
+[logback]2022-12-20 13:14:55 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:14:55 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220131455$$aircok:e$$
+
+[logback]2022-12-20 13:15:12 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 13:15:12 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 13:15:12 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 13:15:12 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 13:15:13 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:15:13 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220131513$$aircok:e$$
+
+[logback]2022-12-20 13:15:13 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:15:13 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220131513$$aircok:e$$
+
+[logback]2022-12-20 13:15:16 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:15:16 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220131516$$aircok:e$$
+
+[logback]2022-12-20 13:15:16 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:15:16 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220131516$$aircok:e$$
+
+[logback]2022-12-20 13:15:18 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:15:18 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220131518$$aircok:e$$
+
+[logback]2022-12-20 13:15:18 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:15:18 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220131518$$aircok:e$$
+
+[logback]2022-12-20 13:15:27 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 13:15:27 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 13:15:27 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 13:15:27 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 13:15:27 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:15:27 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220131527$$aircok:e$$
+
+[logback]2022-12-20 13:15:27 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:15:27 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220131527$$aircok:e$$
+
+[logback]2022-12-20 13:15:54 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:15:54 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220131554$$aircok:e$$
+
+[logback]2022-12-20 13:15:54 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:15:54 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220131554$$aircok:e$$
+
+[logback]2022-12-20 13:15:57 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 13:15:57 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 13:15:57 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 13:15:57 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 13:16:37 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 13:16:50 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 13:16:50 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 13:16:50 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 13:16:50 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 13:17:32 [XNIO-1 task-3] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 13:17:32 [XNIO-1 task-3] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 13:17:32 [XNIO-1 task-3] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 13:17:32 [XNIO-1 task-3] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 13:20:15 [XNIO-1 task-3] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:20:15 [XNIO-1 task-3] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220132015$$aircok:e$$
+
+[logback]2022-12-20 13:20:15 [XNIO-1 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:20:15 [XNIO-1 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220132015$$aircok:e$$
+
+[logback]2022-12-20 13:20:20 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 13:46:27 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:46:27 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220134627$$aircok:e$$
+
+[logback]2022-12-20 13:46:29 [XNIO-2 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:46:29 [XNIO-2 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220134629$$aircok:e$$
+
+[logback]2022-12-20 13:47:11 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 13:47:11 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 13:47:11 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 13:47:11 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 13:47:29 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 13:47:29 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 13:47:29 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 13:47:29 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 13:49:27 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 13:49:27 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 13:49:27 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 13:49:27 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 13:50:46 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:50:46 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220135046$$aircok:e$$
+
+[logback]2022-12-20 13:50:47 [XNIO-2 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:50:47 [XNIO-2 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220135047$$aircok:e$$
+
+[logback]2022-12-20 13:50:50 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:50:50 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220135050$$aircok:e$$
+
+[logback]2022-12-20 13:51:05 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 13:51:05 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 13:51:05 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 13:51:05 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 13:52:52 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 13:52:52 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 13:52:52 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 13:52:52 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 13:52:58 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 13:52:58 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 13:52:58 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 13:52:58 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 13:54:06 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 13:54:06 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 13:54:06 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 13:54:06 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 13:54:55 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 13:54:55 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 13:54:55 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 13:54:55 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 13:55:32 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 13:55:32 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 13:55:32 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 13:55:32 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 13:56:13 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 13:56:13 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 13:56:13 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 13:56:13 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 13:56:46 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 13:56:46 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 13:56:46 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 13:56:46 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 13:57:28 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 13:57:36 [XNIO-3 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:57:36 [XNIO-3 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220135736$$aircok:e$$
+
+[logback]2022-12-20 13:57:37 [XNIO-3 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:57:37 [XNIO-3 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220135737$$aircok:e$$
+
+[logback]2022-12-20 13:57:40 [XNIO-3 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:57:40 [XNIO-3 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220135740$$aircok:e$$
+
+[logback]2022-12-20 13:57:41 [XNIO-3 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:57:41 [XNIO-3 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220135741$$aircok:e$$
+
+[logback]2022-12-20 13:57:44 [XNIO-3 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 13:57:44 [XNIO-3 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 13:57:44 [XNIO-3 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 13:57:44 [XNIO-3 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 13:58:28 [XNIO-3 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 13:58:28 [XNIO-3 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220135828$$aircok:e$$
+
+[logback]2022-12-20 14:04:24 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 14:04:46 [XNIO-1 task-3] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 14:04:46 [XNIO-1 task-3] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 14:04:46 [XNIO-1 task-3] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 14:04:46 [XNIO-1 task-3] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 14:05:01 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 14:05:05 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 14:05:05 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 14:05:05 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 14:05:05 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 14:06:32 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 14:08:33 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 14:08:40 [XNIO-4 task-3] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 14:08:40 [XNIO-4 task-3] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 14:08:40 [XNIO-4 task-3] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 14:08:40 [XNIO-4 task-3] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 14:08:45 [XNIO-3 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:08:45 [XNIO-3 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220140845$$aircok:e$$
+
+[logback]2022-12-20 14:08:46 [XNIO-3 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:08:46 [XNIO-3 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220140846$$aircok:e$$
+
+[logback]2022-12-20 14:08:46 [XNIO-4 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:08:46 [XNIO-4 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220140846$$aircok:e$$
+
+[logback]2022-12-20 14:08:47 [XNIO-4 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:08:47 [XNIO-4 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220140847$$aircok:e$$
+
+[logback]2022-12-20 14:08:47 [XNIO-4 task-3] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:08:47 [XNIO-4 task-3] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220140847$$aircok:e$$
+
+[logback]2022-12-20 14:08:48 [XNIO-4 task-3] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:08:48 [XNIO-4 task-3] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220140848$$aircok:e$$
+
+[logback]2022-12-20 14:09:10 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 14:09:14 [XNIO-5 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:09:14 [XNIO-5 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220140914$$aircok:e$$
+
+[logback]2022-12-20 14:09:18 [XNIO-5 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 14:09:18 [XNIO-5 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 14:09:18 [XNIO-5 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 14:09:18 [XNIO-5 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 14:11:45 [XNIO-5 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:11:45 [XNIO-5 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220141145$$aircok:e$$
+
+[logback]2022-12-20 14:11:45 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:11:45 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220141145$$aircok:e$$
+
+[logback]2022-12-20 14:14:00 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:14:00 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220141400$$aircok:e$$
+
+[logback]2022-12-20 14:14:00 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:14:00 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220141400$$aircok:e$$
+
+[logback]2022-12-20 14:14:08 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:14:08 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220141408$$aircok:e$$
+
+[logback]2022-12-20 14:14:25 [XNIO-5 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 14:14:25 [XNIO-5 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 14:14:25 [XNIO-5 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 14:14:25 [XNIO-5 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 14:15:36 [XNIO-5 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:15:36 [XNIO-5 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220141536$$aircok:e$$
+
+[logback]2022-12-20 14:15:37 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:15:37 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220141537$$aircok:e$$
+
+[logback]2022-12-20 14:15:41 [XNIO-5 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:15:41 [XNIO-5 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220141541$$aircok:e$$
+
+[logback]2022-12-20 14:15:46 [XNIO-5 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 14:15:46 [XNIO-5 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 14:15:46 [XNIO-5 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 14:15:46 [XNIO-5 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 14:26:26 [XNIO-5 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:26:26 [XNIO-5 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220142626$$aircok:e$$
+
+[logback]2022-12-20 14:26:26 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:26:26 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220142626$$aircok:e$$
+
+[logback]2022-12-20 14:30:15 [XNIO-5 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 14:30:15 [XNIO-5 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 14:30:15 [XNIO-5 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 14:30:15 [XNIO-5 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 14:30:40 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:30:40 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220143040$$aircok:e$$
+
+[logback]2022-12-20 14:30:40 [XNIO-5 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:30:40 [XNIO-5 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220143040$$aircok:e$$
+
+[logback]2022-12-20 14:30:54 [XNIO-5 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:30:54 [XNIO-5 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220143054$$aircok:e$$
+
+[logback]2022-12-20 14:30:57 [XNIO-5 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 14:30:57 [XNIO-5 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 14:30:57 [XNIO-5 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 14:30:57 [XNIO-5 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 14:47:45 [XNIO-5 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:47:45 [XNIO-5 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220144745$$aircok:e$$
+
+[logback]2022-12-20 14:47:46 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:47:46 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220144746$$aircok:e$$
+
+[logback]2022-12-20 14:47:56 [XNIO-5 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 14:47:56 [XNIO-5 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 14:47:56 [XNIO-5 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 14:47:56 [XNIO-5 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 14:51:23 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 14:51:24 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:51:24 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220145124$$aircok:e$$
+
+[logback]2022-12-20 14:51:25 [XNIO-5 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:51:25 [XNIO-5 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220145125$$aircok:e$$
+
+[logback]2022-12-20 14:51:25 [XNIO-6 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:51:25 [XNIO-6 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220145125$$aircok:e$$
+
+[logback]2022-12-20 14:51:26 [XNIO-6 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:51:26 [XNIO-6 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220145126$$aircok:e$$
+
+[logback]2022-12-20 14:51:48 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 14:51:52 [XNIO-7 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:51:52 [XNIO-7 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220145152$$aircok:e$$
+
+[logback]2022-12-20 14:51:56 [XNIO-7 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 14:51:56 [XNIO-7 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 14:51:56 [XNIO-7 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 14:51:56 [XNIO-7 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 14:52:09 [XNIO-7 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 14:52:09 [XNIO-7 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 14:52:09 [XNIO-7 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 14:52:09 [XNIO-7 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 14:56:29 [XNIO-7 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:56:29 [XNIO-7 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220145629$$aircok:e$$
+
+[logback]2022-12-20 14:56:29 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 14:56:29 [XNIO-7 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:56:29 [XNIO-7 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220145629$$aircok:e$$
+
+[logback]2022-12-20 14:56:33 [XNIO-8 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:56:33 [XNIO-8 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220145633$$aircok:e$$
+
+[logback]2022-12-20 14:56:39 [XNIO-8 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:56:39 [XNIO-8 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220145639$$aircok:e$$
+
+[logback]2022-12-20 14:56:42 [XNIO-8 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 14:56:42 [XNIO-8 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 14:56:42 [XNIO-8 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 127.0.0.1
+[logback]2022-12-20 14:56:42 [XNIO-8 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 14:57:26 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 14:59:06 [XNIO-8 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:59:06 [XNIO-8 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220145906$$aircok:e$$
+
+[logback]2022-12-20 14:59:06 [XNIO-8 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:59:06 [XNIO-8 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220145906$$aircok:e$$
+
+[logback]2022-12-20 14:59:11 [XNIO-9 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:59:11 [XNIO-9 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220145911$$aircok:e$$
+
+[logback]2022-12-20 14:59:17 [XNIO-9 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 14:59:17 [XNIO-9 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220145917$$aircok:e$$
+
+[logback]2022-12-20 14:59:21 [XNIO-9 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 14:59:21 [XNIO-9 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 14:59:21 [XNIO-9 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 14:59:21 [XNIO-9 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 15:00:07 [XNIO-9 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:00:07 [XNIO-9 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220150007$$aircok:e$$
+
+[logback]2022-12-20 15:00:08 [XNIO-9 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:00:08 [XNIO-9 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220150008$$aircok:e$$
+
+[logback]2022-12-20 15:00:11 [XNIO-9 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 15:00:11 [XNIO-9 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 15:00:11 [XNIO-9 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 15:00:11 [XNIO-9 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 15:01:39 [XNIO-9 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:01:39 [XNIO-9 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220150139$$aircok:e$$
+
+[logback]2022-12-20 15:01:39 [XNIO-9 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:01:39 [XNIO-9 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220150139$$aircok:e$$
+
+[logback]2022-12-20 15:05:09 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:05:33 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:05:37 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:05:37 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220150537$$aircok:e$$
+
+[logback]2022-12-20 15:05:44 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 15:05:44 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 15:05:44 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 15:05:44 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 15:05:44 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:05:44 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220150544$$aircok:e$$
+
+[logback]2022-12-20 15:05:44 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:05:44 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220150544$$aircok:e$$
+
+[logback]2022-12-20 15:06:05 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:06:09 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 15:06:09 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 15:06:09 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 15:06:09 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 15:06:43 [XNIO-1 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:06:43 [XNIO-1 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220150643$$aircok:e$$
+
+[logback]2022-12-20 15:06:43 [XNIO-1 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:06:43 [XNIO-1 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220150643$$aircok:e$$
+
+[logback]2022-12-20 15:06:43 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:06:47 [XNIO-2 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:06:47 [XNIO-2 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220150647$$aircok:e$$
+
+[logback]2022-12-20 15:06:51 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 15:06:51 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 15:06:51 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 15:06:51 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 15:07:23 [XNIO-2 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:07:23 [XNIO-2 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220150723$$aircok:e$$
+
+[logback]2022-12-20 15:07:23 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:07:23 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220150723$$aircok:e$$
+
+[logback]2022-12-20 15:07:27 [XNIO-2 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:07:27 [XNIO-2 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220150727$$aircok:e$$
+
+[logback]2022-12-20 15:07:30 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 15:07:30 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 15:07:30 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 15:07:30 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 15:09:56 [XNIO-2 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:09:56 [XNIO-2 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220150956$$aircok:e$$
+
+[logback]2022-12-20 15:09:56 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:09:56 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220150956$$aircok:e$$
+
+[logback]2022-12-20 15:10:00 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 15:10:00 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 15:10:00 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 15:10:00 [XNIO-2 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 15:10:50 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:11:04 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:11:19 [XNIO-4 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 15:11:19 [XNIO-4 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 15:11:19 [XNIO-4 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 15:11:19 [XNIO-4 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 15:13:15 [XNIO-4 task-3] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 15:13:15 [XNIO-4 task-3] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 15:13:15 [XNIO-4 task-3] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 15:13:15 [XNIO-4 task-3] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 15:13:20 [XNIO-4 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:13:20 [XNIO-4 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220151320$$aircok:e$$
+
+[logback]2022-12-20 15:13:20 [XNIO-4 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:13:20 [XNIO-4 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220151320$$aircok:e$$
+
+[logback]2022-12-20 15:13:21 [XNIO-4 task-4] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:13:21 [XNIO-4 task-4] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220151321$$aircok:e$$
+
+[logback]2022-12-20 15:13:21 [XNIO-4 task-5] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:13:21 [XNIO-4 task-5] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220151321$$aircok:e$$
+
+[logback]2022-12-20 15:13:21 [XNIO-4 task-3] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:13:21 [XNIO-4 task-3] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220151321$$aircok:e$$
+
+[logback]2022-12-20 15:14:36 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:16:00 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:16:09 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 15:16:09 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 15:16:09 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 15:16:09 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 15:18:14 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:18:18 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:18:18 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220151818$$aircok:e$$
+
+[logback]2022-12-20 15:18:18 [XNIO-2 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:18:18 [XNIO-2 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220151818$$aircok:e$$
+
+[logback]2022-12-20 15:18:20 [XNIO-3 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:18:20 [XNIO-3 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220151820$$aircok:e$$
+
+[logback]2022-12-20 15:18:24 [XNIO-3 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 15:18:24 [XNIO-3 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 15:18:24 [XNIO-3 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 15:18:24 [XNIO-3 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 15:19:38 [XNIO-3 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:19:38 [XNIO-3 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220151938$$aircok:e$$
+
+[logback]2022-12-20 15:19:38 [XNIO-3 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:19:38 [XNIO-3 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220151938$$aircok:e$$
+
+[logback]2022-12-20 15:19:38 [XNIO-3 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:19:38 [XNIO-3 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220151938$$aircok:e$$
+
+[logback]2022-12-20 15:19:38 [XNIO-3 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:19:38 [XNIO-3 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220151938$$aircok:e$$
+
+[logback]2022-12-20 15:22:09 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:22:19 [XNIO-1 task-3] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:22:19 [XNIO-1 task-3] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220152219$$aircok:e$$
+
+[logback]2022-12-20 15:22:19 [XNIO-1 task-3] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:22:19 [XNIO-1 task-3] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220152219$$aircok:e$$
+
+[logback]2022-12-20 15:22:24 [XNIO-1 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:22:24 [XNIO-1 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220152224$$aircok:e$$
+
+[logback]2022-12-20 15:22:29 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 15:22:29 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 15:22:29 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 15:22:29 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 15:23:18 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:28:47 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:29:21 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:29:36 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:32:21 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:32:57 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:33:18 [XNIO-5 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 15:33:18 [XNIO-5 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 15:33:18 [XNIO-5 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 15:33:18 [XNIO-5 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 15:34:16 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:34:19 [XNIO-6 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:34:19 [XNIO-6 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220153419$$aircok:e$$
+
+[logback]2022-12-20 15:34:19 [XNIO-6 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:34:19 [XNIO-6 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220153419$$aircok:e$$
+
+[logback]2022-12-20 15:34:30 [XNIO-6 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:36:15 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:36:18 [XNIO-1 task-3] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:36:18 [XNIO-1 task-3] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220153618$$aircok:e$$
+
+[logback]2022-12-20 15:36:18 [XNIO-1 task-3] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:36:18 [XNIO-1 task-3] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220153618$$aircok:e$$
+
+[logback]2022-12-20 15:36:48 [XNIO-1 task-3] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 15:36:48 [XNIO-1 task-3] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 15:36:48 [XNIO-1 task-3] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 15:36:48 [XNIO-1 task-3] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 15:36:48 [XNIO-1 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:36:48 [XNIO-1 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220153648$$aircok:e$$
+
+[logback]2022-12-20 15:36:48 [XNIO-1 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:36:48 [XNIO-1 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220153648$$aircok:e$$
+
+[logback]2022-12-20 15:37:13 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:37:35 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 15:37:35 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 15:37:35 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 15:37:35 [XNIO-1 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 15:37:52 [XNIO-1 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:37:54 [XNIO-1 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220153753$$aircok:e$$
+
+[logback]2022-12-20 15:37:55 [XNIO-1 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:37:57 [XNIO-1 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220153756$$aircok:e$$
+
+[logback]2022-12-20 15:38:25 [XNIO-1 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:38:26 [XNIO-1 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:38:27 [XNIO-1 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220153827$$aircok:e$$
+
+[logback]2022-12-20 15:38:27 [XNIO-1 task-1] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220153827$$aircok:e$$
+
+[logback]2022-12-20 15:41:13 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:41:35 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 15:41:35 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 15:41:35 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 15:41:35 [XNIO-2 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 15:41:59 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:42:01 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220154201$$aircok:e$$
+
+[logback]2022-12-20 15:42:02 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 15:42:04 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220154203$$aircok:e$$
+
+[logback]2022-12-20 15:42:55 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:43:57 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:45:27 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:45:38 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:45:44 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:45:52 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 15:46:10 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 16:30:51 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 16:31:05 [XNIO-8 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 16:31:05 [XNIO-8 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 16:31:05 [XNIO-8 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 16:31:05 [XNIO-8 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 16:31:23 [XNIO-8 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 16:31:23 [XNIO-8 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220163123$$aircok:e$$
+
+[logback]2022-12-20 16:31:23 [XNIO-8 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 16:31:23 [XNIO-8 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220163123$$aircok:e$$
+
+[logback]2022-12-20 16:31:33 [XNIO-8 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 16:31:33 [XNIO-8 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220163133$$aircok:e$$
+
+[logback]2022-12-20 16:31:33 [XNIO-8 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 16:31:33 [XNIO-8 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220163133$$aircok:e$$
+
+[logback]2022-12-20 16:31:37 [XNIO-8 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 16:31:37 [XNIO-8 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220163137$$aircok:e$$
+
+[logback]2022-12-20 16:31:37 [XNIO-8 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 16:31:37 [XNIO-8 task-2] INFO  e.s.web.web.SmartAircokWebController -  => $$aircok:s$$20221220163137$$aircok:e$$
+
+[logback]2022-12-20 16:31:53 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 16:34:38 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 16:34:45 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 16:37:54 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 16:37:58 [XNIO-1 task-3] ERROR e.s.web.web.SmartAircokWebController - /time Exception LOGGER
+[logback]2022-12-20 16:37:58 [XNIO-1 task-3] ERROR e.s.web.web.SmartAircokWebController -  => $$aircok:s$$NO|ER01$$aircok:e$$
+[logback]2022-12-20 16:37:58 [XNIO-1 task-3] ERROR e.s.web.web.SmartAircokWebController - /time Exception LOGGER
+[logback]2022-12-20 16:37:58 [XNIO-1 task-3] ERROR e.s.web.web.SmartAircokWebController -  => $$aircok:s$$NO|ER01$$aircok:e$$
+[logback]2022-12-20 16:38:07 [XNIO-1 task-1] ERROR e.s.web.web.SmartAircokWebController - /time Exception LOGGER
+[logback]2022-12-20 16:38:07 [XNIO-1 task-1] ERROR e.s.web.web.SmartAircokWebController -  => $$aircok:s$$NO|ER01$$aircok:e$$
+[logback]2022-12-20 16:38:07 [XNIO-1 task-1] ERROR e.s.web.web.SmartAircokWebController - /time Exception LOGGER
+[logback]2022-12-20 16:38:07 [XNIO-1 task-1] ERROR e.s.web.web.SmartAircokWebController -  => $$aircok:s$$NO|ER01$$aircok:e$$
+[logback]2022-12-20 16:38:10 [XNIO-1 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 16:38:10 [XNIO-1 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 16:38:10 [XNIO-1 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 16:38:10 [XNIO-1 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 16:38:11 [XNIO-1 task-1] ERROR e.s.web.web.SmartAircokWebController - /time Exception LOGGER
+[logback]2022-12-20 16:38:11 [XNIO-1 task-1] ERROR e.s.web.web.SmartAircokWebController -  => $$aircok:s$$NO|ER01$$aircok:e$$
+[logback]2022-12-20 16:38:11 [XNIO-1 task-1] ERROR e.s.web.web.SmartAircokWebController - /time Exception LOGGER
+[logback]2022-12-20 16:38:11 [XNIO-1 task-1] ERROR e.s.web.web.SmartAircokWebController -  => $$aircok:s$$NO|ER01$$aircok:e$$
+[logback]2022-12-20 16:41:01 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 16:44:18 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 16:44:30 [XNIO-1 task-3] ERROR e.s.web.web.SmartAircokWebController - /time Exception LOGGER
+[logback]2022-12-20 16:45:57 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 16:48:04 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 16:49:35 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 16:49:45 [XNIO-1 task-3] ERROR e.s.web.web.SmartAircokWebController - /time Exception LOGGER
+[logback]2022-12-20 16:49:45 [XNIO-1 task-3] ERROR e.s.web.web.SmartAircokWebController -  => $$aircok:s$$NO|ER01$$aircok:e$$
+[logback]2022-12-20 16:50:16 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 16:50:22 [XNIO-1 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 16:50:22 [XNIO-1 task-1] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 16:50:22 [XNIO-1 task-1] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 16:50:22 [XNIO-1 task-1] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 16:52:35 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 16:53:33 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 16:53:52 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 16:55:14 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 16:55:53 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 16:58:29 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 16:59:06 [XNIO-1 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 16:59:06 [XNIO-1 task-1] INFO  e.s.web.web.SmartAircokWebController -  => [Ljava.lang.String;@38266227
+[logback]2022-12-20 16:59:07 [XNIO-1 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 16:59:07 [XNIO-1 task-1] INFO  e.s.web.web.SmartAircokWebController -  => [Ljava.lang.String;@24f3cfd7
+[logback]2022-12-20 16:59:09 [XNIO-1 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 16:59:09 [XNIO-1 task-1] INFO  e.s.web.web.SmartAircokWebController -  => [Ljava.lang.String;@677f9e2a
+[logback]2022-12-20 16:59:09 [XNIO-1 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 16:59:09 [XNIO-1 task-1] INFO  e.s.web.web.SmartAircokWebController -  => [Ljava.lang.String;@77ab913a
+[logback]2022-12-20 17:00:10 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 17:01:25 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 17:01:44 [XNIO-1 task-3] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 17:01:44 [XNIO-1 task-3] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 17:01:44 [XNIO-1 task-3] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 17:01:44 [XNIO-1 task-3] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 17:01:48 [XNIO-1 task-3] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 17:01:49 [XNIO-1 task-3] INFO  e.s.web.web.SmartAircokWebController -  => 2211IL0001
+[logback]2022-12-20 17:03:39 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 17:03:46 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 17:03:56 [XNIO-1 task-3] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 17:03:56 [XNIO-1 task-3] INFO  e.s.web.web.SmartAircokWebController -  => [Ljava.lang.String;@1a09d4d
+[logback]2022-12-20 17:03:57 [XNIO-1 task-3] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 17:03:57 [XNIO-1 task-3] INFO  e.s.web.web.SmartAircokWebController -  => [Ljava.lang.String;@1a742e51
+[logback]2022-12-20 17:04:44 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 17:04:52 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 17:04:52 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => [Ljava.lang.String;@3194574f
+[logback]2022-12-20 17:04:52 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 17:04:52 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => [Ljava.lang.String;@249f3a80
+[logback]2022-12-20 17:05:40 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 17:05:40 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => [Ljava.lang.String;@6f885706
+[logback]2022-12-20 17:05:40 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 17:05:40 [XNIO-2 task-2] INFO  e.s.web.web.SmartAircokWebController -  => [Ljava.lang.String;@3fc9d53e
+[logback]2022-12-20 17:05:43 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 17:07:25 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 17:07:30 [XNIO-4 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 17:07:30 [XNIO-4 task-1] INFO  e.s.web.web.SmartAircokWebController -  => 2211IL0001
+[logback]2022-12-20 17:07:30 [XNIO-4 task-1] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 17:07:30 [XNIO-4 task-1] INFO  e.s.web.web.SmartAircokWebController -  => 2211IL0001
+[logback]2022-12-20 17:07:40 [XNIO-4 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 17:07:40 [XNIO-4 task-2] INFO  e.s.web.web.SmartAircokWebController -  => 2211IL0001
+[logback]2022-12-20 17:07:40 [XNIO-4 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 17:07:40 [XNIO-4 task-2] INFO  e.s.web.web.SmartAircokWebController -  => 2211IL0001
+[logback]2022-12-20 17:13:25 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 17:13:34 [XNIO-5 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------INFO  LOGGER------------------------------
+[logback]2022-12-20 17:13:34 [XNIO-5 task-2] INFO  e.s.l.web.SmartAircokLoginController -    /login/user Access Logger INFO
+[logback]2022-12-20 17:13:34 [XNIO-5 task-2] INFO  e.s.l.web.SmartAircokLoginController -     Access IP : 0:0:0:0:0:0:0:1
+[logback]2022-12-20 17:13:34 [XNIO-5 task-2] INFO  e.s.l.web.SmartAircokLoginController - ------------------------------------------------------------------------
+[logback]2022-12-20 17:13:34 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 17:13:34 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController -  => 2211IL0001
+[logback]2022-12-20 17:13:34 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController - /device-lists api call
+[logback]2022-12-20 17:13:34 [XNIO-5 task-2] INFO  e.s.web.web.SmartAircokWebController -  => 2211IL0001
+[logback]2022-12-20 17:14:48 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 17:27:07 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 17:27:12 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init
+[logback]2022-12-20 17:28:16 [restartedMain] INFO  e.com.cmm.filter.SimpleCORSFilter - SimpleCORSFilter init

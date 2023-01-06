@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {ChatMessageProps} from '../items/interfaces'
+import {ChatMessageProps} from '../items/Interfaces'
 
 const MessageParser = ({children, actions} : ChatMessageProps) => {
   const parse = (message : string) => {

@@ -43,21 +43,22 @@
   height : 10%;
 
   margin-bottom : 5%;
-  margin-right : 10%;
+  /* margin-right : 10%; */
 }
 
 .gauge-info-data-li > p{
+  width : 20%;
   margin : 0;
   color : #4f4f4f;
 }
 
-.gauge-info-data-li-bar {
-  width : 65%;
+.gauge-bar {
+  width : 50%;
   height : 80%;
 
   margin: auto auto auto 5%;
 }
 
-.gauge-info-data-li-bar > rect {
+.gauge-bar > rect {
   background-color: #444444;
 }

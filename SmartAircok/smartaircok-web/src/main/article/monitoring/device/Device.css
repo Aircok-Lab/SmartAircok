@@ -1,0 +1,194 @@
+.device-body{
+  display : grid;
+  width : 100%;
+  height : 100%;
+
+	grid-template-areas:
+		"dvctitle      .     "
+		"dvcstates dvcstates "
+		"dvcsearch dvcinfoidx"
+		"  dvcul   dvcinfos ";
+  grid-template-rows : 2fr 3fr 2fr 45fr;
+  grid-template-columns : 1fr 5fr;
+	gap: 2% 1%;
+}
+
+/* title */
+.device-title{
+  grid-area : dvctitle;
+
+  color : #4e4e4e;
+  font-weight : bold;
+  font-size: 150%;
+}
+
+/* sensor states */
+.device-states{
+  display : flex;
+
+  grid-area : dvcstates;
+}
+
+.device-state{
+  display : flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding : 0 2%;
+
+  /* border-radius: 0.4rem 0.4rem 0 0; */
+  background-color: white;
+}
+
+.device-state > p{
+  color : #4e4e4e;
+  font-size : 110%;
+  font-weight : bold;
+
+  margin : 7% 0;
+}
+
+
+.device-search{
+  grid-area : dvcsearch;
+
+  /* margin-bottom : 3%; */
+}
+
+.device-search-val{
+  width : 90%;
+  height : 100%;
+
+  background-color : #e0e0e0;
+  border-radius : 1rem;
+
+  padding : 0 5%;
+
+  margin : 0;
+  border : 0;
+}
+
+/* device lists */
+.device-ul{
+  grid-area : dvcul;
+
+  margin : 0;
+  padding : 0;
+  /* padding : 5%; */
+
+  background-color: #ffffff;
+
+  /* border : 1px solid #dddddd;
+  border-radius: 5px; */
+
+  list-style : none;
+
+  overflow : auto;
+}
+
+.device-li{
+  display : flex;  
+  align-items: center;
+
+  margin : 5% 0;
+  padding : 0 5%;
+
+  /* height : 8%; */
+  height : 5%;
+
+  border-left: 3px solid white;
+
+  cursor : default;
+}
+
+.device-li:hover{
+  border-left: 3px solid blue;
+}
+
+/* device info */
+.device-infoindexes{
+  grid-area : dvcinfoidx;
+
+  display : flex;
+
+  margin-top : 1%;
+}
+
+.device-infoindex{
+  width : 15%;
+
+  color : #4e4e4e;
+  font-weight : bold;
+  font-size: 110%;
+
+  text-align : center;
+}
+
+.device-infos{
+  grid-area : dvcinfos;
+
+  overflow : hidden auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.device-infos::-webkit-scrollbar {
+  display: none;
+}
+
+.device-info{
+  display : flex;
+  align-items : center;
+  text-align : center;
+
+  height : 10%;
+
+  margin-bottom : 1%;
+
+  background-color: #ffffff;
+
+  border-left: 4px solid white;
+
+  /* border : 1px solid #dddddd;
+  border-radius: 5px; */
+}
+
+.device-info:last-child{
+  margin-bottom : 0;
+}
+
+.device-info-name{
+  width : 15%;  
+}
+
+.device-info-time{
+  width : 20%;
+  margin-right: 2%;
+}
+
+.device-info-sensors{
+  width : 7%;
+}
+
+.device-info-state{
+  display : flex;
+  align-items: center;
+
+  margin-left : 5%;
+
+  width : 10%;
+}
+
+.device-info-state > p{
+  margin-left : 10%;
+}
+
+
+/* device list is null */
+.device-fail{
+  grid-area : dvcinfos;
+  margin : auto;
+
+  color : #4e4e4e;
+  font-weight : bold;
+  font-size: 180%;
+}

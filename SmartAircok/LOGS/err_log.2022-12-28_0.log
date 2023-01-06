@@ -1,0 +1,13 @@
+[logback]2022-12-28 14:00:12 [XNIO-5 task-1] ERROR e.smartaircok.SmartAircokApplication - 
+### Error updating database.  Cause: org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzIyMDM2MTIsImV4cCI6MTY3MzQxMzIxMiwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.vYV1GXHQAn3uIA-LJIl0M0H2TBZ8Uj9WqkWY23AnHS8, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzIyMDM2MTIsImV4cCI6MTY3MzQxMzIxMiwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.vYV1GXHQAn3uIA-LJIl0M0H2TBZ8Uj9WqkWY23AnHS8) 키가 이미 있습니다.
+### The error may exist in file [D:\git\SmartAircok\SmartAircok\target\classes\egovframework\mapper\let\smartaircok\SmartAircokLogin_SQL_postgresql.xml]
+### The error may involve smartaircokLogin.insertRefreshToken-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO aircok.user_token   VALUES (    ?,    ?   );
+### Cause: org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzIyMDM2MTIsImV4cCI6MTY3MzQxMzIxMiwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.vYV1GXHQAn3uIA-LJIl0M0H2TBZ8Uj9WqkWY23AnHS8, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzIyMDM2MTIsImV4cCI6MTY3MzQxMzIxMiwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.vYV1GXHQAn3uIA-LJIl0M0H2TBZ8Uj9WqkWY23AnHS8) 키가 이미 있습니다.
+; 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzIyMDM2MTIsImV4cCI6MTY3MzQxMzIxMiwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.vYV1GXHQAn3uIA-LJIl0M0H2TBZ8Uj9WqkWY23AnHS8, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzIyMDM2MTIsImV4cCI6MTY3MzQxMzIxMiwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.vYV1GXHQAn3uIA-LJIl0M0H2TBZ8Uj9WqkWY23AnHS8) 키가 이미 있습니다.; nested exception is org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzIyMDM2MTIsImV4cCI6MTY3MzQxMzIxMiwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.vYV1GXHQAn3uIA-LJIl0M0H2TBZ8Uj9WqkWY23AnHS8, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzIyMDM2MTIsImV4cCI6MTY3MzQxMzIxMiwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.vYV1GXHQAn3uIA-LJIl0M0H2TBZ8Uj9WqkWY23AnHS8) 키가 이미 있습니다.
+[logback]2022-12-28 14:00:12 [XNIO-5 task-1] ERROR e.smartaircok.SmartAircokApplication - /login/user Exception LOGGER

@@ -1,0 +1,35 @@
+.detail-lists{
+  display : flex;  
+  align-items: center;
+
+  width : 90%;
+  height: 25%;
+
+  margin : 0 2%;
+}
+
+.detail-list-name{
+  width : 20%;
+}
+
+
+.detail-list-text{
+  width : 20%;
+}
+
+
+.detail-list-bar{
+  width : 40%;
+  height : 30%;
+}
+
+.detail-list-bar > svg{
+  width : 85%;
+  height: 100%;
+  margin : 0;
+}
+
+
+.detail-list-val{
+  width : 20%;
+}

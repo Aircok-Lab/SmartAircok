@@ -16,56 +16,50 @@ import org.springframework.stereotype.Service;
 
 import egovframework.smartaircok.login.service.SmartAircokLoginService;
 import egovframework.smartaircok.login.service.SmartAircokLoginVO;
-import egovframework.smartaircok.login.service.SmartAircokTokenVO;
 
-@Service("smartAircokLoginService")
+@Service("smartaircokLoginService")
 public class SmartAircokLoginServiceImpl extends EgovAbstractServiceImpl implements SmartAircokLoginService {
 	/* Login Query */
 	// Login Process
-	@Resource(name = "smartAircokLoginDAO")
-	private SmartAircokLoginDAO smartAircokLoginDAO;
+	@Resource(name = "smartaircokLoginDAO")
+	private SmartAircokLoginDAO smartaircokLoginDAO;
 	
 	@Override
-	public boolean selectIsUser(Map<String, String> loginUser) throws Exception {
-		return this.smartAircokLoginDAO.selectIsUser(loginUser);
-	}
-
-	@Override
-	public String selectUserAuthority(String id) throws Exception {
-		return this.smartAircokLoginDAO.selectUserAuthority(id);
+	public boolean selectIsUser(SmartAircokLoginVO smartAircokLoginVO) throws Exception {
+		return this.smartaircokLoginDAO.selectIsUser(smartAircokLoginVO);
 	}
 	
 	
 	// JWT Refresh Token
 	@Override
 	public int insertRefreshToken(Map<String, String> token) throws Exception {
-		return this.smartAircokLoginDAO.insertRefreshToken(token);
+		return this.smartaircokLoginDAO.insertRefreshToken(token);
 	}
 
 	@Override
 	public boolean selectTokenValidate(Map<String, String> token) throws Exception {
-		return this.smartAircokLoginDAO.selectTokenValidate(token);
+		return this.smartaircokLoginDAO.selectTokenValidate(token);
 	}
 
 	@Override
 	public int updateAccessToken(Map<String, String> token) throws Exception {
-		return this.smartAircokLoginDAO.updateAccessToken(token);
+		return this.smartaircokLoginDAO.updateAccessToken(token);
 	}
 
 	@Override
 	public int deleteRefreshToken(Map<String, String> token) throws Exception {
-		return this.smartAircokLoginDAO.deleteRefreshToken(token);
+		return this.smartaircokLoginDAO.deleteRefreshToken(token);
 	}
 	
 	// Spring Secrity
 	@Override
 	public UserDetails loadUserByUsername(String id) throws UsernameNotFoundException {
-		Map<String, String> member = this.smartAircokLoginDAO.selectFindByID(id);
+		Map<String, String> member = this.smartaircokLoginDAO.selectFindByID(id);
 
         List<GrantedAuthority> authorities = new ArrayList<>();
 
-        authorities.add(new SimpleGrantedAuthority(member.get("authority")));
+        authorities.add(new SimpleGrantedAuthority(member.get("authrt")));
 
-        return new User(member.get("id"), member.get("pw"), authorities);
+        return new User(member.get("user_id"), member.get("user_pswd"), authorities);
 	}
 }

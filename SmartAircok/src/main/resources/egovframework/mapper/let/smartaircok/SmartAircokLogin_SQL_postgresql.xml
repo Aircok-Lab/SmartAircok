@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="smartAircokLogin">
+<mapper namespace="smartaircokLogin">
 	<!-- 
 	<select id="selectUsableUser" parameterType="string" resultType="hashmap">
 		SELECT *
@@ -14,26 +14,17 @@
 		SELECT EXISTS (
 			SELECT *
 			FROM aircok.user_tb
-			WHERE user_id=#{id} AND user_pswd=#{pw}
+			WHERE user_id = #{id} AND user_pswd = #{pw}
 		);
 	</select>
 	
-	<select id="selectUserAuthority" parameterType="string" resultType="string">
-		SELECT authrt
-		FROM aircok.user_tb
-		WHERE user_id=#{id}
-	</select>
-	
-	
 	<!-- JWT Refresh Token -->
 	<insert id="insertRefreshToken" parameterType="hashmap">
-    	<![CDATA[
         INSERT INTO aircok.user_token
 		VALUES (
 			#{access_token},
 			#{refresh_token}
 		);
-		]]>
 	</insert>
 	
 	<select id="selectTokenValidate" parameterType="hashmap" resultType="boolean">
@@ -58,9 +49,9 @@
 	</delete>
 	
 	<!-- Spring Security -->
-	<select id="selectFindByID" parameterType="string" resultType="map">
+	<select id="selectFindByID" parameterType="string" resultType="hashmap">
 		SELECT user_id, user_pswd, authrt
 		FROM aircok.user_tb
-		WHERE user_id=#{id}
+		WHERE user_id = #{id}
 	</select>
 </mapper>
