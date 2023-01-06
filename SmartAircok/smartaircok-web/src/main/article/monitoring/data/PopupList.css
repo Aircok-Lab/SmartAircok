@@ -1,0 +1,46 @@
+.data-tabs-popup{
+  float : right;
+
+  width: 13%;
+  height: 20%;
+
+  background-color : #ffffff;
+
+  border : 1px solid #dddddd;
+  border-radius : 5px;
+
+  padding: 0.5%;
+}
+
+.data-tabs-popup-search{
+  width : 96%;
+  height : 20%;
+
+  margin-bottom : 5%;
+
+  border : 1px solid #dddddd;
+}
+
+.data-tabs-popup-ul{
+  height : 75%;
+
+  margin : 0 1%;
+  padding : 0;
+
+  list-style : none;
+
+  overflow-y : auto;
+
+  cursor : default;
+}
+
+.data-tabs-popup-li{
+  margin-bottom : 5%;
+  padding-bottom: 2%;
+  
+  border-bottom : 1px solid #dddddd;
+}
+
+.data-tabs-popup-li:hover{
+  background-color : #edf3fd;
+}
