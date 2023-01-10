@@ -40,7 +40,7 @@ export interface ArticleProps{
 
 // Data Info
 export interface DataInfoProps{
-  dvcDatetimes : number[]
+  gaugedatetimes : number[]
   datetimeidx : number
   setdatetimeidx : Function
 }
@@ -48,13 +48,13 @@ export interface DataInfoProps{
 
 // Gauge
 export interface GaugeProps {
-  iaq : number
+  gaugemap : Map<string, any>
 }
 
 
 // Gauge Info
 export interface GauGeInfoProps {
-  dvcDatas : DeviceDataProps
+  gaugemap : Map<string, any>
 }
 
 export interface GaugeBarProps {
@@ -65,7 +65,8 @@ export interface GaugeBarProps {
 
 // Radar
 export interface RadarProps {
-  dvcDatas : DeviceDataProps
+  gaugelabels : string[]
+  gaugedatas : number[]
 }
 
 
@@ -135,31 +136,6 @@ export interface BlpProps{
 /**
  * monitoring/data
  */
-export interface DeviceAPIProps{
-  sn : string
-  st : string | null
-  et : string | null
-}
-
-export interface DeviceDataProps{
-  data_reg_dt : number
-  pm1 : string | null
-  pm25 : string | null
-  pm10 : string | null
-  tem : string | null
-  hum : string | null
-  hcho : string | null
-  co2 : string | null
-  co : string | null
-  vocs : string | null
-  reserve1 : string | null
-  reserve2 : string | null
-  reserve3 : string | null
-  reserve4 : string | null
-  reserve5 : string | null
-  iaq : number
-}
-
 export interface MonitoringProps{
   cn : number
   setasidelistchk : Function
@@ -184,21 +160,21 @@ export interface DevicePopupProps{
   dvctab : React.MutableRefObject<number>
   dvclistpopup : boolean
   setdvclistpopup : Function
-  rerenderDvclists : Function
+  rerender_dvclists : Function
 }
 
 export interface DndProps {
   id : string
   index : number
-  comps : string[]
-  setComps : Function
-  clickedsensor : string
-  setclickedsensor : Function
-
-  // dvcDatas : DeviceDataProps[]
-  // dvcDatetimes : number[]
-  // datetimeidx : number
-  // setdatetimeidx : Function
+  // moveComp : ({ id, index }: CompProps) => void
+  moveComp : Function
+  // gaugeparam : Map<string, any>[]
+  gaugemap : Map<string, any>
+  gaugelabels : string[]
+  gaugedatas : number[]
+  gaugedatetimes : number[]
+  datetimeidx : number
+  setdatetimeidx : Function
 }
 
 export interface CompProps {

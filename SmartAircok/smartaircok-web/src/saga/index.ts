@@ -6,14 +6,11 @@ import { act_Latestdatas } from '../items/ActLatests';
 
 import apis from '../api/APIs'
 
-import { DeviceDataProps, LastDatasProps } from '../items/Interfaces';
+import { LoginProps, LastDatasProps } from '../items/Interfaces';
 
 interface LoginSagaProps {
   type : string, 
-  data : {    
-    id : string,
-    pw : string
-  }
+  data : LoginProps
 }
 
 interface loginAPIProps {
@@ -25,37 +22,18 @@ interface loginAPIProps {
   }
 }
 
-
 interface logoutAPIProps {
   status : number
 }
 
-
-
-// interface deviceListsAPIProps {
-//   data : {
-//     devices : string[],
-//     result : string
-//   }
-// }
-
-interface deviceDataSagaProps {
-  type : string, 
+interface deviceListsAPIProps {
   data : {
-    sn : string,
-    st : string,
-    et : string
-  }
-}
-
-interface deviceDataAPIProps {
-  data : {
-    data : DeviceDataProps[],
+    devices : string[],
     result : string
   }
 }
 
-interface latestDataAPIProps {
+interface deviceDataAPIProps {
   data : {
     data : LastDatasProps[],
     result : string
@@ -93,15 +71,19 @@ function* logoutSaga()  {
 }
 
 
-function* dataSaga({ data } : deviceDataSagaProps ) {
+function* dataSaga() {
   try {
-    // const datamap = new Map<string ,Object>();
-    const dataAPIRes : deviceDataAPIProps = yield call(apis.deviceDataAPI, data);
-    if(dataAPIRes?.data.result === 'success'){
-      // datamap.set(data.sn, dataAPIRes.data.data)
-      yield put(act_devicedatas(dataAPIRes.data.data));
+    const deviceAPIRes : deviceListsAPIProps = yield call(apis.deviceListsAPI);
+    if(deviceAPIRes?.data.result === 'success'){
+      const datamap = new Map<string ,Object>();
+      for (const sn of deviceAPIRes.data.devices) {
+        const dataAPIRes : deviceDataAPIProps = yield call(apis.deviceDataAPI, sn);
+        if(dataAPIRes?.data.result === 'success'){
+          datamap.set(sn, dataAPIRes.data.data)
+        }
+      }
+      yield put(act_devicedatas(datamap));
     }
-    // yield put(act_devicedatas(datamap));
   } catch (error) {
     console.log(error)
   }
@@ -110,7 +92,7 @@ function* dataSaga({ data } : deviceDataSagaProps ) {
 
 function* latestdataSaga() {
   try {
-    const deviceAPIRes : latestDataAPIProps = yield call(apis.deviceLatestDataAPI);
+    const deviceAPIRes : deviceDataAPIProps = yield call(apis.deviceLatestDataAPI);
     if(deviceAPIRes?.data.result === 'success'){
         yield put(act_Latestdatas(deviceAPIRes.data.data));
       }

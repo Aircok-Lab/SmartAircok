@@ -4,22 +4,30 @@
   margin : 0 3%;
   text-align : left;
 
-  color : #4e4e4e;
+  color : #6C6C81;
+
+  /* table 기본값 수정 */
+  border-collapse: collapse;
+  /* text-indent: 0%;
+  border-spacing: 0px; */
 }
 
 .LatestLists > thead{
   line-height : 4rem;
-
-  font-weight : bold;
-  font-size: 140%;
+  font-size: 17px;
 }
 
 .LatestLists > tbody{
   line-height : 4rem;
+  font-size: 15px;
 }
 
-td[class^='LatestLists_td']{
+.LatestLists_tr {
   border-bottom : 1px solid #dddddd;
+}
+
+.LatestLists_tr:last-child {
+  border: none;
 }
 
 .LatestLists_td_iaq{

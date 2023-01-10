@@ -24,7 +24,7 @@ const LatestLists = ({ latestdatas, picker, setpicker } : LatestListsProps) => {
         {latestdatas.map((val, key) => {
           const iaqst = Math.floor(val.iaq / 25)
           return (
-            <tr key={key} onClick={()=>{setpicker(key)}} style={picker === key? {color:'#758cf7'} : {}}>
+            <tr className='LatestLists_tr' key={key} onClick={()=>{setpicker(key)}} style={picker === key? {color:'#758cf7'} : {}}>
               <td className='LatestLists_td_nm'> {val.dvc_mng_nm} </td>
               <td className='LatestLists_td_date'> {new Date(val.data_reg_dt).toLocaleString()} </td>
               <td className='LatestLists_td_sensor'> {!(val.comm_badn || val.sensor_badn || val.power_badn || val.power_st) ? "수신 중" : "-"} </td>

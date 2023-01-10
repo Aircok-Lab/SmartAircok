@@ -148,8 +148,8 @@
 
   border-left: 4px solid white;
 
-  /* border : 1px solid #dddddd;
-  border-radius: 5px; */
+  /* border : 1px solid #dddddd; */
+  border-radius: 0 10px 10px 0;
 }
 
 .device-info:last-child{
