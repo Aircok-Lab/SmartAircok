@@ -207,6 +207,21 @@ export interface CompProps {
 }
 
 
+// Calendar
+export interface DatePickerProps{
+  startDate : Date
+  setStartDate : Function
+  endDate : Date
+  setEndDate : Function
+}
+
+export interface CalendarProps{
+  sdate : Date
+  edate : Date
+  type : string
+  setDate : Function
+}
+
 
 // Chatbot
 export interface ChatActionProps{

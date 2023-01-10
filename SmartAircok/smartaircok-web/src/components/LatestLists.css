@@ -1,4 +1,4 @@
-.LatestLists{
+.latests{
   width : 94%;
 
   margin : 0 3%;
@@ -7,22 +7,22 @@
   color : #4e4e4e;
 }
 
-.LatestLists > thead{
+.latests > thead{
   line-height : 4rem;
 
   font-weight : bold;
   font-size: 140%;
 }
 
-.LatestLists > tbody{
+.latests > tbody{
   line-height : 4rem;
 }
 
-td[class^='LatestLists_td']{
+td[class^='latest-td']{
   border-bottom : 1px solid #dddddd;
 }
 
-.LatestLists_td_iaq{
+.latest-td-iaq{
   display : flex;
   align-items: center;
 }

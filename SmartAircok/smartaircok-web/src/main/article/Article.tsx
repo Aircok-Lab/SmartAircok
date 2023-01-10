@@ -62,23 +62,25 @@ const Article = ({asidelistchk, setasidelistchk} : ArticleProps) => {
         return <MonitoringData popuplists={popuplists} setpopuplists={setpopuplists} dvctab={dvctab}/>
       case asidecontents[3] :
         return <MonitoringStatistics />
-      // manage
       case asidecontents[4] :
-        return <ManageUser />
+        return <MonitoringStatistics />
+      // manage
       case asidecontents[5] :
-        return <ManageDevice />
+        return <ManageUser />
       case asidecontents[6] :
-        return <ManagePosition />
+        return <ManageDevice />
       case asidecontents[7] :
-        return <ManageCommon />
+        return <ManagePosition />
       case asidecontents[8] :
+        return <ManageCommon />
+      case asidecontents[9] :
         return <ManageAPI />
       // board
-      case asidecontents[9] :
-        return <BoardFree />
       case asidecontents[10] :
-        return <BoardQna />
+        return <BoardFree />
       case asidecontents[11] :
+        return <BoardQna />
+      case asidecontents[12] :
         return <BoardFaq />
       default :
         return <></>

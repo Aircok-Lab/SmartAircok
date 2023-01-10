@@ -8,6 +8,7 @@ import { HTML5Backend } from 'react-dnd-html5-backend';
 
 import PopupList from './PopupList'
 import DndComp from './DndComp'
+import DatePicker from '../../../../components/DatePicker'
 // import Gauge from '../../../../components/Gauge'
 
 import { categoriseq } from '../../../../items/ItemSequences'
@@ -23,10 +24,16 @@ const Data = ({ popuplists, setpopuplists, dvctab } : MonitoringDataProps) => {
   const [dvclistchk, setdvclistchk] = useState<string>(popuplists[0][0]);
   const [dvclistpopup, setdvclistpopup] = useState<boolean>(false);
 
+  // datetime picker  
+  const [startDate, setStartDate] = useState<Date>(new Date(Date.now() - 86400000));
+  const [endDate, setEndDate] = useState<Date>(new Date());
+
   // 컴포넌트 배치
   const dispatch = useDispatch()
   const dvcDatas = useSelector((state : RootState) => state.actDatas.devices)
 
+  // const [comps, setComps] = useState<string[]>(Array.from(categoriseq.keys()).filter(label => Object.keys(dvcDatas[dvcDatas.length - 1]).includes(label)))
+  // const [clickedsensor, setclickedsensor] = useState<string>(comps[0])
   const [comps, setComps] = useState<string[]>([])
   const [clickedsensor, setclickedsensor] = useState<string>('')
 
@@ -38,26 +45,29 @@ const Data = ({ popuplists, setpopuplists, dvctab } : MonitoringDataProps) => {
       type: "SAGA_DATAS",
       data : {
         sn : dvclistchk,
-        st : new Date().getTime(),
-        et : new Date().setHours(new Date().getHours() - 1)
+        st : startDate.getTime(),
+        et : endDate.getTime()
       }
-    });
-  }, [])
+    })
+  }, [dvclistchk])
 
   useEffect(() => {
-    if(dvcDatas){
-      setComps(Array.from(categoriseq.keys()).filter(label => Object.keys(dvcDatas[dvcDatas.length - 1]).includes(label)))
-      setclickedsensor(Object.keys(dvcDatas[dvcDatas.length - 1])[0])
+    if(dvcDatas.length > 0){
+      const mycomps = Array.from(categoriseq.keys()).filter(label => Object.keys(dvcDatas[dvcDatas.length - 1]).includes(label))
+      setComps(mycomps)
+      setclickedsensor(mycomps[0])
     }
   },[dvcDatas])
   
   // x button to pop tab
   function popupTab(sn : string, key : number){
-    setpopuplists([...popuplists.slice(0, key), ...popuplists.slice(key + 1, dvctab.current), ...popuplists.slice(dvctab.current, popuplists.length), popuplists[key]]);
-    if(dvclistchk === sn){
-      setdvclistchk(popuplists[key === 0 ? 1 : key - 1][0]);
+    if(dvctab.current > 1){
+      setpopuplists([...popuplists.slice(0, key), ...popuplists.slice(key + 1, dvctab.current), ...popuplists.slice(dvctab.current, popuplists.length), popuplists[key]]);
+      if(dvclistchk === sn){
+        setdvclistchk(popuplists[key === 0 ? 1 : key - 1][0]);
+      }
+      dvctab.current -= 1
     }
-    dvctab.current -= 1
   }
   
   // 장비 교체 시 전역변수의 값 호출하여 변경
@@ -117,40 +127,39 @@ const Data = ({ popuplists, setpopuplists, dvctab } : MonitoringDataProps) => {
                 <img src={ closeIco } className='data-tabs-li-close' alt='data-tabs-li-close' onClick={()=>popupTab(sn, key)}/>
              </li>
           ))}
-          {(popuplists.length > dvctab.current) ?
-              <li className='data-tabs-li-etc'
-                onClick={() => setdvclistpopup(true)}>
-                <span data-hover='radio-etc'>
-                  ...
-                </span>
-              </li>  : <></>
-         }
         </ul>
+        {(popuplists.length > dvctab.current) ?
+          <input type='button' className='data-tabs-popup-btn'
+            onClick={() => setdvclistpopup(true)} value='...' /> : <></>
+         }
       </section>
 
       {(dvclistpopup === true) ? 
-        <PopupList popuplists={popuplists} dvctab={dvctab} dvclistpopup={dvclistpopup} setdvclistpopup={setdvclistpopup} rerenderDvclists={rerenderDvclists} /> 
-        : <></>}
+          <PopupList popuplists={popuplists} dvctab={dvctab} dvclistpopup={dvclistpopup} setdvclistpopup={setdvclistpopup} rerenderDvclists={rerenderDvclists} /> 
+          : <></>}
 
-      <section className='data-infos1'>
-        <section className='data-infos'>
-          <section className='data-iaq'> 
-            <p className='data-iqa-title'> 통합공기질 </p>
-          </section>
-          <section className='data-graph'> 
-            <p className='data-graph-title'> {clickedsensor} </p>
-          </section>
-          <section className='data-dnds' style={{gridTemplateAreas:mygrid[0], gridTemplateColumns:mygrid[1]}}>
-            <DndProvider backend={HTML5Backend}>
-              {comps.map((val, key) => {
-                return <DndComp key={key} id={val} index={key} comps={comps} setComps={setComps} clickedsensor={clickedsensor} setclickedsensor={setclickedsensor}
-                          // dvcDatas={dvcDatas} dvcDatetimes={dvcDatas.map((val) => val.data_reg_dt)} datetimeidx={datetimeidx} setdatetimeidx={setdatetimeidx}
-                        />
-              })}
-            </DndProvider>
+      {clickedsensor ? 
+      <section className='data-infos'>
+        <section className='data-iaq'> 
+          <p className='data-iqa-title'> 통합공기질 </p>
+        </section>
+        <section className='data-graph'> 
+          <section className='data-graph-banner'> 
+            <p className='data-graph-title'> {categoriseq.get(clickedsensor).text + '(' + categoriseq.get(clickedsensor).eng + ')'} </p>
+            <DatePicker startDate={startDate} setStartDate={setStartDate} endDate={endDate} setEndDate={setEndDate}/>
           </section>
         </section>
-      </section>
+        <section className='data-dnds' style={{gridTemplateAreas:mygrid[0], gridTemplateColumns:mygrid[1]}}>
+          <DndProvider backend={HTML5Backend}>
+            {comps.map((val, key) => {
+              return <DndComp key={key} id={val} index={key} comps={comps} setComps={setComps} clickedsensor={clickedsensor} setclickedsensor={setclickedsensor}
+                        // dvcDatas={dvcDatas} dvcDatetimes={dvcDatas.map((val) => val.data_reg_dt)} datetimeidx={datetimeidx} setdatetimeidx={setdatetimeidx}
+                      />
+            })}
+          </DndProvider>
+        </section>
+      </section> : <></>
+      }
 
     </section>
   );
