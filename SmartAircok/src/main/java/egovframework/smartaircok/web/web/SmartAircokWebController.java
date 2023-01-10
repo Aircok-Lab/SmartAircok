@@ -86,7 +86,6 @@ public class SmartAircokWebController {
 	@RequestMapping(value="/device/data/{sn}", method = RequestMethod.GET)
 	public void getDeviceData(
 			@PathVariable String sn,
-			@RequestParam(value = "cnt", required = false, defaultValue="10") int cnt,
 			@RequestParam(value = "st", required = false, defaultValue="") String st,
 			@RequestParam(value = "et", required = false, defaultValue="") String et,
 			HttpServletRequest request, HttpServletResponse response) throws Exception{
@@ -100,6 +99,7 @@ public class SmartAircokWebController {
 			selectDeviceData_param.put("sensors", getUsableSensorList(sn));
 			
 			// 사용가능한 센서만 출력
+//			List<Map<String, String>> mydata = smartaircokWebService.selectDeviceData(selectDeviceData_param);
 			List<Map<String, String>> mydata = smartaircokWebService.selectDeviceData(selectDeviceData_param);
 
 			responseData.put("data", mydata);

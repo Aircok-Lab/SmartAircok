@@ -2,13 +2,13 @@ import React from 'react'
 
 import GaugeBar from './GaugeBar';
 
-import { dataseq } from '../items/ItemSequences';
+import { dataseq, colorseq, getRange } from '../items/ItemSequences';
 
 import { GauGeInfoProps } from '../items/Interfaces';
 
 import './GaugeInfo.css'
 
-const GaugeInfo = ({gaugemap} : GauGeInfoProps) => {
+const GaugeInfo = ({dvcDatas} : GauGeInfoProps) => {
   return (
     <section className='gauge-info'>
       <span className='gauge-info-header'>
@@ -18,24 +18,22 @@ const GaugeInfo = ({gaugemap} : GauGeInfoProps) => {
 
       <ul className='gauge-info-data'>
         {dataseq.map((seqkey) => {
-            const myinfo : string[] = []
+            const mykey = Object.keys(dvcDatas)
+            if(mykey.includes(seqkey)){
+              const myval = Object.values(dvcDatas)[mykey.indexOf(seqkey)]
+  
+              const mystyle = colorseq.get(getRange(seqkey, myval))
 
-            gaugemap.forEach((paramval, paramkey) => {
-              if(seqkey === paramkey){
-                myinfo.push(paramkey)
-                myinfo.push(paramval)
-              }
-            })
-            
-            return myinfo.length === 0 ? <></> : (
-              <li className='gauge-info-data-li' key={myinfo[0]}> 
-                <p className='gauge-info-data-li-param'> {myinfo[0]} </p>
-  
-                <GaugeBar val={Number(myinfo[1])} color='#f2f2f2'/>
-  
-                <p className='gauge-info-data-li-val'> {myinfo[1]} </p>
-              </li>
-            )
+              return (
+                <li className='gauge-info-data-li' key={seqkey}> 
+                  <p className='gauge-info-data-li-param'> {seqkey} </p>
+    
+                  <GaugeBar val={Number(myval)} color={mystyle.color}/>
+    
+                  <p className='gauge-info-data-li-val'> {myval} </p>
+                </li>)
+            }
+            return <></>
         })}
       </ul>
     </section>

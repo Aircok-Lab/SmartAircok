@@ -9,7 +9,7 @@
 	
 	<select id="selectDeviceData" parameterType="hashmap" resultType="hashmap">
 		SELECT 
-			data_reg_dt,
+			data_reg_dt, iaq,
 		    <foreach collection="sensors" item="sensor" open="" close="" separator=",">
 		        COALESCE(
 		        	CASE WHEN LENGTH(${sensor}) = 0
@@ -50,4 +50,5 @@
 		FROM aircok.dvc_sensor
 		WHERE sn = #{sn};
 	</select>
+	
 </mapper>

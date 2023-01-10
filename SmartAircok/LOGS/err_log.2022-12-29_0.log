@@ -1,0 +1,27 @@
+[logback]2022-12-29 15:30:39 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2022-12-29 15:30:39 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2022-12-29 15:30:54 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2022-12-29 15:30:54 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2022-12-29 15:33:20 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2022-12-29 15:33:20 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2022-12-29 15:33:30 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2022-12-29 15:33:30 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/lists Exception LOGGER
+[logback]2022-12-29 15:35:05 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2022-12-29 15:35:05 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2022-12-29 15:36:18 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2022-12-29 15:36:18 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2022-12-29 15:40:42 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - 
+### Error querying database.  Cause: org.postgresql.util.PSQLException: 오류: recent.data_red_dt 칼럼 없음
+  Hint: 아마 "recent.data_reg_dt" 칼럼을 참조하는 것 같습니다.
+  Position: 19
+### The error may exist in file [D:\git\SmartAircok\SmartAircok\target\classes\egovframework\mapper\let\smartaircok\SmartAircokWeb_SQL_postgresql.xml]
+### The error may involve smartaircokWeb.selectDeviceLatestData-Inline
+### The error occurred while setting parameters
+### SQL: SELECT recent.sn, recent.data_red_dt, recent.pm10, recent.pm25, recent.tem, recent.hum, recent.iaq,    state.comm_badn, state.sensor_badn, state.power_badn, state.power_st   FROM aircok_device.dvc_recent_data AS recent   JOIN(    SELECT *    FROM aircok_device.dvc_st   ) AS state   ON state.sn = recent.sn   WHERE state.sn IN (     SELECT UNNEST(STRING_TO_ARRAY(dvc_list, ','))     FROM aircok.user_tb     WHERE user_id = ?    );
+### Cause: org.postgresql.util.PSQLException: 오류: recent.data_red_dt 칼럼 없음
+  Hint: 아마 "recent.data_reg_dt" 칼럼을 참조하는 것 같습니다.
+  Position: 19
+; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: 오류: recent.data_red_dt 칼럼 없음
+  Hint: 아마 "recent.data_reg_dt" 칼럼을 참조하는 것 같습니다.
+  Position: 19
+[logback]2022-12-29 15:40:42 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER

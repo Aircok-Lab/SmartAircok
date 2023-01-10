@@ -4,4 +4,6 @@ div[class^='dndcompnent'] {
 
 	/* width : 50%;
 	height : 50%; */
+
+	border : 1px solid white;
 }

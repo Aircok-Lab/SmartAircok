@@ -1,6 +1,8 @@
+import { DeviceDataProps } from '@/items/Interfaces'
+
 const DATAS = 'ActDatas/DATAS' as const;
 
-export const act_devicedatas = (datasVal : Map<string, Object>) => ({
+export const act_devicedatas = (datasVal : DeviceDataProps[]) => ({
   type : DATAS,
   payload : {
     datas : datasVal
@@ -12,22 +14,22 @@ type MyDeviceGlobalAction =
   | ReturnType<typeof act_devicedatas>;
 
 type MyDeviceGloblsType = {
-  devices : Map<string, string[]>
+  // devices : Map<string, string[]>
+  devices : DeviceDataProps[]
 };
   
 // state initalize
 const initState : MyDeviceGloblsType = {
-  devices : new Map<string, string[]>()
+  // devices : new Map<string, string[]>()
+  devices : []
 };
 
 const actDatas = (state : MyDeviceGloblsType = initState, action : MyDeviceGlobalAction) => {
   switch (action.type) {
     case DATAS :
-      const dataMap = new Map()
-      action.payload.datas.forEach((data, sn) => dataMap.set(sn, data))
       return {
         ...state,
-        devices : dataMap
+        devices : action.payload.datas
       };
     default :
       return state;
