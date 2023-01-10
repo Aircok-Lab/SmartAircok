@@ -4,10 +4,10 @@
   width : 15%;
   height : 100%;
 
-  color : #141414;
-  background-color : white;
+  color : #6C6C81;
+  background-color : #fff;
 
-  border-right : 1px solid #dddddd;
+  border-right : 1px solid #BCBCBC;
 }
 
 .aside-manage{
@@ -36,13 +36,14 @@
 }
 
 .aside-manage-li-radio-label:hover{
-  font-size : 110%;
-  color : #758cf7;
+  color : #6C8CF6;
+  font-weight: 500;
+  background-color: #dae2ff;
 }
 
 .aside-manage-li-radio:checked + .aside-manage-li-radio-label{
   font-size : 110%;
-  color : #758cf7;
+  color : #6C8CF6;
 
   border-radius: 0.3rem;
 
@@ -78,6 +79,8 @@
 }
 
 .aside-manage-li-radio-label-p{
+  font-size: 17px;
+  font-weight: 500;
   margin : 5% 0;
 }
 

@@ -11,7 +11,7 @@
 		"dshdata   dshdata   dshdetail  dshdetail";
   grid-template-rows : 1fr 8fr 5fr;
   grid-template-columns : repeat(4, 1fr);
-	gap: 2% 1%;
+	gap: 2.5% 2%;
 }
 
 
@@ -23,13 +23,13 @@
 .dashboard-title-main{
   margin : 0;
 
-  color : #4e4e4e;
+  color : #6C6C81;
   font-weight : bold;
   font-size: 150%;
 }
 
 .dashboard-title-time{
-  margin : 0.5em 0 0 1em;
+  margin : 0.5em 0 1em 0;
 
   color : #a0a0a0;
 }
@@ -45,10 +45,13 @@ section[class^='dashboard-body']{
 
   background-color: #ffffff;
 
-  border : 1px solid #dddddd;
-  border-radius: 5px;
+  /* border : 1px solid #dddddd; */
+  border-radius: 10px;
 
   overflow : auto;
+
+  color: #6C6C81;
+  font-size: 15px;
 }
 
 
@@ -59,8 +62,9 @@ section[class^='dashboard-body']{
 .dashboard-body-map-title{
   height : 5%;
 
-  font-weight : 600;
-  font-size: 110%;
+  font-weight : 500;
+  font-size: 20px;
+  color: #6C6C81;
 
   margin : 1% 1% 2% 2%;
 }
@@ -68,7 +72,7 @@ section[class^='dashboard-body']{
 .dashboard-body-map-container{
   position : relative;
 
-  margin : auto auto;
+  margin : 15px 5px;
 
   width : 92%;
   height : 78%;

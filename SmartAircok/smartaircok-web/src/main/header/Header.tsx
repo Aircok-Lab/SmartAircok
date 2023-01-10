@@ -27,12 +27,14 @@ const Header = () => {
           {useSelector((state : RootState) => state.actLogin.user)} 
         </div>
 
-        <Arrowico className='header-userinfo-exp' fill='black' transform={userinfo ? 'rotate(90)' : 'rotate(270)'} onClick={() => setuserinfo(!userinfo)}/>
+        <Arrowico className='header-userinfo-exp' fill='black' transform={userinfo ? 'rotate(270)' : 'rotate(90)'} onClick={() => setuserinfo(!userinfo)}/>
 
         {userinfo ? 
           <section className='header-userinfo'>
-            <button className='header-userinfo-logout' 
-              onClick={() => dispatch({ type: "SAGA_LOGOUT" })}/>
+            <input type='button' className='header-userinfo-logout' 
+              value='logout'
+              onClick={() => dispatch({ type: "SAGA_LOGOUT" })}
+            />
           </section> 
           : <></>
         }

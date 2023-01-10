@@ -45,16 +45,19 @@
 /* tabs */
 
 .data-tabs{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   width : 100%;
   height : 5%;
-
-  /* overflow : none; */
 }
 
 .data-tabs-ul {
+  width: 94%;
   height : 100%;
 
-  margin : 1% 0 0 0;
+  margin : 0;
   padding : 0;
 
   list-style : none;
@@ -89,7 +92,7 @@
   margin-right : 5%;
 }
 
-.data-tabs-li-etc {
+.data-tabs-popup-btn{
   display : flex;
   align-items: center;
   justify-content: center;
@@ -107,15 +110,6 @@
   border-radius : 8px;
 
   cursor : default;
-}
-
-.data-infos1{
-  width : 98%;
-  height : 85%;
-
-  padding: 1%;
-
-  background-color: #dddddd;
 }
 
 .data-infos{
@@ -138,19 +132,28 @@
 .data-iaq{
   grid-area : dataiaq;
 
-  padding : 5%;
+  padding : 3%;
 
   background-color: white;
   border-radius : 5px;
 }
 
+/**
+  Graph
+*/
 .data-graph{
   grid-area : datagraph;
 
-  padding : 5%;
+  padding : 2%;
 
   background-color: white;
   border-radius : 5px;
+}
+
+.data-graph-banner{
+  display : flex;
+  justify-content : space-between;
+  align-items : center;
 }
 
 .data-dnds{
