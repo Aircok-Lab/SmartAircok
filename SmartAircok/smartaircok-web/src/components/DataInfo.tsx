@@ -4,8 +4,8 @@ import { DataInfoProps } from '@/items/Interfaces';
 
 import './DataInfo.css'
 
-const DataInfo = ({gaugedatetimes, datetimeidx, setdatetimeidx} : DataInfoProps) => {
-  const selectTime = gaugedatetimes[datetimeidx]
+const DataInfo = ({dvcDatetimes, datetimeidx, setdatetimeidx} : DataInfoProps) => {
+  const selectTime = dvcDatetimes[datetimeidx]
   return (
     <div className='datainfo'>
       {new Date(selectTime).toLocaleString()}
@@ -13,7 +13,7 @@ const DataInfo = ({gaugedatetimes, datetimeidx, setdatetimeidx} : DataInfoProps)
       <section className='data-section-datetime'>
         <ul className='data-datetime-ul'>
           {
-            gaugedatetimes.map((val, key) => (
+            dvcDatetimes.map((val, key) => (
             <li className='data-datetime-li' 
               key={key}
               onClick={() => setdatetimeidx(key)}>

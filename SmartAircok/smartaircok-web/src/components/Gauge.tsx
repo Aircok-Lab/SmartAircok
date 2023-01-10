@@ -6,20 +6,9 @@ import { GaugeProps } from '../items/Interfaces';
 
 import './Gauge.css'
 
-const Gauge = ({gaugemap} : GaugeProps) => {
-  let gaugeparamsum = 0;
-  gaugemap.forEach((value, key) => {
-    switch (key) {
-      case 'co2' :
-        gaugeparamsum += Number(value) / 10
-        break;
-      default : 
-        gaugeparamsum += Number(value)
-        break;
-    }
-  });
-  // 통합공기질 치수 (임의로 평균으로 수행중)
-  const chartval = Math.floor((gaugeparamsum / gaugemap.size) * 10) / 10
+const Gauge = ({iaq} : GaugeProps) => {
+  // 통합공기질 치수
+  const chartval = iaq
 
   const gaugestartdegree : number = -20;
 

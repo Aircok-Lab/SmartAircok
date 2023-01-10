@@ -6,7 +6,7 @@ import { DevicePopupProps } from '@/items/Interfaces';
 
 import './PopupList.css'
 
-const PopupList = ({ popuplists, dvctab, dvclistpopup, setdvclistpopup, rerender_dvclists } : DevicePopupProps) => {
+const PopupList = ({ popuplists, dvctab, dvclistpopup, setdvclistpopup, rerenderDvclists } : DevicePopupProps) => {
   const [searchLists, setsearchlists] = useState<string[][]>(popuplists.slice(dvctab.current, popuplists.length))
 
   // 리스트 목록 클릭 ref
@@ -38,7 +38,7 @@ const PopupList = ({ popuplists, dvctab, dvclistpopup, setdvclistpopup, rerender
           <li className='data-tabs-popup-li' 
             key={key} 
             onClick={() => {
-              rerender_dvclists(searchLists.map((val) => val[0]).findIndex((param : string) => param.match(sn)) + dvctab.current)
+              rerenderDvclists(searchLists.map((val) => val[0]).findIndex((param : string) => param.match(sn)) + dvctab.current)
               dvctab.current = (dvctab.current + 1 > 5) ? 5 : dvctab.current + 1
             }}>
             <p className='data-tabs-popup-li-p'> {name} </p> 

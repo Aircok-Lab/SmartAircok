@@ -4,7 +4,7 @@ import GaugeBar from './GaugeBar';
 
 import { LatestDetailsProps } from '@/items/Interfaces'
 
-import { dashseq, categoriseq, colorseq } from '../items/ItemSequences'
+import { dashseq, categoriseq, colorseq, getRange } from '../items/ItemSequences'
 
 import { ReactComponent as Circleico } from '../img/circle.svg';
 
@@ -27,18 +27,18 @@ const LatestDetails = ({ latestdata } : LatestDetailsProps) => {
     }
   }
 
-  const detailtext = (chkval : number, rangelist : number[]) => {
-    for(var i = 0; i < rangelist.length; i++){
-    if(rangelist[i] > chkval)
-      return i
-    }
-    return 0
-  }
+  // function getRange(chkval : number, rangelist : number[]){
+  //   for(var i = 0; i < rangelist.length; i++){
+  //   if(rangelist[i] > chkval)
+  //     return i
+  //   }
+  //   return 0
+  // }
 
   return (
     <>
       {dashseq.map((val, key) => {
-          const mystyle = colorseq.get(detailtext(getValues(val), categoriseq.get(val).range))
+          const mystyle = colorseq.get(getRange(val, getValues(val)))
           return (
             <div className='detail-lists' key={key}>
               <div className='detail-list-name'> 

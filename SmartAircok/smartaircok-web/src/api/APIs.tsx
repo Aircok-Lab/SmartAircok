@@ -1,6 +1,6 @@
 import axios, { AxiosInstance, AxiosResponse } from 'axios';
 
-import { LoginProps } from '../items/Interfaces';
+import { LoginProps, DeviceAPIProps } from '../items/Interfaces';
 
 // API 헤더 설정
 const aircok_axios: AxiosInstance = axios.create({
@@ -61,10 +61,11 @@ export const deviceListsAPI = async () => {
 }
 
 // 장비 데이터 API
-export const deviceDataAPI = async (sn : string) => {
+export const deviceDataAPI = async (params : DeviceAPIProps) => {
+  console.log(params)
   try{
     const data : AxiosResponse = await aircok_axios.get(
-      '/device/data/' + sn
+      '/device/data/' + params.sn + '?st=' + params.st + '&et=' + params.et
     );
 
     return data;

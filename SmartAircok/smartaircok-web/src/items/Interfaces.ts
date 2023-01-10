@@ -40,7 +40,7 @@ export interface ArticleProps{
 
 // Data Info
 export interface DataInfoProps{
-  gaugedatetimes : number[]
+  dvcDatetimes : number[]
   datetimeidx : number
   setdatetimeidx : Function
 }
@@ -48,13 +48,13 @@ export interface DataInfoProps{
 
 // Gauge
 export interface GaugeProps {
-  gaugemap : Map<string, any>
+  iaq : number
 }
 
 
 // Gauge Info
 export interface GauGeInfoProps {
-  gaugemap : Map<string, any>
+  dvcDatas : DeviceDataProps
 }
 
 export interface GaugeBarProps {
@@ -65,8 +65,7 @@ export interface GaugeBarProps {
 
 // Radar
 export interface RadarProps {
-  gaugelabels : string[]
-  gaugedatas : number[]
+  dvcDatas : DeviceDataProps
 }
 
 
@@ -136,6 +135,31 @@ export interface BlpProps{
 /**
  * monitoring/data
  */
+export interface DeviceAPIProps{
+  sn : string
+  st : string | null
+  et : string | null
+}
+
+export interface DeviceDataProps{
+  data_reg_dt : number
+  pm1 : string | null
+  pm25 : string | null
+  pm10 : string | null
+  tem : string | null
+  hum : string | null
+  hcho : string | null
+  co2 : string | null
+  co : string | null
+  vocs : string | null
+  reserve1 : string | null
+  reserve2 : string | null
+  reserve3 : string | null
+  reserve4 : string | null
+  reserve5 : string | null
+  iaq : number
+}
+
 export interface MonitoringProps{
   cn : number
   setasidelistchk : Function
@@ -160,21 +184,21 @@ export interface DevicePopupProps{
   dvctab : React.MutableRefObject<number>
   dvclistpopup : boolean
   setdvclistpopup : Function
-  rerender_dvclists : Function
+  rerenderDvclists : Function
 }
 
 export interface DndProps {
   id : string
   index : number
-  // moveComp : ({ id, index }: CompProps) => void
-  moveComp : Function
-  // gaugeparam : Map<string, any>[]
-  gaugemap : Map<string, any>
-  gaugelabels : string[]
-  gaugedatas : number[]
-  gaugedatetimes : number[]
-  datetimeidx : number
-  setdatetimeidx : Function
+  comps : string[]
+  setComps : Function
+  clickedsensor : string
+  setclickedsensor : Function
+
+  // dvcDatas : DeviceDataProps[]
+  // dvcDatetimes : number[]
+  // datetimeidx : number
+  // setdatetimeidx : Function
 }
 
 export interface CompProps {

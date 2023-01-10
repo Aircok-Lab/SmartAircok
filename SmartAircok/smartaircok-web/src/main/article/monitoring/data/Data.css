@@ -48,20 +48,20 @@
   width : 100%;
   height : 5%;
 
-  overflow : none;
+  /* overflow : none; */
 }
 
 .data-tabs-ul {
   height : 100%;
 
-  margin : 1% 0;
+  margin : 1% 0 0 0;
   padding : 0;
 
   list-style : none;
 }
 
 .data-tabs-li {
-  width : 10%;
+  width : 12%;
   height : inherit;
 
   margin-right : 1%;
@@ -84,15 +84,22 @@
   border-left : 2px solid #f3f3f3;
 }
 
+.data-tabs-li-close{
+  width : 10%;
+  margin-right : 5%;
+}
+
 .data-tabs-li-etc {
   display : flex;
   align-items: center;
   justify-content: center;
-
-  width : 4%;
-  height : 90%;
   
   float : right;
+
+  width : 4%;
+  height : 70%;
+
+  margin-right : 2%;
 
   background-color : #ffffff;
 
@@ -102,8 +109,65 @@
   cursor : default;
 }
 
-.data-infos{
-  width : 100%;
+.data-infos1{
+  width : 98%;
   height : 85%;
+
+  padding: 1%;
+
   background-color: #dddddd;
+}
+
+.data-infos{
+  display : grid;
+  grid-template-areas:
+    "dataiaq  datagraph"
+    "datadnds datadnds";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows : 1fr 1fr;
+  grid-gap : 2%;
+
+  width : 98%;
+  height : 85%;
+
+  padding: 1%;
+
+  background-color: #dddddd;
+}
+
+.data-iaq{
+  grid-area : dataiaq;
+
+  padding : 5%;
+
+  background-color: white;
+  border-radius : 5px;
+}
+
+.data-graph{
+  grid-area : datagraph;
+
+  padding : 5%;
+
+  background-color: white;
+  border-radius : 5px;
+}
+
+.data-dnds{
+  grid-area : datadnds;
+
+  display : grid;
+  /* grid-template-areas:
+    "div div div div"
+    "div div div div";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr); */
+  grid-gap : 2%;
+
+  width : 100%;
+}
+
+.data-dnds > * {
+  background-color: white;
+  border-radius : 5px;
 }
