@@ -9,7 +9,8 @@ import { HTML5Backend } from 'react-dnd-html5-backend';
 import PopupList from './PopupList'
 import DndComp from './DndComp'
 import DatePicker from '../../../../components/DatePicker'
-// import Gauge from '../../../../components/Gauge'
+import GaugeChart from '../../../../components/GaugeChart'
+import LineChart from '../../../../components/LineChart'
 
 import { categoriseq } from '../../../../items/ItemSequences'
 
@@ -49,7 +50,7 @@ const Data = ({ popuplists, setpopuplists, dvctab } : MonitoringDataProps) => {
         et : endDate.getTime()
       }
     })
-  }, [dvclistchk])
+  }, [dvclistchk, startDate, endDate])
 
   useEffect(() => {
     if(dvcDatas.length > 0){
@@ -138,21 +139,29 @@ const Data = ({ popuplists, setpopuplists, dvctab } : MonitoringDataProps) => {
           <PopupList popuplists={popuplists} dvctab={dvctab} dvclistpopup={dvclistpopup} setdvclistpopup={setdvclistpopup} rerenderDvclists={rerenderDvclists} /> 
           : <></>}
 
-      {clickedsensor ? 
+      {(dvcDatas.length > 0 && clickedsensor) ? 
       <section className='data-infos'>
         <section className='data-iaq'> 
           <p className='data-iqa-title'> 통합공기질 </p>
+          <GaugeChart iaq={dvcDatas[dvcDatas.length - 1].iaq}/>
         </section>
+
         <section className='data-graph'> 
           <section className='data-graph-banner'> 
             <p className='data-graph-title'> {categoriseq.get(clickedsensor).text + '(' + categoriseq.get(clickedsensor).eng + ')'} </p>
-            <DatePicker startDate={startDate} setStartDate={setStartDate} endDate={endDate} setEndDate={setEndDate}/>
+            <DatePicker startDate={startDate} setStartDate={setStartDate} endDate={endDate} setEndDate={setEndDate} />
           </section>
+          <LineChart datas={dvcDatas} sensor={clickedsensor} />
         </section>
+
         <section className='data-dnds' style={{gridTemplateAreas:mygrid[0], gridTemplateColumns:mygrid[1]}}>
           <DndProvider backend={HTML5Backend}>
             {comps.map((val, key) => {
-              return <DndComp key={key} id={val} index={key} comps={comps} setComps={setComps} clickedsensor={clickedsensor} setclickedsensor={setclickedsensor}
+              return <DndComp key={key} id={val} index={key} 
+                        comps={comps} setComps={setComps}
+                        sensorvalue={new Map(Object.entries(dvcDatas[dvcDatas.length - 1])).get(val)}
+                        clickedsensor={clickedsensor} setclickedsensor={setclickedsensor}
+
                         // dvcDatas={dvcDatas} dvcDatetimes={dvcDatas.map((val) => val.data_reg_dt)} datetimeidx={datetimeidx} setdatetimeidx={setdatetimeidx}
                       />
             })}

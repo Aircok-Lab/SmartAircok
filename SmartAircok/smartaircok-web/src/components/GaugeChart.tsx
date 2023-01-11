@@ -2,14 +2,12 @@ import React, { useState, useEffect, useRef } from 'react'
 
 // import {ChartType } from './Auth';
 
-import { GaugeProps } from '../items/Interfaces';
+import { GaugeChartProps } from '../items/Interfaces';
 
-import './Gauge.css'
+import './GaugeChart.css'
 
-const Gauge = ({iaq} : GaugeProps) => {
+const GaugeChart = ({iaq} : GaugeChartProps) => {
   // 통합공기질 치수
-  const chartval = iaq
-
   const gaugestartdegree : number = -20;
 
   const [gaugedegree, setgaugedegree] = useState<number>(gaugestartdegree);
@@ -21,14 +19,14 @@ const Gauge = ({iaq} : GaugeProps) => {
     savedCallback.current = gaugestartdegree;
 
     const bg_func = setInterval(() => {
-      if(savedCallback.current >= 3.6 * chartval + gaugestartdegree){
+      if(savedCallback.current >= 3.6 * iaq + gaugestartdegree){
         clearInterval(bg_func);
       }
       else{
         setgaugedegree(savedCallback.current++);
       }
     }, 3);
-  }, [chartval]);
+  }, [iaq]);
 
   const polarToCartesian = (centerX : number, centerY : number, radius : number, angleInDegrees : number) => {
     const angleInRadians = (angleInDegrees-90) * Math.PI / 180.0;
@@ -54,9 +52,9 @@ const Gauge = ({iaq} : GaugeProps) => {
   }
 
   return (
-    <svg className='gauge-chart' viewBox='0 0 24 24'>
+    <svg className='gaugechart' viewBox='0 0 24 24'>
       <circle 
-        className='chart-bg'
+        className='gaugechart-bg'
         cx='12'
         cy='12'
         r='10'
@@ -66,7 +64,7 @@ const Gauge = ({iaq} : GaugeProps) => {
       />
 
       <path 
-        className='chart-value'
+        className='gaugechart-value'
         fill='none'
         stroke='#f9b10a'
         strokeWidth='2'
@@ -74,16 +72,16 @@ const Gauge = ({iaq} : GaugeProps) => {
         d={describeArc(12, 12, 10, gaugestartdegree, gaugedegree)}
       />
 
-      <text className='chart-value-text'
+      <text className='gaugechart-value-text'
         x='50%'
         y='50%'
         dominantBaseline="middle"
         textAnchor="middle"
       > 
-        {chartval}%
+        {iaq}%
       </text>
     </svg>
   );
 }
 
-export default Gauge;
+export default GaugeChart;

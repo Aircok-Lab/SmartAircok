@@ -45,27 +45,36 @@ export interface DataInfoProps{
   setdatetimeidx : Function
 }
 
-
-// Gauge
-export interface GaugeProps {
-  iaq : number
-}
-
-
 // Gauge Info
 export interface GauGeInfoProps {
   dvcDatas : DeviceDataProps
 }
 
-export interface GaugeBarProps {
+
+// Gauge
+export interface GaugeChartProps {
+  iaq : number
+}
+
+
+// Line Chart
+export interface LineChartProps{
+  datas : DeviceDataProps[]
+  sensor : string
+}
+
+
+// Bar
+export interface BarProps {
   val : number
   color : string
 }
 
 
 // Radar
-export interface RadarProps {
-  dvcDatas : DeviceDataProps
+export interface RadarChartProps {
+  datas : DeviceDataProps[]
+  sensor : string
 }
 
 
@@ -81,6 +90,49 @@ export interface SearchProps{
   lists : any[]
   listopt : number
   setFunc : Function
+}
+
+// Calendar
+export interface DatePickerProps{
+  startDate : Date
+  setStartDate : Function
+  endDate : Date
+  setEndDate : Function
+}
+
+export interface CalendarProps{
+  sdate : Date
+  edate : Date
+  type : string
+  setDate : Function
+}
+
+
+// Chatbot
+export interface ChatActionProps{
+  createChatBotMessage : Function
+  setState : Function
+  children : any
+}
+
+export interface ChatMessageProps{
+  children : any
+  actions : any
+}
+
+export interface ChatAnswerProps{
+  text : string
+  handler : any
+  id : number
+}
+
+export interface ChatAnswersProps{
+  chatbot_options : ChatAnswerProps[]
+}
+
+export interface ChatOptionProps{
+  event : any
+  type : string
 }
 
 
@@ -143,15 +195,15 @@ export interface DeviceAPIProps{
 
 export interface DeviceDataProps{
   data_reg_dt : number
-  pm1 : string | null
-  pm25 : string | null
-  pm10 : string | null
-  tem : string | null
-  hum : string | null
-  hcho : string | null
-  co2 : string | null
-  co : string | null
-  vocs : string | null
+  pm1 : number | null
+  pm25 : number | null
+  pm10 : number | null
+  tem : number | null
+  hum : number | null
+  hcho : number | null
+  co2 : number | null
+  co : number | null
+  vocs : number | null
   reserve1 : string | null
   reserve2 : string | null
   reserve3 : string | null
@@ -193,6 +245,7 @@ export interface DndProps {
   comps : string[]
   setComps : Function
   clickedsensor : string
+  sensorvalue : number
   setclickedsensor : Function
 
   // dvcDatas : DeviceDataProps[]
@@ -204,48 +257,4 @@ export interface DndProps {
 export interface CompProps {
   id : string
   index : number
-}
-
-
-// Calendar
-export interface DatePickerProps{
-  startDate : Date
-  setStartDate : Function
-  endDate : Date
-  setEndDate : Function
-}
-
-export interface CalendarProps{
-  sdate : Date
-  edate : Date
-  type : string
-  setDate : Function
-}
-
-
-// Chatbot
-export interface ChatActionProps{
-  createChatBotMessage : Function
-  setState : Function
-  children : any
-}
-
-export interface ChatMessageProps{
-  children : any
-  actions : any
-}
-
-export interface ChatAnswerProps{
-  text : string
-  handler : any
-  id : number
-}
-
-export interface ChatAnswersProps{
-  chatbot_options : ChatAnswerProps[]
-}
-
-export interface ChatOptionProps{
-  event : any
-  type : string
 }

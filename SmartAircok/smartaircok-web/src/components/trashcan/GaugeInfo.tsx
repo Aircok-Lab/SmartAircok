@@ -1,10 +1,11 @@
 import React from 'react'
 
-import GaugeBar from './GaugeBar';
+import Bar from '../Bar';
 
-import { dataseq, colorseq, getRange } from '../items/ItemSequences';
+import { dataseq } from '../../items/ItemSequences';
+import { getDataStyle } from '../../items/Functions';
 
-import { GauGeInfoProps } from '../items/Interfaces';
+import { GauGeInfoProps } from '../../items/Interfaces';
 
 import './GaugeInfo.css'
 
@@ -22,13 +23,13 @@ const GaugeInfo = ({dvcDatas} : GauGeInfoProps) => {
             if(mykey.includes(seqkey)){
               const myval = Object.values(dvcDatas)[mykey.indexOf(seqkey)]
   
-              const mystyle = colorseq.get(getRange(seqkey, myval))
+              const mystyle = getDataStyle(seqkey, myval)
 
               return (
                 <li className='gauge-info-data-li' key={seqkey}> 
                   <p className='gauge-info-data-li-param'> {seqkey} </p>
     
-                  <GaugeBar val={Number(myval)} color={mystyle.color}/>
+                  <Bar val={Number(myval)} color={mystyle.color}/>
     
                   <p className='gauge-info-data-li-val'> {myval} </p>
                 </li>)

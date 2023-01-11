@@ -6,7 +6,7 @@ import { RootState } from '@/items/RootReducer'
 import Header from './header/Header'
 import Aside from './aside/Aside'
 import Article from './article/Article'
-import Chatbot from '../chatbot/Chatbot'
+// import Chatbot from '../chatbot/Chatbot'
 
 import Loading from './Loading'
 
@@ -39,7 +39,7 @@ const Main = () => {
       <main className='aircok-main'>
         <Aside asidelistchk={asidelistchk} setasidelistchk={setasidelistchk}/>
         <Article asidelistchk={asidelistchk} setasidelistchk={setasidelistchk}/>
-        <Chatbot/>
+        {/* <Chatbot/> */}
       </main>
     </div>
   )
