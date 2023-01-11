@@ -17,9 +17,10 @@
 .device-title{
   grid-area : dvctitle;
 
-  color : #4e4e4e;
+  margin-bottom: 15px;
+  color : #6C6C81;
   font-weight : bold;
-  font-size: 150%;
+  font-size: 23px;
 }
 
 /* sensor states */
@@ -36,14 +37,15 @@
 
   padding : 0 2%;
 
-  /* border-radius: 0.4rem 0.4rem 0 0; */
-  background-color: white;
+  border-radius: 7px 7px 0 0;
+  background-color: #fff;
+  font-size: 17px;
 }
 
 .device-state > p{
-  color : #4e4e4e;
-  font-size : 110%;
-  font-weight : bold;
+  color : #6C6C81;
+  font-size : 17px;
+  font-weight : 500;
 
   margin : 7% 0;
 }
@@ -57,7 +59,7 @@
 
 .device-search-val{
   width : 90%;
-  height : 100%;
+  height : 35px;
 
   background-color : #e0e0e0;
   border-radius : 1rem;
@@ -74,14 +76,9 @@
 
   margin : 0;
   padding : 0;
-  /* padding : 5%; */
 
-  background-color: #ffffff;
-
-  /* border : 1px solid #dddddd;
-  border-radius: 5px; */
-
-  list-style : none;
+  background-color: #fff;
+  border-radius: 7px;
 
   overflow : auto;
 }
@@ -99,6 +96,9 @@
   border-left: 3px solid white;
 
   cursor : default;
+
+  font-size: 15px;
+  color: #6C6C81;
 }
 
 .device-li:hover{
@@ -111,17 +111,21 @@
 
   display : flex;
 
-  margin-top : 1%;
+  margin: 5px 0 0 10px;
 }
 
 .device-infoindex{
-  width : 15%;
+  width : 17.5%;
 
-  color : #4e4e4e;
+  color : #6C6C81;
   font-weight : bold;
-  font-size: 110%;
+  font-size: 17px;
 
-  text-align : center;
+  text-align : left;
+}
+
+.device-infoindex:last-child {
+  margin-left: 16px;
 }
 
 .device-infos{
@@ -130,7 +134,12 @@
   overflow : hidden auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
+
+  color: #6C6C81;
+  font-size: 15px;
+  text-align: left;
 }
+
 .device-infos::-webkit-scrollbar {
   display: none;
 }
@@ -138,7 +147,7 @@
 .device-info{
   display : flex;
   align-items : center;
-  text-align : center;
+  text-align : left;
 
   height : 10%;
 
@@ -150,6 +159,7 @@
 
   /* border : 1px solid #dddddd;
   border-radius: 5px; */
+  border-radius: 7px;
 }
 
 .device-info:last-child{
@@ -157,7 +167,9 @@
 }
 
 .device-info-name{
-  width : 15%;  
+  width : 15%;
+  margin: 0 20px 0 10px;
+
 }
 
 .device-info-time{
@@ -173,7 +185,7 @@
   display : flex;
   align-items: center;
 
-  margin-left : 5%;
+  margin-left : 15px;
 
   width : 10%;
 }
@@ -188,7 +200,7 @@
   grid-area : dvcinfos;
   margin : auto;
 
-  color : #4e4e4e;
+  color : #6C6C81;
   font-weight : bold;
   font-size: 180%;
 }

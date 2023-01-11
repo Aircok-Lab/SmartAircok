@@ -66,7 +66,9 @@ const Device = ({ dvclists, searchlists, setsearchlists, monitoringDvcClick } : 
 							style={{
 								borderBottom : (dvsstatechk.includes(seq.val)) ? ('3px solid ' + seq.color) : '3px solid #dddddd',
 								marginRight : (key < 2) ? '2%' : '',
-								width : (key < 3) ? '12%' : '8%'
+								width : (key < 3) ? '12%' : '8%',
+								borderTopRightRadius : (key < 2) || key === 6 ? '7px' : '',
+								borderTopLeftRadius : (key < 3) ? '7px' : ''
 							}}
 							onClick={() => setdvcstatechk(seq.val)}>
 							<p className='device-state-title'> {seq.label} </p>

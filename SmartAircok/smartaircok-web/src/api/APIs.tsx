@@ -4,9 +4,9 @@ import { LoginProps, DeviceAPIProps } from '../items/Interfaces';
 
 // API 헤더 설정
 const aircok_axios: AxiosInstance = axios.create({
-  baseURL: 'http://localhost:11116',
+  baseURL: 'http://192.168.0.83:11116',
   headers : {
-    "Access-Control-Allow-Origin" : "http://localhost:11116"
+    "Access-Control-Allow-Origin" : "http://192.168.0.83:11116"
   }
 })
 aircok_axios.defaults.withCredentials = true;
