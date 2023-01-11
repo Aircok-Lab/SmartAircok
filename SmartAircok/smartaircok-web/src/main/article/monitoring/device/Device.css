@@ -155,7 +155,7 @@
 
   background-color: #ffffff;
 
-  border-left: 4px solid white;
+  /* border-left: 4px solid white; */
 
   /* border : 1px solid #dddddd;
   border-radius: 5px; */
@@ -167,9 +167,18 @@
 }
 
 .device-info-name{
-  width : 15%;
-  margin: 0 20px 0 10px;
+  /* width : 15%;
+  margin: 0 20px 0 10px; */
+  display: flex;
+  align-items: center;
 
+  width: 15%;
+  height: 100%;
+
+  margin: 0 20px 0 0;
+  padding-left: 10px;
+
+  border-left: 4px solid white;
 }
 
 .device-info-time{
