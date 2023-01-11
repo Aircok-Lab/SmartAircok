@@ -1,12 +1,14 @@
 import React from 'react'
 
-import GaugeBar from './GaugeBar';
+import Bar from '../../../../components/Bar';
 
 import { LatestDetailsProps } from '@/items/Interfaces'
 
-import { dashseq, categoriseq, colorseq, getRange } from '../items/ItemSequences'
+import { getDataStyle } from '../../../../items/Functions'
 
-import { ReactComponent as Circleico } from '../img/circle.svg';
+import { dashseq, categoriseq } from '../../../../items/ItemSequences'
+
+import { ReactComponent as Circleico } from '../../../../img/circle.svg';
 
 import './LatestDetails.css'
 
@@ -27,18 +29,11 @@ const LatestDetails = ({ latestdata } : LatestDetailsProps) => {
     }
   }
 
-  // function getRange(chkval : number, rangelist : number[]){
-  //   for(var i = 0; i < rangelist.length; i++){
-  //   if(rangelist[i] > chkval)
-  //     return i
-  //   }
-  //   return 0
-  // }
-
   return (
     <>
       {dashseq.map((val, key) => {
-          const mystyle = colorseq.get(getRange(val, getValues(val)))
+          const myval = getValues(val)
+          const mystyle = getDataStyle(val, myval)
           return (
             <div className='detail-lists' key={key}>
               <div className='detail-list-name'> 
@@ -49,10 +44,10 @@ const LatestDetails = ({ latestdata } : LatestDetailsProps) => {
                 {mystyle.text}
               </div>
               <div className='detail-list-bar'> 
-                <GaugeBar val={getValues(val)} color={mystyle.color}/>
+                <Bar val={myval} color={mystyle.color}/>
               </div>
               <div className='detail-list-val'> 
-                {getValues(val)} 
+                {myval} 
               </div>
             </div>
           )

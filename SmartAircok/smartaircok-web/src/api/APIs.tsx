@@ -62,7 +62,6 @@ export const deviceListsAPI = async () => {
 
 // 장비 데이터 API
 export const deviceDataAPI = async (params : DeviceAPIProps) => {
-  console.log(params)
   try{
     const data : AxiosResponse = await aircok_axios.get(
       '/device/data/' + params.sn + '?st=' + params.st + '&et=' + params.et

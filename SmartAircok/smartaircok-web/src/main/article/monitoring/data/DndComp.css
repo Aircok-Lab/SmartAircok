@@ -1,9 +1,23 @@
-div[class^='dndcompnent'] {
-	display : flex;
-	justify-content: center;
+.dndcompnent {
+	/* display : flex;
+	justify-content: center; */
 
 	/* width : 50%;
 	height : 50%; */
 
 	border : 1px solid white;
+}
+
+.dndcompnent-title{
+  margin-left : 5%;
+}
+
+.dndcompnent-value{
+	text-align : center;
+}
+
+.dndcompnent > svg{
+  width : 90%;
+  height: 10%;
+  margin-left : 5%;
 }

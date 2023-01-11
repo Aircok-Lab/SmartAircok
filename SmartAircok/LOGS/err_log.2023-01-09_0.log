@@ -1,0 +1,68 @@
+[logback]2023-01-09 09:31:43 [XNIO-1 task-3] ERROR e.smartaircok.SmartAircokApplication - 
+### Error updating database.  Cause: org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzMyMjQzMDMsImV4cCI6MTY3NDQzMzkwMywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xDgfTvw37P0S6k9MHeeVPaV7JT7HYfQSPXGaOuUggiA, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzMyMjQzMDMsImV4cCI6MTY3NDQzMzkwMywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xDgfTvw37P0S6k9MHeeVPaV7JT7HYfQSPXGaOuUggiA) 키가 이미 있습니다.
+### The error may exist in file [D:\git\SmartAircok\SmartAircok\target\classes\egovframework\mapper\let\smartaircok\SmartAircokLogin_SQL_postgresql.xml]
+### The error may involve smartaircokLogin.insertRefreshToken-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO aircok.user_token   VALUES (    ?,    ?   );
+### Cause: org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzMyMjQzMDMsImV4cCI6MTY3NDQzMzkwMywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xDgfTvw37P0S6k9MHeeVPaV7JT7HYfQSPXGaOuUggiA, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzMyMjQzMDMsImV4cCI6MTY3NDQzMzkwMywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xDgfTvw37P0S6k9MHeeVPaV7JT7HYfQSPXGaOuUggiA) 키가 이미 있습니다.
+; 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzMyMjQzMDMsImV4cCI6MTY3NDQzMzkwMywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xDgfTvw37P0S6k9MHeeVPaV7JT7HYfQSPXGaOuUggiA, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzMyMjQzMDMsImV4cCI6MTY3NDQzMzkwMywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xDgfTvw37P0S6k9MHeeVPaV7JT7HYfQSPXGaOuUggiA) 키가 이미 있습니다.; nested exception is org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzMyMjQzMDMsImV4cCI6MTY3NDQzMzkwMywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xDgfTvw37P0S6k9MHeeVPaV7JT7HYfQSPXGaOuUggiA, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzMyMjQzMDMsImV4cCI6MTY3NDQzMzkwMywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xDgfTvw37P0S6k9MHeeVPaV7JT7HYfQSPXGaOuUggiA) 키가 이미 있습니다.
+[logback]2023-01-09 09:31:43 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - 
+### Error updating database.  Cause: org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzMyMjQzMDMsImV4cCI6MTY3NDQzMzkwMywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xDgfTvw37P0S6k9MHeeVPaV7JT7HYfQSPXGaOuUggiA, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzMyMjQzMDMsImV4cCI6MTY3NDQzMzkwMywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xDgfTvw37P0S6k9MHeeVPaV7JT7HYfQSPXGaOuUggiA) 키가 이미 있습니다.
+### The error may exist in file [D:\git\SmartAircok\SmartAircok\target\classes\egovframework\mapper\let\smartaircok\SmartAircokLogin_SQL_postgresql.xml]
+### The error may involve smartaircokLogin.insertRefreshToken-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO aircok.user_token   VALUES (    ?,    ?   );
+### Cause: org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzMyMjQzMDMsImV4cCI6MTY3NDQzMzkwMywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xDgfTvw37P0S6k9MHeeVPaV7JT7HYfQSPXGaOuUggiA, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzMyMjQzMDMsImV4cCI6MTY3NDQzMzkwMywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xDgfTvw37P0S6k9MHeeVPaV7JT7HYfQSPXGaOuUggiA) 키가 이미 있습니다.
+; 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzMyMjQzMDMsImV4cCI6MTY3NDQzMzkwMywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xDgfTvw37P0S6k9MHeeVPaV7JT7HYfQSPXGaOuUggiA, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzMyMjQzMDMsImV4cCI6MTY3NDQzMzkwMywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xDgfTvw37P0S6k9MHeeVPaV7JT7HYfQSPXGaOuUggiA) 키가 이미 있습니다.; nested exception is org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzMyMjQzMDMsImV4cCI6MTY3NDQzMzkwMywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xDgfTvw37P0S6k9MHeeVPaV7JT7HYfQSPXGaOuUggiA, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzMyMjQzMDMsImV4cCI6MTY3NDQzMzkwMywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.xDgfTvw37P0S6k9MHeeVPaV7JT7HYfQSPXGaOuUggiA) 키가 이미 있습니다.
+[logback]2023-01-09 09:31:43 [XNIO-1 task-3] ERROR e.smartaircok.SmartAircokApplication - /login/user Exception LOGGER
+[logback]2023-01-09 09:31:43 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - /login/user Exception LOGGER
+[logback]2023-01-09 09:48:49 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - nested exception is org.apache.ibatis.builder.BuilderException: The expression 'sensors' evaluated to a null value.
+[logback]2023-01-09 09:48:49 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - /device/data/undefined Exception LOGGER
+[logback]2023-01-09 10:23:22 [XNIO-1 task-3] ERROR e.smartaircok.SmartAircokApplication - nested exception is org.apache.ibatis.builder.BuilderException: The expression 'sensors' evaluated to a null value.
+[logback]2023-01-09 10:23:22 [XNIO-1 task-3] ERROR e.smartaircok.SmartAircokApplication - /device/data/undefined Exception LOGGER
+[logback]2023-01-09 10:23:22 [XNIO-1 task-3] ERROR e.smartaircok.SmartAircokApplication - nested exception is org.apache.ibatis.builder.BuilderException: The expression 'sensors' evaluated to a null value.
+[logback]2023-01-09 10:23:22 [XNIO-1 task-3] ERROR e.smartaircok.SmartAircokApplication - /device/data/undefined Exception LOGGER
+[logback]2023-01-09 10:24:20 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - nested exception is org.apache.ibatis.builder.BuilderException: The expression 'sensors' evaluated to a null value.
+[logback]2023-01-09 10:24:20 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - /device/data/undefined Exception LOGGER
+[logback]2023-01-09 10:24:20 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - nested exception is org.apache.ibatis.builder.BuilderException: The expression 'sensors' evaluated to a null value.
+[logback]2023-01-09 10:24:20 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - /device/data/undefined Exception LOGGER
+[logback]2023-01-09 10:25:40 [XNIO-1 task-3] ERROR e.smartaircok.SmartAircokApplication - nested exception is org.apache.ibatis.builder.BuilderException: The expression 'sensors' evaluated to a null value.
+[logback]2023-01-09 10:25:40 [XNIO-1 task-3] ERROR e.smartaircok.SmartAircokApplication - /device/data/undefined Exception LOGGER
+[logback]2023-01-09 10:25:40 [XNIO-1 task-3] ERROR e.smartaircok.SmartAircokApplication - nested exception is org.apache.ibatis.builder.BuilderException: The expression 'sensors' evaluated to a null value.
+[logback]2023-01-09 10:25:40 [XNIO-1 task-3] ERROR e.smartaircok.SmartAircokApplication - /device/data/undefined Exception LOGGER
+[logback]2023-01-09 11:05:11 [XNIO-4 task-2] ERROR e.smartaircok.SmartAircokApplication - nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 15
+[logback]2023-01-09 11:05:11 [XNIO-4 task-1] ERROR e.smartaircok.SmartAircokApplication - nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 15
+[logback]2023-01-09 11:05:11 [XNIO-4 task-2] ERROR e.smartaircok.SmartAircokApplication - /device/data/2211IL0008 Exception LOGGER
+[logback]2023-01-09 11:05:11 [XNIO-4 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/data/2211IL0008 Exception LOGGER
+[logback]2023-01-09 11:22:55 [XNIO-2 task-2] ERROR e.smartaircok.SmartAircokApplication - 
+### Error querying database.  Cause: org.postgresql.util.PSQLException: 오류: 구문 오류, "(" 부근
+  Position: 57
+### The error may exist in file [D:\git\SmartAircok\SmartAircok\target\classes\egovframework\mapper\let\smartaircok\SmartAircokWeb_SQL_postgresql.xml]
+### The error may involve smartaircokWeb.selectDeviceData-Inline
+### The error occurred while setting parameters
+### SQL: SELECT     data_reg_dt, iaq                     COALESCE(            CASE WHEN LENGTH(pm10) = 0             THEN NULL             ELSE pm10            END, '0') as pm10        ,            COALESCE(            CASE WHEN LENGTH(co2) = 0             THEN NULL             ELSE co2            END, '0') as co2        ,            COALESCE(            CASE WHEN LENGTH(reserve3) = 0             THEN NULL             ELSE reserve3            END, '0') as reserve3        ,            COALESCE(            CASE WHEN LENGTH(pm1) = 0             THEN NULL             ELSE pm1            END, '0') as pm1        ,            COALESCE(            CASE WHEN LENGTH(reserve2) = 0             THEN NULL             ELSE reserve2            END, '0') as reserve2        ,            COALESCE(            CASE WHEN LENGTH(pm25) = 0             THEN NULL             ELSE pm25            END, '0') as pm25        ,            COALESCE(            CASE WHEN LENGTH(hum) = 0             THEN NULL             ELSE hum            END, '0') as hum        ,            COALESCE(            CASE WHEN LENGTH(co) = 0             THEN NULL             ELSE co            END, '0') as co        ,            COALESCE(            CASE WHEN LENGTH(vocs) = 0             THEN NULL             ELSE vocs            END, '0') as vocs            FROM aircok_device.dvc_2211IL0008   WHERE data_reg_dt > ?   ORDER BY data_reg_dt;
+### Cause: org.postgresql.util.PSQLException: 오류: 구문 오류, "(" 부근
+  Position: 57
+; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: 오류: 구문 오류, "(" 부근
+  Position: 57
+[logback]2023-01-09 11:22:55 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - 
+### Error querying database.  Cause: org.postgresql.util.PSQLException: 오류: 구문 오류, "(" 부근
+  Position: 57
+### The error may exist in file [D:\git\SmartAircok\SmartAircok\target\classes\egovframework\mapper\let\smartaircok\SmartAircokWeb_SQL_postgresql.xml]
+### The error may involve smartaircokWeb.selectDeviceData-Inline
+### The error occurred while setting parameters
+### SQL: SELECT     data_reg_dt, iaq                     COALESCE(            CASE WHEN LENGTH(pm10) = 0             THEN NULL             ELSE pm10            END, '0') as pm10        ,            COALESCE(            CASE WHEN LENGTH(co2) = 0             THEN NULL             ELSE co2            END, '0') as co2        ,            COALESCE(            CASE WHEN LENGTH(reserve3) = 0             THEN NULL             ELSE reserve3            END, '0') as reserve3        ,            COALESCE(            CASE WHEN LENGTH(pm1) = 0             THEN NULL             ELSE pm1            END, '0') as pm1        ,            COALESCE(            CASE WHEN LENGTH(reserve2) = 0             THEN NULL             ELSE reserve2            END, '0') as reserve2        ,            COALESCE(            CASE WHEN LENGTH(pm25) = 0             THEN NULL             ELSE pm25            END, '0') as pm25        ,            COALESCE(            CASE WHEN LENGTH(hum) = 0             THEN NULL             ELSE hum            END, '0') as hum        ,            COALESCE(            CASE WHEN LENGTH(co) = 0             THEN NULL             ELSE co            END, '0') as co        ,            COALESCE(            CASE WHEN LENGTH(vocs) = 0             THEN NULL             ELSE vocs            END, '0') as vocs            FROM aircok_device.dvc_2211IL0008   WHERE data_reg_dt > ?   ORDER BY data_reg_dt;
+### Cause: org.postgresql.util.PSQLException: 오류: 구문 오류, "(" 부근
+  Position: 57
+; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: 오류: 구문 오류, "(" 부근
+  Position: 57
+[logback]2023-01-09 11:22:55 [XNIO-2 task-2] ERROR e.smartaircok.SmartAircokApplication - /device/data/2211IL0008 Exception LOGGER
+[logback]2023-01-09 11:22:55 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/data/2211IL0008 Exception LOGGER

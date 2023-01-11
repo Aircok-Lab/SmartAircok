@@ -7,8 +7,8 @@ import Blp from './Blp'
 
 import { LastDatasProps } from '@/items/Interfaces'
 
-import LatestLists from '../../../components/LatestLists'
-import LatestDetails from '../../../components/LatestDetails'
+import LatestLists from './comp/LatestLists'
+import LatestDetails from './comp/LatestDetails'
 
 import './Dashboard.css'
 

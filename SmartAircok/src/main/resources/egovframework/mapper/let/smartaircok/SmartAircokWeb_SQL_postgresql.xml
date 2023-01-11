@@ -18,7 +18,9 @@
 		       		END, '0') as ${sensor}
 		    </foreach>
 		FROM aircok_device.dvc_${sn}
-		WHERE data_reg_dt > #{time}
+		<![CDATA[
+		WHERE data_reg_dt > #{stime} AND data_reg_dt < #{etime}
+   		]]>
 		ORDER BY data_reg_dt;
 	</select>
 	
