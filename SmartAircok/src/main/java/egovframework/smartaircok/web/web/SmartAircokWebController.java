@@ -95,11 +95,11 @@ public class SmartAircokWebController {
 			Map<String, Object> selectDeviceData_param = new HashMap<String, Object>();
 			selectDeviceData_param.put("sn", sn);
 //			selectDeviceData_param.put("time", LocalDateTime.now().minusMinutes(5));
-			selectDeviceData_param.put("time", LocalDateTime.of(2022, 12, 8, 20, 0, 0));
+			selectDeviceData_param.put("stime", LocalDateTime.of(2022, 12, 8, 15, 0, 0));
+			selectDeviceData_param.put("etime", LocalDateTime.of(2022, 12, 8, 20, 0, 0));
 			selectDeviceData_param.put("sensors", getUsableSensorList(sn));
 			
 			// 사용가능한 센서만 출력
-//			List<Map<String, String>> mydata = smartaircokWebService.selectDeviceData(selectDeviceData_param);
 			List<Map<String, String>> mydata = smartaircokWebService.selectDeviceData(selectDeviceData_param);
 
 			responseData.put("data", mydata);

@@ -138,6 +138,11 @@
   border-radius : 5px;
 }
 
+.data-iaq > svg{
+  width : 60%;
+  margin-left: 20%;
+}
+
 /**
   Graph
 */

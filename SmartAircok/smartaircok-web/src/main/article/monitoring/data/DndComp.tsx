@@ -1,17 +1,19 @@
 import React from 'react'
 import { useDrag, useDrop } from 'react-dnd'
 
-// import DataInfo from '../../../../components/DataInfo'
-// import Gauge from '../../../../components/Gauge'
-// import GaugeInfo from '../../../../components/GaugeInfo'
-// import RadarGraph from '../../../../components/RadarGraph'
+import Bar from '../../../../components/Bar'
+
+import { getDataStyle } from '../../../../items/Functions';
+
+import { categoriseq } from '../../../../items/ItemSequences'
 
 import { DndProps, CompProps } from '@/items/Interfaces';
 
 import './DndComp.css'
 
 
-const Dnd = ({ id, index, comps, setComps, clickedsensor, setclickedsensor, /*dvcDatas, dvcDatetimes, datetimeidx, setdatetimeidx*/ } : DndProps) => {
+// const Dnd = ({ id, index, comps, setComps, clickedsensor, setclickedsensor, /*dvcDatas, dvcDatetimes, datetimeidx, setdatetimeidx*/ } : DndProps) => {
+const Dnd = ({ id, index, comps, setComps, sensorvalue, clickedsensor, setclickedsensor } : DndProps) => {
   const [, dragRef] = useDrag(
     () => ({
       type: 'dnd',
@@ -41,21 +43,6 @@ const Dnd = ({ id, index, comps, setComps, clickedsensor, setclickedsensor, /*dv
    }),
     [moveComp]
   );
-
-  function DndComp(){
-    switch(id){
-      // case 'info' :
-      //   return <DataInfo dvcDatetimes={dvcDatetimes} datetimeidx={datetimeidx} setdatetimeidx={setdatetimeidx}/>
-      // case 'gauge' :
-      //   return <Gauge dvcDatas={dvcDatas[0]}/>
-      // case 'gaugeinfo' :
-      //   return <GaugeInfo dvcDatas={dvcDatas[0]}/>
-      // case 'radar' :
-      //   return <RadarGraph dvcDatas={dvcDatas[0]}/>
-      default :
-        return <div>{id}</div>
-    }
-  }
   
   function moveComp({id, index} : CompProps){
     const comp_idx = comps.indexOf(id);
@@ -66,13 +53,14 @@ const Dnd = ({ id, index, comps, setComps, clickedsensor, setclickedsensor, /*dv
  };
 
   return (
-    <div className={'dndcompnent' + index}
+    <div className='dndcompnent'
       ref={node => dragRef(dropRef(node))}
       onClick={() => setclickedsensor(id)}
-      style={{borderColor : comps.indexOf(clickedsensor) === index ? 'red' : ''}}
-      >
-
-      {DndComp()}
+      style={{borderColor : comps.indexOf(clickedsensor) === index ? 'red' : ''}}>
+        
+      <p className='dndcompnent-title'> {categoriseq.get(id).text} </p>
+      <p className='dndcompnent-value'> {sensorvalue} {categoriseq.get(id).unit} </p>
+      <Bar val={sensorvalue} color={getDataStyle(id, sensorvalue).color}/>
     </div>
   );
 }
