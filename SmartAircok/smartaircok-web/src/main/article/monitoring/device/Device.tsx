@@ -107,7 +107,8 @@ const Device = ({ dvclists, searchlists, setsearchlists, monitoringDvcClick } : 
 						{datas_filter(dvsstatechk, false).map((val : any, key : number) => {
 							return (
 								<section className='device-info' key={key} /*style={{borderColor:(dvcselect === val.sn)?'blue':''}}*/ onClick={() => monitoringDvcClick(val.sn)}>
-									<p className='device-info-name'style={{borderColor:(dvcselect === val.sn)?'blue':''}}> {val.name} </p>
+									<p className='device-info-name'
+										style={(dvcselect === val.sn) ? {borderColor:'blue'}:{borderRadius: '7px'}}> {val.name} </p>
 									<p className='device-info-time'> {new Date(val.time).toLocaleString()} </p>
 									<p className='device-info-sensors'> <Circleico fill={val.cbc ? '#a0a0a0' : 'green'}/> </p>
 									<p className='device-info-sensors'> <Circleico fill={val.cbs ? '#a0a0a0' : 'green'}/> </p>

@@ -113,29 +113,38 @@
 }
 
 .data-infos{
-  display : grid;
+  /* display : grid;
   grid-template-areas:
     "dataiaq  datagraph"
     "datadnds datadnds";
   grid-template-columns: 1fr 2fr;
   grid-template-rows : 1fr 1fr;
-  grid-gap : 2%;
+  grid-gap : 2%; */
 
-  width : 98%;
-  height : 85%;
+  /* width : 98%;
+  height : 85%; */
 
-  padding: 1%;
+  padding: 20px;
 
   background-color: #dddddd;
 }
 
+.data-banner {
+  display: flex;
+  flex-direction: row;
+  /* position: relative; */
+}
+
 .data-iaq{
-  grid-area : dataiaq;
+  /* grid-area : dataiaq; */
+  width: 40%;
+  height: 300px;
 
-  padding : 3%;
+  margin-right: 20px;
+  padding : 20px;
 
-  background-color: white;
-  border-radius : 5px;
+  background-color: #fff;
+  border-radius : 10px;
 }
 
 .data-iaq > svg{
@@ -147,35 +156,56 @@
   Graph
 */
 .data-graph{
-  grid-area : datagraph;
+  /* grid-area : datagraph; */
+  width: 100%;
+  height: 300px;
 
-  padding : 2%;
+  padding : 20px;
 
-  background-color: white;
-  border-radius : 5px;
+  background-color: #fff;
+  border-radius : 10px;
 }
 
-.data-graph-banner{
+/* .data-graph-banner{
   display : flex;
   justify-content : space-between;
   align-items : center;
-}
+} */
 
 .data-dnds{
-  grid-area : datadnds;
+  /* grid-area : datadnds; */
 
-  display : grid;
+  /* display : grid; */
   /* grid-template-areas:
     "div div div div"
     "div div div div";
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr); */
-  grid-gap : 2%;
+  /* grid-gap : 2%; */
 
   width : 100%;
+
+  margin-top: 20px;
+
+  /* position: absolute;
+  top: 70%; */
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .data-dnds > * {
-  background-color: white;
-  border-radius : 5px;
+  width: 24%;
+  height: 180px;
+
+  margin: 0 15px 15px 0;
+
+  background-color: #fff;
+  border-radius : 10px;
+}
+
+.data-dnds > *:nth-child(4n) {
+  margin: 0;
 }

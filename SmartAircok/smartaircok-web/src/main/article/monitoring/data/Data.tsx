@@ -83,26 +83,26 @@ const Data = ({ popuplists, setpopuplists, dvctab } : MonitoringDataProps) => {
     rerenderChart(popuplists[choose][0]);
   }
 
-  function gridbuilder(){
-    const str = []
-    const gridlen = comps.length + ((comps.length % 4) === 0 ? 0 : (4 - comps.length % 4))
+  // function gridbuilder(){
+  //   const str = []
+  //   const gridlen = comps.length + ((comps.length % 4) === 0 ? 0 : (4 - comps.length % 4))
 
-    for(let i = 0; i < gridlen; i++){
-      if(i % 4 === 0){
-        str.push('"')
-      }
-      str.push('div')
-      if(i % 4 === 3){
-        str.push('"')
-      }
-      else{
-        str.push(' ')
-      }
-    }
-    return [str.join(''), 'repeat(4, 1fr)', 'repeat(' + gridlen/4 + ', 1fr)']
-  }
+  //   for(let i = 0; i < gridlen; i++){
+  //     if(i % 4 === 0){
+  //       str.push('"')
+  //     }
+  //     str.push('div')
+  //     if(i % 4 === 3){
+  //       str.push('"')
+  //     }
+  //     else{
+  //       str.push(' ')
+  //     }
+  //   }
+  //   return [str.join(''), 'repeat(4, 1fr)', 'repeat(' + gridlen/4 + ', 1fr)']
+  // }
 
-  const mygrid = gridbuilder()
+  // const mygrid = gridbuilder()
 
   return (
     <section className='data-body'>
@@ -141,20 +141,20 @@ const Data = ({ popuplists, setpopuplists, dvctab } : MonitoringDataProps) => {
 
       {(dvcDatas.length > 0 && clickedsensor) ? 
       <section className='data-infos'>
-        <section className='data-iaq'> 
-          <p className='data-iqa-title'> 통합공기질 </p>
-          <GaugeChart iaq={dvcDatas[dvcDatas.length - 1].iaq}/>
-        </section>
+        <section className='data-banner'> 
+          <section className='data-iaq'> 
+            <p className='data-iqa-title'> 통합공기질 </p>
+            <GaugeChart iaq={dvcDatas[dvcDatas.length - 1].iaq}/>
+          </section>
 
-        <section className='data-graph'> 
-          <section className='data-graph-banner'> 
+          <section className='data-graph'> 
             <p className='data-graph-title'> {categoriseq.get(clickedsensor).text + '(' + categoriseq.get(clickedsensor).eng + ')'} </p>
             <DatePicker startDate={startDate} setStartDate={setStartDate} endDate={endDate} setEndDate={setEndDate} />
+            <LineChart datas={dvcDatas} sensor={clickedsensor} />
           </section>
-          <LineChart datas={dvcDatas} sensor={clickedsensor} />
         </section>
 
-        <section className='data-dnds' style={{gridTemplateAreas:mygrid[0], gridTemplateColumns:mygrid[1]}}>
+        <section className='data-dnds' /*style={{gridTemplateAreas:mygrid[0], gridTemplateColumns:mygrid[1]}}*/>
           <DndProvider backend={HTML5Backend}>
             {comps.map((val, key) => {
               return <DndComp key={key} id={val} index={key} 
