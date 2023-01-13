@@ -6,7 +6,7 @@ import { LoginProps, DeviceAPIProps } from '../items/Interfaces';
 const aircok_axios: AxiosInstance = axios.create({
   baseURL: 'http://192.168.0.83:11116',
   headers : {
-    "Access-Control-Allow-Origin" : "http://192.168.0.83:11116"
+    'Access-Control-Allow-Origin' : 'http://192.168.0.83:11116'
   }
 })
 aircok_axios.defaults.withCredentials = true;
@@ -35,6 +35,21 @@ export const logoutAPI = async () => {
   try{
     const data : AxiosResponse = await aircok_axios.post(
       '/logout'
+    );
+
+    return data;
+  }
+  catch (err){
+    // console.log(err)
+    return null
+  }
+}
+
+// 소셜 로그인 연동 해시키 API
+export const hashkeyAPI = async (type : number) => {
+  try{
+    const data : AxiosResponse = await aircok_axios.post(
+      '/app/key' + '?type=' + type
     );
 
     return data;
@@ -95,6 +110,7 @@ export const deviceLatestDataAPI = async () => {
 const APIs = {
   loginAPI,
   logoutAPI,
+  hashkeyAPI,
   deviceListsAPI,
   deviceDataAPI,
   deviceLatestDataAPI

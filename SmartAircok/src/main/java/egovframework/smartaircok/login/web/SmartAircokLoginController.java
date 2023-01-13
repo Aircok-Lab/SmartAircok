@@ -65,6 +65,7 @@ public class SmartAircokLoginController {
 
 	        Authentication authentication = managerBuilder.getObject().authenticate(smartAircokLoginVO.toAuthentication());
 	        
+	        // 로그인 토큰 생성
 	        Map<String, String> tokenMap = jwtProvider.GenerateTokenByAuth(authentication);
 			
 			// 토큰 검증
@@ -78,13 +79,13 @@ public class SmartAircokLoginController {
 		    responseData.put("user", smartAircokLoginVO.getId());
 		    responseData.put("admin", claims.get("authority", String.class).equals("ROLE_ADMIN") ? "true" : "false");
 		    responseData.put("refresh_token", tokenMap.get("refresh_token"));
-		    responseData.put("result", "success"); 
+		    responseData.put("result", "success");
 		    // 쿠키 설정
 	        ResponseCookie auth_cookie = ResponseCookie.from("Authorization", tokenMap.get("access_token"))
 	                .maxAge(7 * 24 * 60 * 60)
-	                .path("/")
+	                .path("http://localhost:3000/main")
 	                .secure(true)
-	                .sameSite("Strict")
+	                .sameSite("None")
 	                .httpOnly(true)
 	                .build();
 	        

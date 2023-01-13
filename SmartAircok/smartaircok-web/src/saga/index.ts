@@ -74,6 +74,7 @@ function* loginSaga({ data } : LoginSagaProps )  {
   try {
     const loginAPIRes : loginAPIProps = yield call(apis.loginAPI, data);
     if(loginAPIRes?.data.result === 'success'){
+      console.log(loginAPIRes.data)
       yield put(act_login(loginAPIRes.data.user, loginAPIRes.data.admin, loginAPIRes.data.refresh_token));
     }
   } catch (error) {

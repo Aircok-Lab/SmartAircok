@@ -1,0 +1,73 @@
+[logback]2023-01-11 10:22:00 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - 
+### Error querying database.  Cause: org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone >= character varying
+  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
+  Position: 1373
+### The error may exist in file [D:\git\SmartAircok\SmartAircok\target\classes\egovframework\mapper\let\smartaircok\SmartAircokWeb_SQL_postgresql.xml]
+### The error may involve smartaircokWeb.selectDeviceData-Inline
+### The error occurred while setting parameters
+### SQL: SELECT     data_reg_dt, iaq,                     COALESCE(            CASE WHEN LENGTH(pm10) = 0             THEN NULL             ELSE pm10            END, '0') as pm10        ,            COALESCE(            CASE WHEN LENGTH(co2) = 0             THEN NULL             ELSE co2            END, '0') as co2        ,            COALESCE(            CASE WHEN LENGTH(reserve3) = 0             THEN NULL             ELSE reserve3            END, '0') as reserve3        ,            COALESCE(            CASE WHEN LENGTH(pm1) = 0             THEN NULL             ELSE pm1            END, '0') as pm1        ,            COALESCE(            CASE WHEN LENGTH(reserve2) = 0             THEN NULL             ELSE reserve2            END, '0') as reserve2        ,            COALESCE(            CASE WHEN LENGTH(pm25) = 0             THEN NULL             ELSE pm25            END, '0') as pm25        ,            COALESCE(            CASE WHEN LENGTH(hum) = 0             THEN NULL             ELSE hum            END, '0') as hum        ,            COALESCE(            CASE WHEN LENGTH(co) = 0             THEN NULL             ELSE co            END, '0') as co        ,            COALESCE(            CASE WHEN LENGTH(vocs) = 0             THEN NULL             ELSE vocs            END, '0') as vocs            FROM aircok_device.dvc_2211IL0008   WHERE data_reg_dt BETWEEN ? AND ?   ORDER BY data_reg_dt;
+### Cause: org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone >= character varying
+  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
+  Position: 1373
+; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone >= character varying
+  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
+  Position: 1373
+[logback]2023-01-11 10:22:00 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - /device/data/2211IL0008 Exception LOGGER
+[logback]2023-01-11 10:22:35 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - 
+### Error querying database.  Cause: org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone >= character varying
+  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
+  Position: 1373
+### The error may exist in file [D:\git\SmartAircok\SmartAircok\target\classes\egovframework\mapper\let\smartaircok\SmartAircokWeb_SQL_postgresql.xml]
+### The error may involve smartaircokWeb.selectDeviceData-Inline
+### The error occurred while setting parameters
+### SQL: SELECT     data_reg_dt, iaq,                     COALESCE(            CASE WHEN LENGTH(pm10) = 0             THEN NULL             ELSE pm10            END, '0') as pm10        ,            COALESCE(            CASE WHEN LENGTH(co2) = 0             THEN NULL             ELSE co2            END, '0') as co2        ,            COALESCE(            CASE WHEN LENGTH(reserve3) = 0             THEN NULL             ELSE reserve3            END, '0') as reserve3        ,            COALESCE(            CASE WHEN LENGTH(pm1) = 0             THEN NULL             ELSE pm1            END, '0') as pm1        ,            COALESCE(            CASE WHEN LENGTH(reserve2) = 0             THEN NULL             ELSE reserve2            END, '0') as reserve2        ,            COALESCE(            CASE WHEN LENGTH(pm25) = 0             THEN NULL             ELSE pm25            END, '0') as pm25        ,            COALESCE(            CASE WHEN LENGTH(hum) = 0             THEN NULL             ELSE hum            END, '0') as hum        ,            COALESCE(            CASE WHEN LENGTH(co) = 0             THEN NULL             ELSE co            END, '0') as co        ,            COALESCE(            CASE WHEN LENGTH(vocs) = 0             THEN NULL             ELSE vocs            END, '0') as vocs            FROM aircok_device.dvc_2211IL0008   WHERE data_reg_dt BETWEEN ? AND ?   ORDER BY data_reg_dt;
+### Cause: org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone >= character varying
+  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
+  Position: 1373
+; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone >= character varying
+  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
+  Position: 1373
+[logback]2023-01-11 10:22:35 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/data/2211IL0008 Exception LOGGER
+[logback]2023-01-11 10:22:35 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - 
+### Error querying database.  Cause: org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone >= character varying
+  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
+  Position: 1373
+### The error may exist in file [D:\git\SmartAircok\SmartAircok\target\classes\egovframework\mapper\let\smartaircok\SmartAircokWeb_SQL_postgresql.xml]
+### The error may involve smartaircokWeb.selectDeviceData-Inline
+### The error occurred while setting parameters
+### SQL: SELECT     data_reg_dt, iaq,                     COALESCE(            CASE WHEN LENGTH(pm10) = 0             THEN NULL             ELSE pm10            END, '0') as pm10        ,            COALESCE(            CASE WHEN LENGTH(co2) = 0             THEN NULL             ELSE co2            END, '0') as co2        ,            COALESCE(            CASE WHEN LENGTH(reserve3) = 0             THEN NULL             ELSE reserve3            END, '0') as reserve3        ,            COALESCE(            CASE WHEN LENGTH(pm1) = 0             THEN NULL             ELSE pm1            END, '0') as pm1        ,            COALESCE(            CASE WHEN LENGTH(reserve2) = 0             THEN NULL             ELSE reserve2            END, '0') as reserve2        ,            COALESCE(            CASE WHEN LENGTH(pm25) = 0             THEN NULL             ELSE pm25            END, '0') as pm25        ,            COALESCE(            CASE WHEN LENGTH(hum) = 0             THEN NULL             ELSE hum            END, '0') as hum        ,            COALESCE(            CASE WHEN LENGTH(co) = 0             THEN NULL             ELSE co            END, '0') as co        ,            COALESCE(            CASE WHEN LENGTH(vocs) = 0             THEN NULL             ELSE vocs            END, '0') as vocs            FROM aircok_device.dvc_2211IL0008   WHERE data_reg_dt BETWEEN ? AND ?   ORDER BY data_reg_dt;
+### Cause: org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone >= character varying
+  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
+  Position: 1373
+; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone >= character varying
+  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
+  Position: 1373
+[logback]2023-01-11 10:22:35 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/data/2211IL0008 Exception LOGGER
+[logback]2023-01-11 10:23:23 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - 
+### Error querying database.  Cause: org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone > character varying
+  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
+  Position: 1224
+### The error may exist in file [D:\git\SmartAircok\SmartAircok\target\classes\egovframework\mapper\let\smartaircok\SmartAircokWeb_SQL_postgresql.xml]
+### The error may involve smartaircokWeb.selectDeviceData-Inline
+### The error occurred while setting parameters
+### SQL: SELECT     data_reg_dt, iaq,                     COALESCE(            CASE WHEN LENGTH(pm10) = 0             THEN NULL             ELSE pm10            END, '0') as pm10        ,            COALESCE(            CASE WHEN LENGTH(co2) = 0             THEN NULL             ELSE co2            END, '0') as co2        ,            COALESCE(            CASE WHEN LENGTH(pm1) = 0             THEN NULL             ELSE pm1            END, '0') as pm1        ,            COALESCE(            CASE WHEN LENGTH(reserve2) = 0             THEN NULL             ELSE reserve2            END, '0') as reserve2        ,            COALESCE(            CASE WHEN LENGTH(pm25) = 0             THEN NULL             ELSE pm25            END, '0') as pm25        ,            COALESCE(            CASE WHEN LENGTH(tem) = 0             THEN NULL             ELSE tem            END, '0') as tem        ,            COALESCE(            CASE WHEN LENGTH(co) = 0             THEN NULL             ELSE co            END, '0') as co        ,            COALESCE(            CASE WHEN LENGTH(vocs) = 0             THEN NULL             ELSE vocs            END, '0') as vocs            FROM aircok_device.dvc_2211IL0011       WHERE data_reg_dt > ? AND data_reg_dt < ?          ORDER BY data_reg_dt;
+### Cause: org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone > character varying
+  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
+  Position: 1224
+; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone > character varying
+  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
+  Position: 1224
+[logback]2023-01-11 10:23:23 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/data/2211IL0011 Exception LOGGER
+[logback]2023-01-11 17:16:37 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - 
+### Error updating database.  Cause: org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzM0MjQ5OTcsImV4cCI6MTY3NDYzNDU5NywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.fP2lAQYKlASKoEwM_VIkDB9ZCzFwEtMqrIgccOVO2UA, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzM0MjQ5OTcsImV4cCI6MTY3NDYzNDU5NywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.fP2lAQYKlASKoEwM_VIkDB9ZCzFwEtMqrIgccOVO2UA) 키가 이미 있습니다.
+### The error may exist in file [D:\git\SmartAircok\SmartAircok\target\classes\egovframework\mapper\let\smartaircok\SmartAircokLogin_SQL_postgresql.xml]
+### The error may involve smartaircokLogin.insertRefreshToken-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO aircok.user_token   VALUES (    ?,    ?   );
+### Cause: org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzM0MjQ5OTcsImV4cCI6MTY3NDYzNDU5NywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.fP2lAQYKlASKoEwM_VIkDB9ZCzFwEtMqrIgccOVO2UA, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzM0MjQ5OTcsImV4cCI6MTY3NDYzNDU5NywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.fP2lAQYKlASKoEwM_VIkDB9ZCzFwEtMqrIgccOVO2UA) 키가 이미 있습니다.
+; 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzM0MjQ5OTcsImV4cCI6MTY3NDYzNDU5NywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.fP2lAQYKlASKoEwM_VIkDB9ZCzFwEtMqrIgccOVO2UA, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzM0MjQ5OTcsImV4cCI6MTY3NDYzNDU5NywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.fP2lAQYKlASKoEwM_VIkDB9ZCzFwEtMqrIgccOVO2UA) 키가 이미 있습니다.; nested exception is org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzM0MjQ5OTcsImV4cCI6MTY3NDYzNDU5NywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.fP2lAQYKlASKoEwM_VIkDB9ZCzFwEtMqrIgccOVO2UA, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzM0MjQ5OTcsImV4cCI6MTY3NDYzNDU5NywiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.fP2lAQYKlASKoEwM_VIkDB9ZCzFwEtMqrIgccOVO2UA) 키가 이미 있습니다.
+[logback]2023-01-11 17:16:37 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - /login/user Exception LOGGER

@@ -12,8 +12,6 @@ import {
 import { Radar } from 'react-chartjs-2';
 
 import { RadarChartProps } from '../items/Interfaces';
-
-import './RadarChart.css'
   
 ChartJS.register(
   RadialLinearScale,
@@ -39,7 +37,7 @@ const RadarChart = ({datas, sensor} : RadarChartProps) => {
   };
 
   return (
-    <section className='radar-section'>
+    <section className='radar-section' style={{width:'75%', height:'75%'}}>
       <Radar data={data}/>
     </section>
   );

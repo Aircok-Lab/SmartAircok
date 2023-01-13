@@ -3,6 +3,7 @@ package egovframework.com.cmm.interceptor;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -68,7 +69,7 @@ public class AuthenticSecurityInterceptor implements HandlerInterceptor {
 			Claims claims = jwtProvider.parseJwtToken(token);
 
 			request.setAttribute("authority", claims.get("authority", String.class));
-
+			
 			return true;
 		} catch (Exception e) {
 			String requestURI = request.getRequestURI();
