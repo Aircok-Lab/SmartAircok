@@ -17,11 +17,11 @@
 			        	ELSE ${sensor}
 		       		END, '0') as ${sensor}
 		    </foreach>
-		FROM aircok_device.dvc_${sn}
+		FROM aircok_device.dvc_${sn} dvctb
 		<![CDATA[
-		WHERE data_reg_dt > #{stime} AND data_reg_dt < #{etime}
+		WHERE dvctb.data_reg_dt > #{stime} AND dvctb.data_reg_dt < #{etime}
    		]]>
-		ORDER BY data_reg_dt;
+		ORDER BY dvctb.data_reg_dt;
 	</select>
 	
 	<select id="selectDeviceLatestData" parameterType="string" resultType="hashmap">
@@ -42,7 +42,7 @@
 		WHERE state.sn IN (
 				SELECT UNNEST(STRING_TO_ARRAY(dvc_list, ','))
 				FROM aircok.user_tb
-				WHERE user_id = #{id}
+				WHERE user_tb.user_id = #{id}
 			);
 	</select>
 	
@@ -50,7 +50,7 @@
 	<select id="selectDeviceSensor" parameterType="string" resultType="hashmap">
 		SELECT *
 		FROM aircok.dvc_sensor
-		WHERE sn = #{sn};
+		WHERE dvc_sensor.sn = #{sn};
 	</select>
 	
 </mapper>

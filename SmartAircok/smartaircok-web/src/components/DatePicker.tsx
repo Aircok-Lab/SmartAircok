@@ -4,11 +4,9 @@ import Calendar from './Calendar'
 
 import { DatePickerProps } from '../items/Interfaces'
 
-import './DatePicker.css'
-
 const DatePicker = ({startDate, setStartDate, endDate, setEndDate} : DatePickerProps) => {
   return (
-    <section className='datepicker'>
+    <section className='datepicker' style={{display:'flex'}}>
       <Calendar sdate={startDate} edate={endDate} type={'s'} setDate={setStartDate}/>
        ~
       <Calendar sdate={startDate} edate={endDate} type={'e'} setDate={setEndDate}/>

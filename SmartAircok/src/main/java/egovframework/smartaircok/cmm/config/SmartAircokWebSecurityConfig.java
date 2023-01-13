@@ -78,6 +78,7 @@ public class SmartAircokWebSecurityConfig extends WebSecurityConfigurerAdapter {
 	        .authorizeRequests()
 //	        .antMatchers("/login/**").permitAll()
 //	        .antMatchers("/logout/**").permitAll()
+//	        .antMatchers("/app/**").permitAll()
 	        .antMatchers("/**").permitAll()
 	        .anyRequest().authenticated()
 

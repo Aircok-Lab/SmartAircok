@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="smartaircokApp">
+	<update id="updateAppAcessKey" parameterType="hashmap">
+		UPDATE aircok.user_tb
+		SET hash_key = #{key}
+		WHERE user_tb.user_id = #{id}
+	</update>
+	
+	<select id="selectAppAccessUser" parameterType="string"  resultType="string">
+		SELECT user_tb.user_id
+		FROM aircok.aircok.user_tb
+		WHERE user_tb.hash_key = #{key};
+	</select>
+	
+	<update id="updateAppAccessUser" parameterType="hashmap">
+		UPDATE aircok_app.user_social
+		SET user_ids = (
+			SELECT ARRAY(
+				SELECT DISTINCT UNNEST(ARRAY_APPEND(user_social.user_ids, #{user_id}))
+				FROM aircok_app.user_social
+				WHERE user_social.social_id = #{social_id}
+			)
+		)
+		WHERE user_social.social_id = #{social_id};
+	</update>
+</mapper>

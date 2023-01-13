@@ -1,60 +1,65 @@
-[logback]2023-01-11 10:22:00 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - 
-### Error querying database.  Cause: org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone >= character varying
-  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
-  Position: 1373
-### The error may exist in file [D:\git\SmartAircok\SmartAircok\target\classes\egovframework\mapper\let\smartaircok\SmartAircokWeb_SQL_postgresql.xml]
-### The error may involve smartaircokWeb.selectDeviceData-Inline
+[logback]2023-01-12 09:38:42 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - 
+### Error updating database.  Cause: org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzM0ODM5MjIsImV4cCI6MTY3NDY5MzUyMiwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.z9JSP1zlpS0WS8qw6cWWupO9yk9Z4XP2RupLQb48UjQ, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzM0ODM5MjIsImV4cCI6MTY3NDY5MzUyMiwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.z9JSP1zlpS0WS8qw6cWWupO9yk9Z4XP2RupLQb48UjQ) 키가 이미 있습니다.
+### The error may exist in file [D:\git\SmartAircok\SmartAircok\target\classes\egovframework\mapper\let\smartaircok\SmartAircokLogin_SQL_postgresql.xml]
+### The error may involve smartaircokLogin.insertRefreshToken-Inline
 ### The error occurred while setting parameters
-### SQL: SELECT     data_reg_dt, iaq,                     COALESCE(            CASE WHEN LENGTH(pm10) = 0             THEN NULL             ELSE pm10            END, '0') as pm10        ,            COALESCE(            CASE WHEN LENGTH(co2) = 0             THEN NULL             ELSE co2            END, '0') as co2        ,            COALESCE(            CASE WHEN LENGTH(reserve3) = 0             THEN NULL             ELSE reserve3            END, '0') as reserve3        ,            COALESCE(            CASE WHEN LENGTH(pm1) = 0             THEN NULL             ELSE pm1            END, '0') as pm1        ,            COALESCE(            CASE WHEN LENGTH(reserve2) = 0             THEN NULL             ELSE reserve2            END, '0') as reserve2        ,            COALESCE(            CASE WHEN LENGTH(pm25) = 0             THEN NULL             ELSE pm25            END, '0') as pm25        ,            COALESCE(            CASE WHEN LENGTH(hum) = 0             THEN NULL             ELSE hum            END, '0') as hum        ,            COALESCE(            CASE WHEN LENGTH(co) = 0             THEN NULL             ELSE co            END, '0') as co        ,            COALESCE(            CASE WHEN LENGTH(vocs) = 0             THEN NULL             ELSE vocs            END, '0') as vocs            FROM aircok_device.dvc_2211IL0008   WHERE data_reg_dt BETWEEN ? AND ?   ORDER BY data_reg_dt;
-### Cause: org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone >= character varying
-  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
-  Position: 1373
-; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone >= character varying
-  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
-  Position: 1373
-[logback]2023-01-11 10:22:00 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - /device/data/2211IL0008 Exception LOGGER
-[logback]2023-01-11 10:22:35 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - 
-### Error querying database.  Cause: org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone >= character varying
-  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
-  Position: 1373
-### The error may exist in file [D:\git\SmartAircok\SmartAircok\target\classes\egovframework\mapper\let\smartaircok\SmartAircokWeb_SQL_postgresql.xml]
-### The error may involve smartaircokWeb.selectDeviceData-Inline
-### The error occurred while setting parameters
-### SQL: SELECT     data_reg_dt, iaq,                     COALESCE(            CASE WHEN LENGTH(pm10) = 0             THEN NULL             ELSE pm10            END, '0') as pm10        ,            COALESCE(            CASE WHEN LENGTH(co2) = 0             THEN NULL             ELSE co2            END, '0') as co2        ,            COALESCE(            CASE WHEN LENGTH(reserve3) = 0             THEN NULL             ELSE reserve3            END, '0') as reserve3        ,            COALESCE(            CASE WHEN LENGTH(pm1) = 0             THEN NULL             ELSE pm1            END, '0') as pm1        ,            COALESCE(            CASE WHEN LENGTH(reserve2) = 0             THEN NULL             ELSE reserve2            END, '0') as reserve2        ,            COALESCE(            CASE WHEN LENGTH(pm25) = 0             THEN NULL             ELSE pm25            END, '0') as pm25        ,            COALESCE(            CASE WHEN LENGTH(hum) = 0             THEN NULL             ELSE hum            END, '0') as hum        ,            COALESCE(            CASE WHEN LENGTH(co) = 0             THEN NULL             ELSE co            END, '0') as co        ,            COALESCE(            CASE WHEN LENGTH(vocs) = 0             THEN NULL             ELSE vocs            END, '0') as vocs            FROM aircok_device.dvc_2211IL0008   WHERE data_reg_dt BETWEEN ? AND ?   ORDER BY data_reg_dt;
-### Cause: org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone >= character varying
-  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
-  Position: 1373
-; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone >= character varying
-  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
-  Position: 1373
-[logback]2023-01-11 10:22:35 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/data/2211IL0008 Exception LOGGER
-[logback]2023-01-11 10:22:35 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - 
-### Error querying database.  Cause: org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone >= character varying
-  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
-  Position: 1373
-### The error may exist in file [D:\git\SmartAircok\SmartAircok\target\classes\egovframework\mapper\let\smartaircok\SmartAircokWeb_SQL_postgresql.xml]
-### The error may involve smartaircokWeb.selectDeviceData-Inline
-### The error occurred while setting parameters
-### SQL: SELECT     data_reg_dt, iaq,                     COALESCE(            CASE WHEN LENGTH(pm10) = 0             THEN NULL             ELSE pm10            END, '0') as pm10        ,            COALESCE(            CASE WHEN LENGTH(co2) = 0             THEN NULL             ELSE co2            END, '0') as co2        ,            COALESCE(            CASE WHEN LENGTH(reserve3) = 0             THEN NULL             ELSE reserve3            END, '0') as reserve3        ,            COALESCE(            CASE WHEN LENGTH(pm1) = 0             THEN NULL             ELSE pm1            END, '0') as pm1        ,            COALESCE(            CASE WHEN LENGTH(reserve2) = 0             THEN NULL             ELSE reserve2            END, '0') as reserve2        ,            COALESCE(            CASE WHEN LENGTH(pm25) = 0             THEN NULL             ELSE pm25            END, '0') as pm25        ,            COALESCE(            CASE WHEN LENGTH(hum) = 0             THEN NULL             ELSE hum            END, '0') as hum        ,            COALESCE(            CASE WHEN LENGTH(co) = 0             THEN NULL             ELSE co            END, '0') as co        ,            COALESCE(            CASE WHEN LENGTH(vocs) = 0             THEN NULL             ELSE vocs            END, '0') as vocs            FROM aircok_device.dvc_2211IL0008   WHERE data_reg_dt BETWEEN ? AND ?   ORDER BY data_reg_dt;
-### Cause: org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone >= character varying
-  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
-  Position: 1373
-; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone >= character varying
-  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
-  Position: 1373
-[logback]2023-01-11 10:22:35 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/data/2211IL0008 Exception LOGGER
-[logback]2023-01-11 10:23:23 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - 
-### Error querying database.  Cause: org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone > character varying
-  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
-  Position: 1224
-### The error may exist in file [D:\git\SmartAircok\SmartAircok\target\classes\egovframework\mapper\let\smartaircok\SmartAircokWeb_SQL_postgresql.xml]
-### The error may involve smartaircokWeb.selectDeviceData-Inline
-### The error occurred while setting parameters
-### SQL: SELECT     data_reg_dt, iaq,                     COALESCE(            CASE WHEN LENGTH(pm10) = 0             THEN NULL             ELSE pm10            END, '0') as pm10        ,            COALESCE(            CASE WHEN LENGTH(co2) = 0             THEN NULL             ELSE co2            END, '0') as co2        ,            COALESCE(            CASE WHEN LENGTH(pm1) = 0             THEN NULL             ELSE pm1            END, '0') as pm1        ,            COALESCE(            CASE WHEN LENGTH(reserve2) = 0             THEN NULL             ELSE reserve2            END, '0') as reserve2        ,            COALESCE(            CASE WHEN LENGTH(pm25) = 0             THEN NULL             ELSE pm25            END, '0') as pm25        ,            COALESCE(            CASE WHEN LENGTH(tem) = 0             THEN NULL             ELSE tem            END, '0') as tem        ,            COALESCE(            CASE WHEN LENGTH(co) = 0             THEN NULL             ELSE co            END, '0') as co        ,            COALESCE(            CASE WHEN LENGTH(vocs) = 0             THEN NULL             ELSE vocs            END, '0') as vocs            FROM aircok_device.dvc_2211IL0011       WHERE data_reg_dt > ? AND data_reg_dt < ?          ORDER BY data_reg_dt;
-### Cause: org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone > character varying
-  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
-  Position: 1224
-; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: 오류: 연산자 없음: timestamp without time zone > character varying
-  Hint: 지정된 이름 및 인자 형식과 일치하는 연산자가 없습니다. 명시적 형변환자를 추가해야 할 수도 있습니다.
-  Position: 1224
-[logback]2023-01-11 10:23:23 [XNIO-2 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/data/2211IL0011 Exception LOGGER
+### SQL: INSERT INTO aircok.user_token   VALUES (    ?,    ?   );
+### Cause: org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzM0ODM5MjIsImV4cCI6MTY3NDY5MzUyMiwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.z9JSP1zlpS0WS8qw6cWWupO9yk9Z4XP2RupLQb48UjQ, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzM0ODM5MjIsImV4cCI6MTY3NDY5MzUyMiwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.z9JSP1zlpS0WS8qw6cWWupO9yk9Z4XP2RupLQb48UjQ) 키가 이미 있습니다.
+; 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzM0ODM5MjIsImV4cCI6MTY3NDY5MzUyMiwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.z9JSP1zlpS0WS8qw6cWWupO9yk9Z4XP2RupLQb48UjQ, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzM0ODM5MjIsImV4cCI6MTY3NDY5MzUyMiwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.z9JSP1zlpS0WS8qw6cWWupO9yk9Z4XP2RupLQb48UjQ) 키가 이미 있습니다.; nested exception is org.postgresql.util.PSQLException: 오류: 중복된 키 값이 "user_token_pk" 고유 제약 조건을 위반함
+  Detail: (access_token, refresh_token)=(eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzM0ODM5MjIsImV4cCI6MTY3NDY5MzUyMiwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.z9JSP1zlpS0WS8qw6cWWupO9yk9Z4XP2RupLQb48UjQ, eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhaXJjb2siLCJpYXQiOjE2NzM0ODM5MjIsImV4cCI6MTY3NDY5MzUyMiwiaWQiOiJ0ZXN0X3VzZXIxIiwiYXV0aG9yaXR5IjoiUk9MRV9URVNUIn0.z9JSP1zlpS0WS8qw6cWWupO9yk9Z4XP2RupLQb48UjQ) 키가 이미 있습니다.
+[logback]2023-01-12 09:38:42 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - /login/user Exception LOGGER
+[logback]2023-01-12 13:27:59 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2023-01-12 13:27:59 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2023-01-12 13:28:00 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2023-01-12 13:28:00 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2023-01-12 14:57:38 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2023-01-12 14:57:38 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2023-01-12 14:58:02 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2023-01-12 14:58:02 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2023-01-12 14:58:02 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2023-01-12 14:58:02 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2023-01-12 15:02:09 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2023-01-12 15:02:09 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2023-01-12 15:02:10 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2023-01-12 15:02:10 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2023-01-12 15:02:38 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2023-01-12 15:02:38 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2023-01-12 15:02:43 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2023-01-12 15:02:43 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2023-01-12 15:04:56 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2023-01-12 15:04:56 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2023-01-12 15:05:09 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2023-01-12 15:05:09 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2023-01-12 15:07:57 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2023-01-12 15:07:57 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2023-01-12 15:08:01 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - class java.lang.String cannot be cast to class org.springframework.security.core.userdetails.UserDetails (java.lang.String is in module java.base of loader 'bootstrap'; org.springframework.security.core.userdetails.UserDetails is in unnamed module of loader 'app')
+[logback]2023-01-12 15:08:01 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2023-01-12 15:33:17 [XNIO-7 task-1] ERROR e.smartaircok.SmartAircokApplication - http://localhost:3000: invalid cookie domain char '58'
+[logback]2023-01-12 15:33:17 [XNIO-7 task-1] ERROR e.smartaircok.SmartAircokApplication - /login/user Exception LOGGER
+[logback]2023-01-12 15:33:21 [XNIO-7 task-1] ERROR e.smartaircok.SmartAircokApplication - http://localhost:3000: invalid cookie domain char '58'
+[logback]2023-01-12 15:33:21 [XNIO-7 task-1] ERROR e.smartaircok.SmartAircokApplication - /login/user Exception LOGGER
+[logback]2023-01-12 15:33:39 [XNIO-8 task-1] ERROR e.smartaircok.SmartAircokApplication - localhost:3000: invalid cookie domain char '58'
+[logback]2023-01-12 15:33:39 [XNIO-8 task-1] ERROR e.smartaircok.SmartAircokApplication - /login/user Exception LOGGER
+[logback]2023-01-12 15:33:51 [XNIO-9 task-1] ERROR e.smartaircok.SmartAircokApplication - http://localhost: invalid cookie domain char '58'
+[logback]2023-01-12 15:33:51 [XNIO-9 task-1] ERROR e.smartaircok.SmartAircokApplication - /login/user Exception LOGGER
+[logback]2023-01-12 16:38:22 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - Could not open JDBC Connection for transaction; nested exception is java.sql.SQLException: Data source is closed
+[logback]2023-01-12 16:38:22 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - /device/latests Exception LOGGER
+[logback]2023-01-12 17:34:29 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for smartaircokApp.updateAppAcessKey
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for smartaircokApp.updateAppAcessKey
+[logback]2023-01-12 17:34:29 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - /app/key Exception LOGGER
+[logback]2023-01-12 17:39:15 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for smartaircokApp.updateAppAcessKey
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for smartaircokApp.updateAppAcessKey
+[logback]2023-01-12 17:39:15 [XNIO-1 task-2] ERROR e.smartaircok.SmartAircokApplication - /app/key Exception LOGGER
+[logback]2023-01-12 18:45:27 [XNIO-18 task-1] ERROR e.smartaircok.SmartAircokApplication - null
+[logback]2023-01-12 18:45:27 [XNIO-18 task-1] ERROR e.smartaircok.SmartAircokApplication - http://192.168.0.83:11116/app/access/social_type/google/social_id/airsocial1%40google.com Exception LOGGER
+[logback]2023-01-12 18:48:04 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - null
+[logback]2023-01-12 18:48:04 [XNIO-1 task-1] ERROR e.smartaircok.SmartAircokApplication - http://192.168.0.83:11116/app/access/social_type/google/social_id/airsocial1%40google.com Exception LOGGER
+[logback]2023-01-12 18:52:21 [XNIO-2 task-1] ERROR e.s.app.web.SmartAircokAppController - null
+[logback]2023-01-12 18:52:21 [XNIO-2 task-1] ERROR e.s.app.web.SmartAircokAppController - http://192.168.0.83:11116/app/access/social_type/google/social_id/airsocial1%40google.com Exception LOGGER
+[logback]2023-01-12 18:52:29 [XNIO-2 task-1] ERROR e.s.app.web.SmartAircokAppController - Cannot invoke "String.equals(Object)" because "user_id" is null
+[logback]2023-01-12 18:52:29 [XNIO-2 task-1] ERROR e.s.app.web.SmartAircokAppController - http://192.168.0.83:11116/app/access/social_type/google/social_id/airsocial1%40google.com Exception LOGGER

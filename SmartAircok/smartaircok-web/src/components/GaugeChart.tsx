@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react'
 
 import { GaugeChartProps } from '../items/Interfaces';
 
-import './GaugeChart.css'
+// import './GaugeChart.css'
 
 const GaugeChart = ({iaq} : GaugeChartProps) => {
   // 통합공기질 치수
@@ -52,7 +52,7 @@ const GaugeChart = ({iaq} : GaugeChartProps) => {
   }
 
   return (
-    <svg className='gaugechart' viewBox='0 0 24 24'>
+    <svg className='gaugechart' viewBox='0 0 24 24' style={{aspectRatio : 1 / 1}}>
       <circle 
         className='gaugechart-bg'
         cx='12'
@@ -77,6 +77,7 @@ const GaugeChart = ({iaq} : GaugeChartProps) => {
         y='50%'
         dominantBaseline="middle"
         textAnchor="middle"
+        style={{width : '75%', height : '100%', fontSize: '40%'}}
       > 
         {iaq}%
       </text>

@@ -5,15 +5,11 @@ import { useSelector } from 'react-redux';
 import { RootState } from './items/RootReducer';
 
 import Login from './login/Login';
-// import MainLoader from './main/MainLoader';
 import Main from './main/Main';
 
 import './App.css';
 
-function App() {  
-  // const test = (useSelector((state: RootState) => state.actLogin.refresh_token) ? '1' : '0') +
-  //               (useSelector((state: RootState) => state.actDatas.devices).size > 0 ? '1' : '0')
-
+function App() {
   return (
     <BrowserRouter>
       <Routes>

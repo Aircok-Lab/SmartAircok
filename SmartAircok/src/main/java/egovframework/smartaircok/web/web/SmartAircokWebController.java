@@ -86,8 +86,8 @@ public class SmartAircokWebController {
 	@RequestMapping(value="/device/data/{sn}", method = RequestMethod.GET)
 	public void getDeviceData(
 			@PathVariable String sn,
-			@RequestParam(value = "st", required = false, defaultValue="") String st,
-			@RequestParam(value = "et", required = false, defaultValue="") String et,
+			@RequestParam(value="st", required = false, defaultValue="") String st,
+			@RequestParam(value="et", required = false, defaultValue="") String et,
 			HttpServletRequest request, HttpServletResponse response) throws Exception{
 		try {	
 			Map<String, Object> responseData = new HashMap<String, Object>();

@@ -18,6 +18,7 @@ import org.springframework.web.servlet.handler.SimpleMappingExceptionResolver;
 import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
+import egovframework.com.cmm.interceptor.AuthenticSecurityInterceptor;
 import egovframework.com.cmm.interceptor.CustomAuthenticInterceptor;
 import egovframework.smartaircok.cmm.jwt.JwtProvider;
 
